@@ -1,9 +1,15 @@
 fileFormatVersion: 2
 guid: 9e473901f8ecf8e4bafe5d26571a6e8a
-timeCreated: 1454098492
+timeCreated: 1454099462
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: props_0
+    21300002: props_1
+    21300004: props_2
+    21300006: props_3
+    21300008: props_4
+    21300010: props_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,7 +55,97 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: props_0
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 969
+        width: 191
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -95.5, y: 122.5}
+        - {x: -95.5, y: -122.5}
+        - {x: 95.5, y: -122.5}
+        - {x: 95.5, y: 122.5}
+    - name: props_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1237
+        width: 254
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -127, y: 40}
+        - {x: -127, y: -40}
+        - {x: 127, y: -40}
+        - {x: 127, y: 40}
+    - name: props_2
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 678
+        width: 157
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -78.5, y: 67}
+        - {x: -78.5, y: -67}
+        - {x: 78.5, y: -67}
+        - {x: 78.5, y: 67}
+    - name: props_3
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 1764
+        width: 272
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -136, y: 43}
+        - {x: -136, y: -43}
+        - {x: 136, y: -43}
+        - {x: 136, y: 43}
+    - name: props_4
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 93
+        width: 102
+        height: 334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51, y: 167}
+        - {x: -51, y: -167}
+        - {x: 51, y: -167}
+        - {x: 51, y: 167}
+    - name: props_5
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 35
+        width: 97
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48.5, y: 165}
+        - {x: -48.5, y: -165}
+        - {x: 48.5, y: -165}
+        - {x: 48.5, y: 165}
     outline: []
   spritePackingTag: 
   userData: 
