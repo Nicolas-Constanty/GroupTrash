@@ -786,6 +786,7 @@ GameObject:
   - 4: {fileID: 490048}
   - 212: {fileID: 21290934}
   - 50: {fileID: 5056212}
+  - 255: {fileID: 25576448}
   m_Layer: 9
   m_Name: hip
   m_TagString: Untagged
@@ -5683,14 +5684,31 @@ FixedJoint2D:
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
+  m_ConnectedRigidBody: {fileID: 5091594}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.81, y: 0.56}
-  m_ConnectedAnchor: {x: 9.639434, y: -1.2343279}
+  m_ConnectedAnchor: {x: 0.40931505, y: 0.7451934}
   m_DampingRatio: 0
   m_Frequency: 30
+--- !u!255 &25576448
+FixedJoint2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163784}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 5080956}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: -0.2800002, y: -14.625}
+  m_DampingRatio: 0
+  m_Frequency: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

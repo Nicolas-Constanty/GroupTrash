@@ -413,7 +413,6 @@ GameObject:
   - 50: {fileID: 5015512}
   - 233: {fileID: 23348448}
   - 255: {fileID: 25552048}
-  - 255: {fileID: 25584090}
   - 114: {fileID: 11497410}
   m_Layer: 8
   m_Name: spine
@@ -710,6 +709,7 @@ GameObject:
   - 4: {fileID: 426684}
   - 212: {fileID: 21268544}
   - 50: {fileID: 5057876}
+  - 255: {fileID: 25599378}
   m_Layer: 8
   m_Name: hip
   m_TagString: Untagged
@@ -5674,7 +5674,7 @@ FixedJoint2D:
   m_Anchor: {x: -0.69, y: 0}
   m_ConnectedAnchor: {x: -0.080714904, y: 0.80761117}
   m_DampingRatio: 0
-  m_Frequency: 30
+  m_Frequency: 15
 --- !u!255 &25552048
 FixedJoint2D:
   m_ObjectHideFlags: 1
@@ -5692,12 +5692,12 @@ FixedJoint2D:
   m_ConnectedAnchor: {x: 0, y: 0.79999995}
   m_DampingRatio: 0
   m_Frequency: 0
---- !u!255 &25584090
+--- !u!255 &25599378
 FixedJoint2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133190}
+  m_GameObject: {fileID: 159300}
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
@@ -5706,7 +5706,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.2800002, y: -13.825}
+  m_ConnectedAnchor: {x: 0.2800002, y: -14.625}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!1001 &100100000
