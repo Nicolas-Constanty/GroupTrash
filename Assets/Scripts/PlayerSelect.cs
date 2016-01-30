@@ -36,8 +36,7 @@ public class PlayerSelect : MonoBehaviour {
 	void Update ()
 	{
 		MoveCursorP1 ();
-		// TODO: add P2
-		MoveCursorP2();
+		MoveCursorP2 ();
 
 		if (remainingTime > 0)
 		{

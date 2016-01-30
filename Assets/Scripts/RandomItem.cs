@@ -56,10 +56,10 @@ public class RandomItem : MonoBehaviour {
         }
     }
 
-	private List<Part> items;
-	private List<Part> allitems;
+	private List<Part> items = new List<Part>();
+	private List<Part> allitems = new List<Part>();
     public Body[] bodies;
-	private Part empty;
+	private Part empty = null;
 
 	void Start ()
 	{
