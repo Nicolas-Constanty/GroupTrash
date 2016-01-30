@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/scene_test_gaspar.unity
+  isLoaded: 1
+  isActive: 1
