@@ -1,0 +1,302 @@
+fileFormatVersion: 2
+guid: 7567ac2a2866f2b4daf7e6827111bb3a
+timeCreated: 1454118107
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: modele_decoupey_0
+    21300002: modele_decoupey_1
+    21300004: modele_decoupey_3
+    21300006: modele_decoupey_5
+    21300008: modele_decoupey_6
+    21300010: modele_decoupey_7
+    21300012: modele_decoupey_8
+    21300014: modele_decoupey_9
+    21300016: modele_decoupey_10
+    21300018: modele_decoupey_11
+    21300020: modele_decoupey_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: modele_decoupey_0
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 1756
+        width: 137
+        height: 236
+      alignment: 9
+      pivot: {x: 0.683042, y: 0.75236225}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34.643066, y: 41.10486}
+        - {x: -38.643066, y: 40.10486}
+        - {x: -63.643066, y: -70.89514}
+        - {x: -63.643066, y: -116.89514}
+        - {x: -47.643066, y: -120.89514}
+        - {x: -9.643066, y: -120.89514}
+        - {x: 31.356934, y: -62.89514}
+        - {x: 31.356934, y: 35.10486}
+        - {x: 16.356934, y: 41.10486}
+    - name: modele_decoupey_1
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 1727
+        width: 94
+        height: 275
+      alignment: 9
+      pivot: {x: 0.26657298, y: 0.72797096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.7661743, y: 52.667603}
+        - {x: -15.766174, y: 52.667603}
+        - {x: -16.766174, y: 50.667603}
+        - {x: -16.766174, y: 21.667603}
+        - {x: 0.23382568, y: -136.3324}
+        - {x: 17.233826, y: -136.3324}
+        - {x: 47.233826, y: -86.3324}
+        - {x: 48.233826, y: -84.3324}
+        - {x: 48.233826, y: -63.332397}
+        - {x: 28.233826, y: 8.667603}
+    - name: modele_decoupey_3
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1224
+        width: 109
+        height: 400
+      alignment: 9
+      pivot: {x: 0.55751556, y: 0.93884367}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.365097, y: 17.750366}
+        - {x: -40.365097, y: -33.249634}
+        - {x: -40.365097, y: -222.24963}
+        - {x: -33.365097, y: -233.24963}
+        - {x: -18.365097, y: -256.24963}
+        - {x: 9.634903, y: -256.24963}
+        - {x: 34.634903, y: -222.24963}
+        - {x: 34.634903, y: 5.750366}
+        - {x: 24.634903, y: 17.750366}
+    - name: modele_decoupey_5
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1252
+        width: 187
+        height: 344
+      alignment: 9
+      pivot: {x: 0.13122427, y: 0.8827128}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4.322754, y: 28.823425}
+        - {x: -8.677246, y: 22.823425}
+        - {x: -16.677246, y: 1.8234253}
+        - {x: -16.677246, y: -55.176575}
+        - {x: 45.322754, y: -207.17657}
+        - {x: 92.322754, y: -207.17657}
+        - {x: 111.322754, y: -190.17657}
+        - {x: 111.322754, y: -122.176575}
+        - {x: 29.322754, y: 28.823425}
+    - name: modele_decoupey_6
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 801
+        width: 174
+        height: 384
+      alignment: 9
+      pivot: {x: 0.60808957, y: 0.8754988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27.571373, y: 6.8812256}
+        - {x: -10.428627, y: 33.881226}
+        - {x: -43.428627, y: 33.881226}
+        - {x: -50.428627, y: 31.881226}
+        - {x: -68.42863, y: 8.881226}
+        - {x: -72.42863, y: -121.118774}
+        - {x: -72.42863, y: -210.11877}
+        - {x: -58.428627, y: -229.11877}
+        - {x: 7.571373, y: -229.11877}
+        - {x: 20.571373, y: -221.11877}
+        - {x: 47.571373, y: -100.118774}
+        - {x: 47.571373, y: -23.118774}
+    - name: modele_decoupey_7
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 774
+        width: 164
+        height: 401
+      alignment: 9
+      pivot: {x: 0.2897527, y: 0.7970443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.017395, y: 56.5683}
+        - {x: -30.982605, y: -2.4317017}
+        - {x: -30.982605, y: -78.4317}
+        - {x: -20.982605, y: -196.4317}
+        - {x: 29.017395, y: -218.4317}
+        - {x: 81.017395, y: -218.4317}
+        - {x: 81.017395, y: -106.4317}
+        - {x: 46.017395, y: 56.5683}
+    - name: modele_decoupey_8
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 1090
+        width: 201
+        height: 258
+      alignment: 9
+      pivot: {x: 0.28166994, y: 0.14766203}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38.56427, y: 149.66327}
+        - {x: -38.56427, y: 14.663269}
+        - {x: 10.43573, y: -18.336731}
+        - {x: 35.43573, y: -26.336731}
+        - {x: 87.43573, y: -26.336731}
+        - {x: 99.43573, y: 4.663269}
+        - {x: 99.43573, y: 116.66327}
+        - {x: 68.43573, y: 149.66327}
+    - name: modele_decoupey_9
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 92
+        width: 214
+        height: 623
+      alignment: 9
+      pivot: {x: 0.69041944, y: 0.9628938}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46.329483, y: -35.564026}
+        - {x: 46.329483, y: 17.435974}
+        - {x: -36.670517, y: 17.435974}
+        - {x: -59.670517, y: -39.564026}
+        - {x: -99.67052, y: -310.56403}
+        - {x: -100.67052, y: -321.56403}
+        - {x: -100.67052, y: -361.56403}
+        - {x: -87.67052, y: -382.56403}
+        - {x: -58.670517, y: -409.56403}
+        - {x: -28.670517, y: -409.56403}
+        - {x: 4.329483, y: -355.56403}
+        - {x: -9.670517, y: -229.56403}
+        - {x: 40.329483, y: -87.564026}
+    - name: modele_decoupey_10
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 128
+        width: 147
+        height: 557
+      alignment: 9
+      pivot: {x: 0.5213241, y: 0.9502114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48.721405, y: 13.690552}
+        - {x: 27.721405, y: 19.690552}
+        - {x: -26.278595, y: 19.690552}
+        - {x: -45.278595, y: 3.6905518}
+        - {x: -52.278595, y: -66.30945}
+        - {x: -52.278595, y: -304.30945}
+        - {x: -45.278595, y: -347.30945}
+        - {x: -21.278595, y: -361.30945}
+        - {x: 14.721405, y: -361.30945}
+        - {x: 28.721405, y: -332.30945}
+        - {x: 42.721405, y: -175.30945}
+        - {x: 48.721405, y: -91.30945}
+    - name: modele_decoupey_11
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 650
+        width: 285
+        height: 296
+      alignment: 9
+      pivot: {x: 0.69246507, y: 0.20658606}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.843323, y: 161.52328}
+        - {x: -85.84332, y: 161.52328}
+        - {x: -99.84332, y: 142.52328}
+        - {x: -134.84332, y: 121.523285}
+        - {x: -134.84332, y: 94.523285}
+        - {x: -108.84332, y: 60.523285}
+        - {x: -122.84332, y: 26.523285}
+        - {x: -71.84332, y: -41.476715}
+        - {x: -4.8433228, y: -41.476715}
+        - {x: 61.156677, y: -19.476715}
+        - {x: 61.156677, y: 83.523285}
+        - {x: 54.156677, y: 116.523285}
+    - name: modele_decoupey_14
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 119
+        width: 258
+        height: 353
+      alignment: 9
+      pivot: {x: 0.6240206, y: 0.22806759}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29.087524, y: 186.76797}
+        - {x: -75.087524, y: 169.76797}
+        - {x: -110.087524, y: 53.767975}
+        - {x: -110.087524, y: 0.76797485}
+        - {x: -60.087524, y: 17.767975}
+        - {x: -12.087524, y: -55.232025}
+        - {x: 15.912476, y: -55.232025}
+        - {x: 47.912476, y: -44.232025}
+        - {x: 58.912476, y: -3.2320251}
+        - {x: 66.912476, y: 24.767975}
+        - {x: 66.912476, y: 186.76797}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
