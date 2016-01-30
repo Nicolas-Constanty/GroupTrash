@@ -4288,6 +4288,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11400800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4442,7 +4449,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300004, guid: e36473a47b0ff93478c0c6174e418ba4, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 6ef97019485204d46b948bdfc83b9974, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -4488,6 +4495,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11404270
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4574,6 +4588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control: 2
+  Caracs: {fileID: 0}
   buttons:
   - {fileID: 172778}
   - {fileID: 108576}
@@ -4730,7 +4745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300018, guid: e36473a47b0ff93478c0c6174e418ba4, type: 3}
+  - {fileID: 21300010, guid: 6ef97019485204d46b948bdfc83b9974, type: 3}
   - {fileID: 0}
 --- !u!114 &11406566
 MonoBehaviour:
@@ -4771,6 +4786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control: 1
+  Caracs: {fileID: 0}
   buttons:
   - {fileID: 138376}
   - {fileID: 161710}
@@ -4843,6 +4859,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11408830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4854,6 +4877,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11409742
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4865,6 +4895,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11410428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4918,6 +4955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control: 2
+  Caracs: {fileID: 0}
   buttons:
   - {fileID: 172778}
   - {fileID: 108576}
@@ -4963,6 +5001,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11410988
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5001,6 +5046,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11411802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5066,6 +5118,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11412856
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5077,6 +5136,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11412858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5196,6 +5262,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11414012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5207,6 +5280,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11414512
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5299,6 +5379,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11415864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5493,7 +5580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300000, guid: e36473a47b0ff93478c0c6174e418ba4, type: 3}
+  - {fileID: 21300002, guid: 6ef97019485204d46b948bdfc83b9974, type: 3}
   - {fileID: 0}
 --- !u!114 &11416744
 MonoBehaviour:
@@ -5785,7 +5872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300004, guid: e36473a47b0ff93478c0c6174e418ba4, type: 3}
+  - {fileID: 21300004, guid: 6ef97019485204d46b948bdfc83b9974, type: 3}
   - {fileID: 0}
 --- !u!114 &11420734
 MonoBehaviour:
@@ -5825,6 +5912,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11421798
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6151,9 +6245,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300008, guid: e36473a47b0ff93478c0c6174e418ba4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6ef97019485204d46b948bdfc83b9974, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -6197,6 +6291,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11426068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6552,6 +6653,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11429824
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6897,6 +7005,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11432184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6959,8 +7074,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300014, guid: e36473a47b0ff93478c0c6174e418ba4, type: 3}
-  - {fileID: 0}
+  - {fileID: 21300006, guid: 6ef97019485204d46b948bdfc83b9974, type: 3}
+  - {fileID: 21300006, guid: d347acac51b9f0040ad166783b92a4b2, type: 3}
 --- !u!114 &11432780
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7032,6 +7147,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11434734
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7124,6 +7246,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11436016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7261,6 +7390,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11437198
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7272,6 +7408,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11437368
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7631,6 +7774,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11440746
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7669,6 +7819,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11442048
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7707,6 +7864,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11442678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7745,6 +7909,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11443726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7909,6 +8080,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11444404
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8019,6 +8197,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11445354
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8084,6 +8269,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11446002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8149,6 +8341,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11446884
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8249,9 +8448,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300014, guid: e36473a47b0ff93478c0c6174e418ba4, type: 3}
+  m_Sprite: {fileID: 21300006, guid: 6ef97019485204d46b948bdfc83b9974, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -8411,7 +8610,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300016, guid: e36473a47b0ff93478c0c6174e418ba4, type: 3}
+  m_Sprite: {fileID: 21300008, guid: 6ef97019485204d46b948bdfc83b9974, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -8430,6 +8629,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11448786
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8522,6 +8728,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11449902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8799,6 +9012,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11453464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8891,6 +9111,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11454176
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8902,6 +9129,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11454684
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8927,6 +9161,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11455056
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9129,6 +9370,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11457738
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9239,7 +9487,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300018, guid: e36473a47b0ff93478c0c6174e418ba4, type: 3}
+  m_Sprite: {fileID: 21300010, guid: 6ef97019485204d46b948bdfc83b9974, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -9285,6 +9533,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11459682
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9324,7 +9579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300008, guid: e36473a47b0ff93478c0c6174e418ba4, type: 3}
+  - {fileID: 21300000, guid: 6ef97019485204d46b948bdfc83b9974, type: 3}
   - {fileID: 0}
 --- !u!114 &11460108
 MonoBehaviour:
@@ -9337,6 +9592,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11461142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9538,6 +9800,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11462768
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9549,6 +9818,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11463150
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9614,6 +9890,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11463554
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9727,6 +10010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control: 1
+  Caracs: {fileID: 0}
   buttons:
   - {fileID: 138376}
   - {fileID: 161710}
@@ -9834,7 +10118,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e36473a47b0ff93478c0c6174e418ba4, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 6ef97019485204d46b948bdfc83b9974, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -9853,6 +10137,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11466706
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10065,6 +10356,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11468232
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10126,6 +10424,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11468576
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10430,6 +10735,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11471146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10528,6 +10840,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11471524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10620,6 +10939,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11471912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10631,6 +10957,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11471938
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10789,6 +11122,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11474460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10914,6 +11254,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11476044
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10960,6 +11307,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11476934
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10971,6 +11325,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11477474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11009,6 +11370,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11477942
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11222,6 +11590,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11480682
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11476,6 +11851,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11486018
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11487,6 +11869,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11486446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11525,6 +11914,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11487020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11808,6 +12204,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11491134
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12036,6 +12439,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11494910
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12074,6 +12484,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11496286
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12127,7 +12544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300016, guid: e36473a47b0ff93478c0c6174e418ba4, type: 3}
+  - {fileID: 21300008, guid: 6ef97019485204d46b948bdfc83b9974, type: 3}
   - {fileID: 0}
 --- !u!114 &11496948
 MonoBehaviour:
@@ -12325,6 +12742,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _part:
+    sprite: {fileID: 0}
+    damage: 0
+    hp: 0
+    speed: 0
+    candies: 0
+    special: 0
 --- !u!114 &11498802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14529,8 +14953,8 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000038146696, y: 378.5}
-  m_SizeDelta: {x: 532, y: 532}
+  m_AnchoredPosition: {x: 42, y: 366}
+  m_SizeDelta: {x: 707.75, y: 1417}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22420826
 RectTransform:
@@ -14812,8 +15236,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 185, y: 20}
-  m_SizeDelta: {x: 677, y: 677}
+  m_AnchoredPosition: {x: 223, y: 63}
+  m_SizeDelta: {x: 707.75, y: 1417}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22428088
 RectTransform:
@@ -15636,11 +16060,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 22471884}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -95, y: 39}
-  m_SizeDelta: {x: 600, y: 600}
+  m_AnchoredPosition: {x: -150, y: -0.000030518}
+  m_SizeDelta: {x: 707.75, y: 1417}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22445126
 RectTransform:
@@ -16967,19 +17391,19 @@ RectTransform:
   m_GameObject: {fileID: 167208}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.48291996, y: 0.48291993, z: 0.48291993}
+  m_LocalScale: {x: 0.26651123, y: 0.2665112, z: 0.2665112}
   m_Children:
   - {fileID: 22427126}
+  - {fileID: 22486480}
   - {fileID: 22493602}
   - {fileID: 22444628}
   - {fileID: 22483796}
-  - {fileID: 22486480}
   - {fileID: 22420758}
   m_Father: {fileID: 22469438}
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.25855, y: 163.88}
+  m_AnchoredPosition: {x: 0.000022888184, y: 227.00003}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22472594
@@ -17500,11 +17924,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 22471884}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -34, y: -419.7}
-  m_SizeDelta: {x: 500, y: 500}
+  m_AnchoredPosition: {x: -41.124954, y: -658.5}
+  m_SizeDelta: {x: 707.75, y: 1417}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22483900
 RectTransform:
@@ -17587,11 +18011,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 22471884}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 135.5, y: -407}
-  m_SizeDelta: {x: 489, y: 489}
+  m_AnchoredPosition: {x: 142, y: -603}
+  m_SizeDelta: {x: 707.75, y: 1417}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22486736
 RectTransform:
@@ -17876,11 +18300,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 22471884}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 34, y: -9}
-  m_SizeDelta: {x: 692, y: 1113}
+  m_AnchoredPosition: {x: 42, y: 96}
+  m_SizeDelta: {x: 707.75, y: 1417}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22494858
 RectTransform:

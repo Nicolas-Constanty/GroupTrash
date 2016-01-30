@@ -83,16 +83,16 @@ public class GameManager : MonoBehaviour {
 
     void Update ()
 	{
-		for (int i = 0; i < 20; i++)
-		{
-			if (Input.GetKeyDown ("joystick 1 button " + i))
-			{
-				Debug.Log ("Button " + i + " pressed !");
-			}
-		}
+        for (int i = 0; i < 20; i++)
+        {
+            if (Input.GetKeyDown("joystick 1 button " + i))
+            {
+                Debug.Log("Button " + i + " pressed !");
+            }
+        }
 
-		// fait le décompte sur la selection
-		if (state == GameState.SELECTION)
+        // fait le décompte sur la selection
+        if (state == GameState.SELECTION)
 		{
 			if (remainingTime > 0)
 			{
@@ -258,11 +258,11 @@ public class GameManager : MonoBehaviour {
 		return 0;
 	}
 
-	public void SetPlayerPart(int playerID, PART partType, Part part)
+	public void SetPlayerPart(int playerID, int partType, Part part)
 	{
 		switch (partType)
 		{
-		case PART.HEAD:
+		case (int)PART.HEAD:
 			if (playerID == 1)
 			{
 				player1.Head = part;
@@ -272,7 +272,7 @@ public class GameManager : MonoBehaviour {
 				player2.Head = part;
 			}
 			break;
-		case PART.BODY:
+		case (int)PART.BODY:
 			if (playerID == 1)
 			{
 				player1.Torso = part;
@@ -282,7 +282,7 @@ public class GameManager : MonoBehaviour {
 				player2.Torso = part;
 			}
 			break;
-		case PART.LEFTARM:
+		case (int)PART.LEFTARM:
 			if (playerID == 1)
 			{
 				player1.ArmL = part;
@@ -292,7 +292,7 @@ public class GameManager : MonoBehaviour {
 				player2.ArmL = part;
 			}
 			break;
-		case PART.LEFTLEG:
+		case (int)PART.LEFTLEG:
 			if (playerID == 1)
 			{
 				player1.LegL = part;
@@ -302,7 +302,7 @@ public class GameManager : MonoBehaviour {
 				player2.LegL = part;
 			}
 			break;
-		case PART.RIGHTARM:
+		case (int)PART.RIGHTARM:
 			if (playerID == 1)
 			{
 				player1.ArmR = part;
@@ -312,7 +312,7 @@ public class GameManager : MonoBehaviour {
 				player2.ArmR = part;
 			}
 			break;
-		case PART.RIGHTLEG:
+		case (int)PART.RIGHTLEG:
 			if (playerID == 1)
 			{
 				player1.LegR = part;
@@ -374,12 +374,12 @@ public class GameManager : MonoBehaviour {
 		int _nbCandies = 0;
 
 		// All the character active items
-		Part head = null;
-		Part armL = null;
-		Part armR = null;
-		Part torso = null;
-		Part legL = null;
-		Part legR = null;
+		Part head = new Part();
+		Part armL = new Part();
+		Part armR = new Part();
+		Part torso = new Part();
+		Part legL = new Part();
+		Part legR = new Part();
 
 		Dictionary<int, List<Part>> _items = new Dictionary<int, List<Part>>();
 

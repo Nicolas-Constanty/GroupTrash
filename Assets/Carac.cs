@@ -9,7 +9,7 @@ public class Carac : MonoBehaviour {
     private Dictionary<int, Image[]> _panel = new Dictionary<int, Image[]>();
     private enum CARAC { DAMAGE, HP, SPEED, CANDIES, SPECIAL };
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         _panel.Add((int)CARAC.DAMAGE,   transform.GetChild(1).GetChild((int)CARAC.DAMAGE).GetChild(0).GetComponentsInChildren<Image>());
         _panel.Add((int)CARAC.HP,       transform.GetChild(1).GetChild((int)CARAC.HP).GetChild(0).GetComponentsInChildren<Image>());
         _panel.Add((int)CARAC.SPEED,    transform.GetChild(1).GetChild((int)CARAC.SPEED).GetChild(0).GetComponentsInChildren<Image>());

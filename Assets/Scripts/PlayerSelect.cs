@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.EventSystems;
-using System.Collections.Generic;
 using UnityEngine.UI;
 using Character;
 
@@ -10,9 +8,10 @@ public class PlayerSelect : MonoBehaviour {
     private string[] NAME = { "Head", "Left Arm", "Body", "Right Arm", "Left Leg", "Right Leg" };
     [Range(1, 2)]
     public int control = 1;
-    public Carac Caracs;
+    public Carac CaracsPerso;
+    public BottomPanel panel;
 
-	[SerializeField]
+    [SerializeField]
 	private GameObject[] buttons;
 	private int buttonIdx = 0;
     public int Index
@@ -28,7 +27,7 @@ public class PlayerSelect : MonoBehaviour {
 	{
 		// Selectionne la tête par défaut
 		buttons[buttonIdx].GetComponent<Image>().color = Color.red;
-        Caracs.setObject(GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().GetPlayerPart(control, (int)PART.HEAD), NAME[0]);
+        CaracsPerso.setObject(GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().GetPlayerPart(control, (int)PART.HEAD), NAME[0]);
 	}
 	
 	void Update ()
@@ -48,14 +47,14 @@ public class PlayerSelect : MonoBehaviour {
 			buttonIdx -= (int)verticalP1;
 			buttonIdx = (buttonIdx < 0) ? buttons.Length - 1 : (buttonIdx > buttons.Length - 1) ? 0 : buttonIdx;
 			buttons[buttonIdx].GetComponent<Image>().color = Color.red;
-            Caracs.setObject(GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().GetPlayerPart(control, buttonIdx), NAME[buttonIdx]);
+            CaracsPerso.setObject(GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().GetPlayerPart(control, buttonIdx), NAME[buttonIdx]);
         }
 	}
 
     IEnumerator waitV()
     {
         isMoving = true;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.15f);
         isMoving = false;
     }
 }
