@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour {
 	private GameObject canvasWin;
 	[SerializeField]
 	private GameObject canvasWinText;
+	[SerializeField]
+	private GameObject background;
 
 	[SerializeField]
 	private Text timer;
@@ -23,6 +25,11 @@ public class GameManager : MonoBehaviour {
 	private int waitTime = 30;
 	private int remainingTime;
 	private float decreaseTime = 0;
+
+	[SerializeField]
+	private int roundTime = 66;
+	private int roundRemainingTime;
+	private float roundDecreaseTime = 0;
 
 	PlayerStats player1 = new PlayerStats();
 	PlayerStats player2 = new PlayerStats();
@@ -66,6 +73,7 @@ public class GameManager : MonoBehaviour {
 		lastState = state;
 
 		remainingTime = waitTime;
+		roundRemainingTime = roundTime;
 
 		player1.playerObj = GameObject.FindGameObjectWithTag ("Player1");
 		player2.playerObj = GameObject.FindGameObjectWithTag ("Player2");
@@ -83,6 +91,7 @@ public class GameManager : MonoBehaviour {
 			}
 		}
 
+		// fait le décompte sur la selection
 		if (state == GameState.SELECTION)
 		{
 			if (remainingTime > 0)
@@ -99,7 +108,33 @@ public class GameManager : MonoBehaviour {
 			}
 		}
 
-		// Sets pause
+		// décompte sur la partie, trigger des events
+		if (state == GameState.PLAYING)
+		{
+			if (roundRemainingTime > 0)
+			{
+				roundRemainingTime = roundTime - (int)roundDecreaseTime;
+				roundDecreaseTime += Time.deltaTime;
+				timer.text = roundRemainingTime.ToString ();
+			}
+			else
+			{
+				roundDecreaseTime = 0;
+				timer.text = "DIE";
+				// TODO: fire gaspar event
+			}
+		}
+
+		// relance la partie après un win
+		if (state == GameState.WIN)
+		{
+			if (Input.GetKeyDown ("joystick 1 button 2") || Input.GetKeyDown(KeyCode.Return))
+			{
+				SetSelection ();
+			}
+		}
+
+		// Sets pause with start
 		if (Input.GetKeyDown ("joystick 1 button 9"))
 		{
 			SetPause ();
@@ -125,8 +160,10 @@ public class GameManager : MonoBehaviour {
 	{
 		canvasSelection.SetActive (false);
 		canvasHUD.SetActive (true);
+		background.SetActive (true);
 		player1.playerObj = (GameObject)Instantiate (player1Prefab);
 		player2.playerObj = (GameObject)Instantiate (player2Prefab);
+		roundRemainingTime = roundTime;
 		state = GameState.PLAYING;
 	}
 
@@ -156,10 +193,14 @@ public class GameManager : MonoBehaviour {
 		if (player == player1.playerObj)
 		{
 			player2.nbVictories++;
+			player2.nbCandies += 75;
+			player1.nbCandies += 25;
 		}
 		else
 		{
 			player1.nbVictories++;
+			player1.nbCandies += 75;
+			player2.nbCandies += 25;
 		}
 
 		Destroy (player1.playerObj);
@@ -174,7 +215,8 @@ public class GameManager : MonoBehaviour {
 		decreaseTime = 0;
 		canvasHUD.SetActive (false);
 		canvasPause.SetActive (false);
-		canvasWin.SetActive (false);		
+		canvasWin.SetActive (false);
+		background.SetActive (false);
 		canvasSelection.SetActive (true);
 	}
 
@@ -216,13 +258,125 @@ public class GameManager : MonoBehaviour {
 		return 0;
 	}
 
+	public void SetPlayerPart(int playerID, PART partType, Part part)
+	{
+		switch (partType)
+		{
+		case PART.HEAD:
+			if (playerID == 1)
+			{
+				player1.Head = part;
+			}
+			else
+			{
+				player2.Head = part;
+			}
+			break;
+		case PART.BODY:
+			if (playerID == 1)
+			{
+				player1.Torso = part;
+			}
+			else
+			{
+				player2.Torso = part;
+			}
+			break;
+		case PART.LEFTARM:
+			if (playerID == 1)
+			{
+				player1.ArmL = part;
+			}
+			else
+			{
+				player2.ArmL = part;
+			}
+			break;
+		case PART.LEFTLEG:
+			if (playerID == 1)
+			{
+				player1.LegL = part;
+			}
+			else
+			{
+				player2.LegL = part;
+			}
+			break;
+		case PART.RIGHTARM:
+			if (playerID == 1)
+			{
+				player1.ArmR = part;
+			}
+			else
+			{
+				player2.ArmR = part;
+			}
+			break;
+		case PART.RIGHTLEG:
+			if (playerID == 1)
+			{
+				player1.LegR = part;
+			}
+			else
+			{
+				player2.LegR = part;
+			}
+			break;
+		default:
+			break;
+		}
+	}
+
 	class PlayerStats
 	{
 		GameObject _playerObj = null;
 		int _nbVictories = 0;
 		int _nbCandies = 0;
 
+		// All the character active items
+		Part head = null;
+		Part armL = null;
+		Part armR = null;
+		Part torso = null;
+		Part legL = null;
+		Part legR = null;
+
 		Dictionary<int, List<Part>> _items = new Dictionary<int, List<Part>>();
+
+		public Part LegR
+		{
+			get { return legR; }
+			set { legR = value; }
+		}
+
+		public Part LegL
+		{
+			get { return legL; }
+			set { legL = value; }
+		}
+
+		public Part Torso
+		{
+			get { return torso;	}
+			set { torso = value; }
+		}
+
+		public Part ArmR
+		{
+			get { return armR; }
+			set { armR = value; }
+		}
+
+		public Part Head
+		{
+			get { return head; }
+			set { head = value;	}
+		}
+
+		public Part ArmL {
+			get { return armL; }
+			set { armL = value;	}
+		}
 
 		public GameObject playerObj
 		{
