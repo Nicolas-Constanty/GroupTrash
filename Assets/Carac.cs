@@ -19,22 +19,24 @@ public class Carac : MonoBehaviour {
 
     public void setObject(Part part, string name)
     {
-        int power;
-        power = Mathf.Clamp(part.damage, 0, 5) + 1;
-        setField((int)CARAC.DAMAGE, power);
+        if (part != null)
+        {
+            int power;
+            power = Mathf.Clamp(part.damage, 0, 5) + 1;
+            setField((int)CARAC.DAMAGE, power);
 
-        power = Mathf.Clamp(part.hp, 0, 5) + 1;
-        setField((int)CARAC.HP, power);
+            power = Mathf.Clamp(part.hp, 0, 5) + 1;
+            setField((int)CARAC.HP, power);
 
-        power = Mathf.Clamp(part.speed, 0, 5) + 1;
-        setField((int)CARAC.SPEED, power);
+            power = Mathf.Clamp(part.speed, 0, 5) + 1;
+            setField((int)CARAC.SPEED, power);
 
-        power = Mathf.Clamp(part.candies, 0, 5) + 1;
-        setField((int)CARAC.CANDIES, power);
+            power = Mathf.Clamp(part.candies, 0, 5) + 1;
+            setField((int)CARAC.CANDIES, power);
 
-        power = Mathf.Clamp(part.special, 0, 5) + 1;
-        setField((int)CARAC.SPECIAL, power);
-
+            power = Mathf.Clamp(part.special, 0, 5) + 1;
+            setField((int)CARAC.SPECIAL, power);
+        }
         transform.GetChild(0).GetComponent<Text>().text = name;
     }
     private void setField(int carac, int power)

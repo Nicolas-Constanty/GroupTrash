@@ -7,9 +7,10 @@ using Character;
 
 public class PlayerSelect : MonoBehaviour {
 
-    //public enum VISUAL { HEAD, LEFTARM, BODY, RIGHTARM, LEFTLEG, RIGHTLEG };
+    private string[] NAME = { "Head", "Left Arm", "Body", "Right Arm", "Left Leg", "Right Leg" };
     [Range(1, 2)]
     public int control = 1;
+    public Carac Caracs;
 
 	[SerializeField]
 	private GameObject[] buttons;
@@ -21,13 +22,13 @@ public class PlayerSelect : MonoBehaviour {
     }
    
 
-    private bool isP1MovingH = false;
-	private bool isP1MovingV = false;
+	private bool isMoving = false;
 
 	void Start ()
 	{
 		// Selectionne la tête par défaut
 		buttons[buttonIdx].GetComponent<Image>().color = Color.red;
+        Caracs.setObject(GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().GetPlayerPart(control, (int)PART.HEAD), NAME[0]);
 	}
 	
 	void Update ()
@@ -40,26 +41,21 @@ public class PlayerSelect : MonoBehaviour {
 		float verticalP1 = Input.GetAxisRaw ("Vertical" + control.ToString());
 		float horizontalP1 = Input.GetAxisRaw ("Horizontal" + control.ToString());
 
-		if (verticalP1 != 0 && !isP1MovingV)
+		if (verticalP1 != 0 && !isMoving)
 		{
-			isP1MovingV = true;
+            StartCoroutine(waitV());
 			buttons[buttonIdx].GetComponent<Image>().color = Color.white;
 			buttonIdx -= (int)verticalP1;
 			buttonIdx = (buttonIdx < 0) ? buttons.Length - 1 : (buttonIdx > buttons.Length - 1) ? 0 : buttonIdx;
 			buttons[buttonIdx].GetComponent<Image>().color = Color.red;
-		}
-		if (horizontalP1 != 0 && !isP1MovingH)
-		{
-			isP1MovingH = true;
-			buttons [buttonIdx].GetComponent<SpriteManager> ().NextSprite ();
-		}
-		if (verticalP1 == 0)
-		{
-			isP1MovingV = false;
-		}
-		if (horizontalP1 == 0)
-		{
-			isP1MovingH = false;
-		}
+            Caracs.setObject(GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().GetPlayerPart(control, buttonIdx), NAME[buttonIdx]);
+        }
 	}
+
+    IEnumerator waitV()
+    {
+        isMoving = true;
+        yield return new WaitForSeconds(0.2f);
+        isMoving = false;
+    }
 }

@@ -327,7 +327,47 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
-	class PlayerStats
+    public Part GetPlayerPart(int playerID, int partType)
+    {
+        switch (partType)
+        {
+            case (int)PART.HEAD:
+                if (playerID == 1)
+                    return player1.Head;
+                else
+                    return player2.Head;
+            case (int)PART.BODY:
+                if (playerID == 1)
+                    return player1.Torso;
+                else
+                    return player2.Torso;
+            case (int)PART.LEFTARM:
+                if (playerID == 1)
+                    return player1.ArmL;
+                else
+                    return player2.ArmL;
+            case (int)PART.LEFTLEG:
+                if (playerID == 1)
+                    return player1.LegL;
+                else
+                    return player2.LegL;
+            case (int)PART.RIGHTARM:
+                if (playerID == 1)
+                    return player1.ArmR;
+                else
+                    return player2.ArmR;
+            case (int)PART.RIGHTLEG:
+                if (playerID == 1)
+                    return player1.LegR;
+                else
+                    return player2.LegR;
+            default:
+                break;
+        }
+        return null;
+    }
+
+    class PlayerStats
 	{
 		GameObject _playerObj = null;
 		int _nbVictories = 0;
