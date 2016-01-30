@@ -8,12 +8,14 @@ using UnityEngine;
 namespace Character
 {
     public enum PART { HEAD, LEFTARM, BODY, RIGHTARM, LEFTLEG, RIGHTLEG };
+    
     [System.Serializable]
 	public class Part
 	{
 		public Sprite sprite;
 		// Add stats
 		public int damage;
+        public int hp;
 		public int speed;
 		public int candies;
 		public int special;
