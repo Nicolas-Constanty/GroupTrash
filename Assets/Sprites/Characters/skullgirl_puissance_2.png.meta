@@ -1,0 +1,283 @@
+fileFormatVersion: 2
+guid: 96ad3029ed42fb84f8b2a62301f57f0d
+timeCreated: 1454187322
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: skullgirl_puissance_2_0
+    21300002: skullgirl_puissance_2_1
+    21300004: skullgirl_puissance_2_2
+    21300006: skullgirl_puissance_2_3
+    21300008: skullgirl_puissance_2_4
+    21300010: skullgirl_puissance_2_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: skullgirl_puissance_2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1417
+        width: 707.75
+        height: 1417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 52, y: 166}
+        - {x: 50, y: 176}
+        - {x: 38, y: 181}
+        - {x: -21, y: 181}
+        - {x: -42, y: 76}
+        - {x: -101, y: 10}
+        - {x: -151, y: 0}
+        - {x: -151, y: -53}
+        - {x: -108, y: -118}
+        - {x: -69, y: -215}
+        - {x: -42, y: -266}
+        - {x: -2, y: -266}
+        - {x: 32, y: -202}
+        - {x: 50, y: -57}
+        - {x: 52, y: -42}
+    - name: skullgirl_puissance_2_1
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1417
+        width: 707.75
+        height: 1417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 163.41602, y: 124}
+        - {x: 185.41602, y: 163}
+        - {x: 185.41602, y: 209}
+        - {x: 161.41602, y: 271}
+        - {x: 142.41602, y: 265}
+        - {x: 128.41602, y: 227}
+        - {x: 80.416016, y: 217}
+        - {x: 32.416016, y: 249}
+        - {x: -7.5839844, y: 272}
+        - {x: -61.583984, y: 272}
+        - {x: -70.583984, y: 271}
+        - {x: -97.583984, y: 258}
+        - {x: -136.58398, y: 195}
+        - {x: -136.58398, y: 152}
+        - {x: -133.58398, y: 145}
+        - {x: -88.583984, y: 101}
+        - {x: -64.583984, y: 5}
+        - {x: -61.583984, y: 1}
+        - {x: -56.583984, y: -3}
+        - {x: -65.583984, y: 4}
+        - {x: -85.583984, y: 0}
+        - {x: -78.583984, y: -18}
+        - {x: 18.416016, y: -46}
+        - {x: 51.416016, y: -46}
+        - {x: 68.416016, y: -42}
+        - {x: 85.416016, y: -17}
+        - {x: 110.416016, y: 40}
+        - {x: 136.41602, y: 91}
+    - name: skullgirl_puissance_2_2
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 1417
+        width: 707.75
+        height: 1417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 99.33203, y: -90}
+        - {x: 101.33203, y: 20}
+        - {x: 121.33203, y: 47}
+        - {x: 96.33203, y: 104}
+        - {x: 87.33203, y: 145}
+        - {x: 68.33203, y: 162}
+        - {x: 22.332031, y: 161}
+        - {x: -18.667969, y: 174}
+        - {x: -91.66797, y: 174}
+        - {x: -99.66797, y: 172}
+        - {x: -120.66797, y: 140}
+        - {x: -134.66797, y: 135}
+        - {x: -134.66797, y: 120}
+        - {x: -100.66797, y: 111}
+        - {x: -75.66797, y: 88}
+        - {x: -88.66797, y: 35}
+        - {x: -56.66797, y: -31}
+        - {x: -102.66797, y: -157}
+        - {x: -90.66797, y: -196}
+        - {x: -10.667969, y: -202}
+        - {x: -2.6679688, y: -246}
+        - {x: 23.332031, y: -256}
+        - {x: 62.33203, y: -256}
+        - {x: 90.33203, y: -233}
+        - {x: 122.33203, y: -183}
+        - {x: 122.33203, y: -121}
+    - name: skullgirl_puissance_2_3
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 1417
+        width: 707.75
+        height: 1417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -78.75195, y: 191}
+        - {x: -92.75195, y: 174}
+        - {x: -92.75195, y: 111}
+        - {x: -62.751953, y: 44}
+        - {x: -25.751953, y: -16}
+        - {x: -5.751953, y: -30}
+        - {x: 1.2480469, y: -25}
+        - {x: 5.248047, y: -21}
+        - {x: 3.2480469, y: -25}
+        - {x: -4.751953, y: -30}
+        - {x: -9.751953, y: -34}
+        - {x: -41.751953, y: -134}
+        - {x: 53.248047, y: -193}
+        - {x: 125.24805, y: -193}
+        - {x: 125.24805, y: 72}
+        - {x: -30.751953, y: 191}
+    - name: skullgirl_puissance_2_4
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 0
+        width: 707.75
+        height: 1417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.416016, y: -200}
+        - {x: 37.416016, y: -181}
+        - {x: 1.4160156, y: -148}
+        - {x: 41.416016, y: -100}
+        - {x: 11.416016, y: -71}
+        - {x: 45.416016, y: -12}
+        - {x: 36.416016, y: 27}
+        - {x: 72.416016, y: 186}
+        - {x: 72.416016, y: 325}
+        - {x: 45.416016, y: 357}
+        - {x: -10.583984, y: 357}
+        - {x: -30.583984, y: 352}
+        - {x: -49.583984, y: 313}
+        - {x: -67.583984, y: 74}
+        - {x: -96.583984, y: 20}
+        - {x: -69.583984, y: -10}
+        - {x: -83.583984, y: -70}
+        - {x: -107.583984, y: -67}
+        - {x: -162.58398, y: -50}
+        - {x: -196.58398, y: -57}
+        - {x: -199.58398, y: -64}
+        - {x: -199.58398, y: -73}
+        - {x: -171.58398, y: -111}
+        - {x: -199.58398, y: -142}
+        - {x: -199.58398, y: -161}
+        - {x: -180.58398, y: -179}
+        - {x: -105.583984, y: -184}
+        - {x: -135.58398, y: -251}
+        - {x: -109.583984, y: -338}
+        - {x: -82.583984, y: -360}
+        - {x: -47.583984, y: -360}
+        - {x: -19.583984, y: -322}
+        - {x: -17.583984, y: -263}
+        - {x: -8.583984, y: -202}
+    - name: skullgirl_puissance_2_5
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 0
+        width: 707.75
+        height: 1417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 108.33203, y: -136}
+        - {x: 159.33203, y: -113}
+        - {x: 146.33203, y: -74}
+        - {x: 101.33203, y: -58}
+        - {x: 102.33203, y: -65}
+        - {x: 141.33203, y: -35}
+        - {x: 163.33203, y: -2}
+        - {x: 163.33203, y: 16}
+        - {x: 161.33203, y: 22}
+        - {x: 86.33203, y: 43}
+        - {x: 78.33203, y: 184}
+        - {x: 60.33203, y: 339}
+        - {x: 25.332031, y: 360}
+        - {x: -41.66797, y: 360}
+        - {x: -65.66797, y: 324}
+        - {x: -65.66797, y: 250}
+        - {x: -16.667969, y: 131}
+        - {x: -10.667969, y: 57}
+        - {x: -65.66797, y: -39}
+        - {x: -65.66797, y: -54}
+        - {x: -50.66797, y: -100}
+        - {x: 3.3320312, y: -230}
+        - {x: -0.66796875, y: -284}
+        - {x: 19.332031, y: -313}
+        - {x: 34.33203, y: -320}
+        - {x: 62.33203, y: -320}
+        - {x: 62.33203, y: -252}
+        - {x: 90.33203, y: -202}
+        - {x: 73.33203, y: -123}
+      - - {x: -39.66797, y: 176}
+        - {x: -37.66797, y: 175}
+        - {x: -34.66797, y: 177}
+        - {x: -34.66797, y: 183}
+        - {x: -36.66797, y: 185}
+        - {x: -39.66797, y: 184}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

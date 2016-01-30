@@ -3443,8 +3443,8 @@ MonoBehaviour:
   waitTime: 30
   roundTimer: {fileID: 0}
   roundTime: 66
-  player1Prefab: {fileID: 156214, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
-  player2Prefab: {fileID: 176868, guid: 8566cfbc57c404544a4d949c40e212ca, type: 2}
+  player1Prefab: {fileID: 167962, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
+  player2Prefab: {fileID: 163788, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
   state: 0
 --- !u!114 &257068647
 MonoBehaviour:
@@ -4599,7 +4599,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a45d779168e41949b6f159f6d3626f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 0.72156864, b: 0.15686275, a: 1}
 --- !u!114 &347418385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14425,7 +14424,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a45d779168e41949b6f159f6d3626f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 0.72156864, b: 0.15686275, a: 1}
 --- !u!114 &896054313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14581,7 +14579,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a45d779168e41949b6f159f6d3626f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 0.72156864, b: 0.15686275, a: 1}
 --- !u!114 &904406954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19210,7 +19207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a45d779168e41949b6f159f6d3626f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 0.72156864, b: 0.15686275, a: 1}
 --- !u!114 &1273884655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23880,7 +23876,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a45d779168e41949b6f159f6d3626f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 0.72156864, b: 0.15686275, a: 1}
 --- !u!114 &1563481703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26044,7 +26039,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a45d779168e41949b6f159f6d3626f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 0.72156864, b: 0.15686275, a: 1}
 --- !u!114 &1729887375
 MonoBehaviour:
   m_ObjectHideFlags: 0
