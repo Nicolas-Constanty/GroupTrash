@@ -13,6 +13,7 @@ namespace Character
 	public class Part
 	{
 		public Sprite sprite;
+        public Sprite[] spriteParts = new Sprite[2];
 		// Add stats
 		public int damage;
         public int hp;

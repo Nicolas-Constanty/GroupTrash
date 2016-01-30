@@ -144,6 +144,18 @@ public class BottomPanel : MonoBehaviour {
         ActiveItem(Inventory.transform.GetChild(0));
     }
 
+	// Update visual
+	private void UpdateCharacter()
+	{
+		//visual.buttons [_type].GetComponent<Image> ().sprite = _items[_type][_current].sprite;
+		visual.buttons [0].GetComponent<Image> ().sprite = _GM.GetPlayerPart(manette, (int)Character.PART.HEAD).sprite;
+		visual.buttons [1].GetComponent<Image> ().sprite = _GM.GetPlayerPart(manette, (int)Character.PART.LEFTARM).sprite;
+		visual.buttons [2].GetComponent<Image> ().sprite = _GM.GetPlayerPart(manette, (int)Character.PART.BODY).sprite;
+		visual.buttons [3].GetComponent<Image> ().sprite = _GM.GetPlayerPart(manette, (int)Character.PART.RIGHTARM).sprite;
+		visual.buttons [4].GetComponent<Image> ().sprite = _GM.GetPlayerPart(manette, (int)Character.PART.LEFTLEG).sprite;
+		visual.buttons [5].GetComponent<Image> ().sprite = _GM.GetPlayerPart(manette, (int)Character.PART.RIGHTLEG).sprite;
+	}
+
     public void Generate()
     {
         foreach (Body body in bodies)
@@ -171,6 +183,7 @@ public class BottomPanel : MonoBehaviour {
                 _allitems.Remove(_allitems[dice]);
             }
         }
+		UpdateCharacter ();
     }
 
     // Update is called once per frame
@@ -210,6 +223,7 @@ public class BottomPanel : MonoBehaviour {
             StartCoroutine(waitClick());
             _GM.SetPlayerPart(manette, _type, _itemActive.GetComponent<Item>().Part);
             CaracTotal.setObject(mixParts(), "Total");
+			UpdateCharacter ();
         }
     }
 

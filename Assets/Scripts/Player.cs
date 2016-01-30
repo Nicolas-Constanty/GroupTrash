@@ -6,6 +6,7 @@ public class Player : MonoBehaviour {
 
     public Vector4 displacementArea = Vector4.zero;
 
+    [Range(1,2)]
     public int player = 1;
 
     public GameObject leftHand;
@@ -25,6 +26,8 @@ public class Player : MonoBehaviour {
     public GameObject puppeteer;
 
     private Vector3 myPlayerPos, enemyPos;
+
+    private GameManager gM;
 
     void Start()
     {
@@ -56,8 +59,24 @@ public class Player : MonoBehaviour {
             myPlayerPos = GameObject.Find("RagdollP2").transform.GetChild(0).transform.position;
             enemyPos = GameObject.Find("RagdollP1").transform.GetChild(0).transform.position;
         }
+
+        gM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        SetMember();
+
+        Debug.Log("found hip at : ", gameObject.transform.Find("kneeL").gameObject);
     }
 
+    private void SetMember()
+    {
+        body.body = gM.GetPlayerPart(player, (int)PART.BODY);
+        body.head = gM.GetPlayerPart(player, (int)PART.HEAD);
+        body.leftArm = gM.GetPlayerPart(player, (int)PART.LEFTARM);
+        body.rightArm = gM.GetPlayerPart(player, (int)PART.RIGHTARM);
+        body.leftArm = gM.GetPlayerPart(player, (int)PART.LEFTLEG);
+        body.rightArm = gM.GetPlayerPart(player, (int)PART.RIGHTLEG);
+
+
+    }
 
     void Update()
     {

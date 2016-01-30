@@ -1294,6 +1294,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -2130,6 +2133,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -2291,6 +2297,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -2452,6 +2461,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -2793,6 +2805,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -2884,6 +2899,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -3045,6 +3063,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -3420,9 +3441,10 @@ MonoBehaviour:
   background: {fileID: 777481204}
   timer: {fileID: 466459651}
   waitTime: 30
+  roundTimer: {fileID: 0}
   roundTime: 66
-  player1Prefab: {fileID: 156214, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
-  player2Prefab: {fileID: 176868, guid: 8566cfbc57c404544a4d949c40e212ca, type: 2}
+  player1Prefab: {fileID: 167962, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
+  player2Prefab: {fileID: 163788, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
   state: 0
 --- !u!114 &257068647
 MonoBehaviour:
@@ -3770,6 +3792,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -4241,6 +4266,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -4571,7 +4599,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a45d779168e41949b6f159f6d3626f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 0.72156864, b: 0.15686275, a: 1}
 --- !u!114 &347418385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4658,6 +4685,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -4819,6 +4849,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -6069,6 +6102,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -6160,6 +6196,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -6391,6 +6430,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -6937,6 +6979,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -7028,6 +7073,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -7296,6 +7344,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -7744,6 +7795,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -8315,6 +8369,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -8687,6 +8744,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -8778,6 +8838,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -9017,6 +9080,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -9562,6 +9628,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -10136,6 +10205,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -10577,6 +10649,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -10827,6 +10902,9 @@ MonoBehaviour:
   bodies:
   - head:
       sprite: {fileID: 21300294, guid: 63da7730928071043bc1115f78e21519, type: 3}
+      spriteParts:
+      - {fileID: 0}
+      - {fileID: 0}
       damage: 2
       hp: 2
       speed: 1
@@ -10834,6 +10912,9 @@ MonoBehaviour:
       special: 0
     body:
       sprite: {fileID: 21300174, guid: 63da7730928071043bc1115f78e21519, type: 3}
+      spriteParts:
+      - {fileID: 0}
+      - {fileID: 0}
       damage: 0
       hp: 0
       speed: 0
@@ -10841,6 +10922,9 @@ MonoBehaviour:
       special: 0
     leftArm:
       sprite: {fileID: 21300006, guid: 63da7730928071043bc1115f78e21519, type: 3}
+      spriteParts:
+      - {fileID: 0}
+      - {fileID: 0}
       damage: 3
       hp: 0
       speed: 0
@@ -10848,6 +10932,9 @@ MonoBehaviour:
       special: 0
     rightArm:
       sprite: {fileID: 21300072, guid: 63da7730928071043bc1115f78e21519, type: 3}
+      spriteParts:
+      - {fileID: 0}
+      - {fileID: 0}
       damage: 0
       hp: 0
       speed: 0
@@ -10855,6 +10942,9 @@ MonoBehaviour:
       special: 0
     leftLeg:
       sprite: {fileID: 21300290, guid: 63da7730928071043bc1115f78e21519, type: 3}
+      spriteParts:
+      - {fileID: 0}
+      - {fileID: 0}
       damage: 0
       hp: 0
       speed: 0
@@ -10862,6 +10952,9 @@ MonoBehaviour:
       special: 0
     rightLeg:
       sprite: {fileID: 21300300, guid: 63da7730928071043bc1115f78e21519, type: 3}
+      spriteParts:
+      - {fileID: 0}
+      - {fileID: 0}
       damage: 0
       hp: 0
       speed: 0
@@ -10869,6 +10962,9 @@ MonoBehaviour:
       special: 0
   shopContent:
   - sprite: {fileID: 21300274, guid: 63da7730928071043bc1115f78e21519, type: 3}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -11122,6 +11218,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -12184,6 +12283,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -12275,6 +12377,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -12973,6 +13078,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -14316,7 +14424,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a45d779168e41949b6f159f6d3626f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 0.72156864, b: 0.15686275, a: 1}
 --- !u!114 &896054313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14472,7 +14579,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a45d779168e41949b6f159f6d3626f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 0.72156864, b: 0.15686275, a: 1}
 --- !u!114 &904406954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14699,6 +14805,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -15246,6 +15355,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -15337,6 +15449,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -15652,6 +15767,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -15813,6 +15931,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -16254,6 +16375,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -16625,6 +16749,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -16716,6 +16843,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -17301,6 +17431,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -17642,6 +17775,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -18136,6 +18272,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -18467,6 +18606,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -18692,6 +18834,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -19062,7 +19207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a45d779168e41949b6f159f6d3626f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 0.72156864, b: 0.15686275, a: 1}
 --- !u!114 &1273884655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19569,6 +19713,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -20483,6 +20630,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -22113,6 +22263,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -22678,6 +22831,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -23156,6 +23312,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -23247,6 +23406,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -23714,7 +23876,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a45d779168e41949b6f159f6d3626f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 0.72156864, b: 0.15686275, a: 1}
 --- !u!114 &1563481703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24041,6 +24202,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -24536,6 +24700,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -24767,6 +24934,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -25636,6 +25806,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -25866,7 +26039,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a45d779168e41949b6f159f6d3626f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 1, g: 0.72156864, b: 0.15686275, a: 1}
 --- !u!114 &1729887375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26437,42 +26609,60 @@ MonoBehaviour:
   manette: 1
   bodies:
   - head:
-      sprite: {fileID: 21300294, guid: 63da7730928071043bc1115f78e21519, type: 3}
+      sprite: {fileID: 21300000, guid: 447006068c1276947adb691a7677d854, type: 3}
+      spriteParts:
+      - {fileID: 21300000, guid: 447006068c1276947adb691a7677d854, type: 3}
+      - {fileID: 0}
       damage: 4
       hp: 2
       speed: 1
       candies: 3
       special: 0
     body:
-      sprite: {fileID: 21300174, guid: 63da7730928071043bc1115f78e21519, type: 3}
+      sprite: {fileID: 21300004, guid: 447006068c1276947adb691a7677d854, type: 3}
+      spriteParts:
+      - {fileID: 21300004, guid: 447006068c1276947adb691a7677d854, type: 3}
+      - {fileID: 0}
       damage: 4
       hp: 0
       speed: 0
       candies: 0
       special: 0
     leftArm:
-      sprite: {fileID: 21300006, guid: 63da7730928071043bc1115f78e21519, type: 3}
+      sprite: {fileID: 21300000, guid: dbda43f2dceb90742b1c042df426f5b0, type: 3}
+      spriteParts:
+      - {fileID: 21300008, guid: 447006068c1276947adb691a7677d854, type: 3}
+      - {fileID: 21300002, guid: 447006068c1276947adb691a7677d854, type: 3}
       damage: 3
       hp: 0
       speed: 0
       candies: 0
       special: 0
     rightArm:
-      sprite: {fileID: 21300072, guid: 63da7730928071043bc1115f78e21519, type: 3}
+      sprite: {fileID: 21300006, guid: dbda43f2dceb90742b1c042df426f5b0, type: 3}
+      spriteParts:
+      - {fileID: 21300006, guid: 447006068c1276947adb691a7677d854, type: 3}
+      - {fileID: 21300014, guid: 447006068c1276947adb691a7677d854, type: 3}
       damage: 5
       hp: 0
       speed: 0
       candies: 0
       special: 0
     leftLeg:
-      sprite: {fileID: 21300290, guid: 63da7730928071043bc1115f78e21519, type: 3}
+      sprite: {fileID: 21300008, guid: dbda43f2dceb90742b1c042df426f5b0, type: 3}
+      spriteParts:
+      - {fileID: 21300016, guid: 447006068c1276947adb691a7677d854, type: 3}
+      - {fileID: 21300010, guid: 447006068c1276947adb691a7677d854, type: 3}
       damage: 3
       hp: 0
       speed: 0
       candies: 0
       special: 0
     rightLeg:
-      sprite: {fileID: 21300300, guid: 63da7730928071043bc1115f78e21519, type: 3}
+      sprite: {fileID: 21300010, guid: dbda43f2dceb90742b1c042df426f5b0, type: 3}
+      spriteParts:
+      - {fileID: 21300018, guid: 447006068c1276947adb691a7677d854, type: 3}
+      - {fileID: 21300012, guid: 447006068c1276947adb691a7677d854, type: 3}
       damage: 4
       hp: 0
       speed: 0
@@ -26480,6 +26670,9 @@ MonoBehaviour:
       special: 0
   shopContent:
   - sprite: {fileID: 21300274, guid: 63da7730928071043bc1115f78e21519, type: 3}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -26571,6 +26764,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -27256,6 +27452,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -27517,6 +27716,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -28709,6 +28911,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -29390,6 +29595,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -29551,6 +29759,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -30997,6 +31208,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
@@ -31325,6 +31539,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _part:
     sprite: {fileID: 0}
+    spriteParts:
+    - {fileID: 0}
+    - {fileID: 0}
     damage: 0
     hp: 0
     speed: 0
