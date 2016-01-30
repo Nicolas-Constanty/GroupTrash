@@ -97,6 +97,7 @@ GameObject:
   - 50: {fileID: 5038204}
   - 233: {fileID: 23390686}
   - 233: {fileID: 23352856}
+  - 120: {fileID: 12023812}
   m_Layer: 8
   m_Name: footR
   m_TagString: Untagged
@@ -289,6 +290,7 @@ GameObject:
   - 50: {fileID: 5033528}
   - 233: {fileID: 23335014}
   - 233: {fileID: 23327316}
+  - 120: {fileID: 12026286}
   m_Layer: 8
   m_Name: handR
   m_TagString: Untagged
@@ -413,8 +415,8 @@ GameObject:
   - 50: {fileID: 5015512}
   - 233: {fileID: 23348448}
   - 255: {fileID: 25552048}
-  - 255: {fileID: 25584090}
   - 114: {fileID: 11497410}
+  - 120: {fileID: 12030614}
   m_Layer: 8
   m_Name: spine
   m_TagString: Untagged
@@ -710,6 +712,7 @@ GameObject:
   - 4: {fileID: 426684}
   - 212: {fileID: 21268544}
   - 50: {fileID: 5057876}
+  - 255: {fileID: 25569046}
   m_Layer: 8
   m_Name: hip
   m_TagString: Untagged
@@ -1096,6 +1099,7 @@ GameObject:
   - 50: {fileID: 5087028}
   - 233: {fileID: 23382390}
   - 233: {fileID: 23378394}
+  - 120: {fileID: 12044628}
   m_Layer: 8
   m_Name: handL
   m_TagString: Untagged
@@ -1167,6 +1171,7 @@ GameObject:
   - 50: {fileID: 5024772}
   - 233: {fileID: 23378200}
   - 233: {fileID: 23371288}
+  - 120: {fileID: 12085860}
   m_Layer: 8
   m_Name: footL
   m_TagString: Untagged
@@ -2686,7 +2691,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!50 &5059724
 Rigidbody2D:
   serializedVersion: 2
@@ -3199,7 +3204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c298a0e0a8534314ab65d1deb7b78f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displacementArea: {x: -20, y: 10, z: 20, w: 20}
+  displacementArea: {x: -20, y: 10.5, z: 20, w: 20}
   player: 1
   leftHand: {fileID: 186288}
   rightHand: {fileID: 124506}
@@ -3481,6 +3486,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 11423308}
   life: 100
+--- !u!120 &12023812
+LineRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104430}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 3b771d70f2256479fa355cab46bc7490, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 40, z: 0}
+  m_Parameters:
+    startWidth: 0.02
+    endWidth: 0.02
+    m_StartColor:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_EndColor:
+      serializedVersion: 2
+      rgba: 4278190080
+  m_UseWorldSpace: 1
 --- !u!120 &12023908
 LineRenderer:
   m_ObjectHideFlags: 1
@@ -3524,6 +3568,45 @@ LineRenderer:
     m_EndColor:
       serializedVersion: 2
       rgba: 4294967295
+  m_UseWorldSpace: 1
+--- !u!120 &12026286
+LineRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124506}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 3b771d70f2256479fa355cab46bc7490, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 40, z: 0}
+  m_Parameters:
+    startWidth: 0.02
+    endWidth: 0.02
+    m_StartColor:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_EndColor:
+      serializedVersion: 2
+      rgba: 4278190080
   m_UseWorldSpace: 1
 --- !u!120 &12026354
 LineRenderer:
@@ -3572,6 +3655,45 @@ LineRenderer:
       serializedVersion: 2
       rgba: 4294967295
   m_UseWorldSpace: 1
+--- !u!120 &12030614
+LineRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133190}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 40, z: 0}
+  m_Parameters:
+    startWidth: 0.03
+    endWidth: 0.03
+    m_StartColor:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_EndColor:
+      serializedVersion: 2
+      rgba: 4278190080
+  m_UseWorldSpace: 1
 --- !u!120 &12035254
 LineRenderer:
   m_ObjectHideFlags: 1
@@ -3615,6 +3737,45 @@ LineRenderer:
     m_EndColor:
       serializedVersion: 2
       rgba: 4294967295
+  m_UseWorldSpace: 1
+--- !u!120 &12044628
+LineRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 186288}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 3b771d70f2256479fa355cab46bc7490, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 40, z: 0}
+  m_Parameters:
+    startWidth: 0.02
+    endWidth: 0.02
+    m_StartColor:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_EndColor:
+      serializedVersion: 2
+      rgba: 4278190080
   m_UseWorldSpace: 1
 --- !u!120 &12060392
 LineRenderer:
@@ -3704,6 +3865,45 @@ LineRenderer:
     m_EndColor:
       serializedVersion: 2
       rgba: 4294967295
+  m_UseWorldSpace: 1
+--- !u!120 &12085860
+LineRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197880}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 3b771d70f2256479fa355cab46bc7490, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 40, z: 0}
+  m_Parameters:
+    startWidth: 0.02
+    endWidth: 0.02
+    m_StartColor:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_EndColor:
+      serializedVersion: 2
+      rgba: 4278190080
   m_UseWorldSpace: 1
 --- !u!212 &21204424
 SpriteRenderer:
@@ -5692,12 +5892,12 @@ FixedJoint2D:
   m_ConnectedAnchor: {x: 0, y: 0.79999995}
   m_DampingRatio: 0
   m_Frequency: 0
---- !u!255 &25584090
+--- !u!255 &25569046
 FixedJoint2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133190}
+  m_GameObject: {fileID: 159300}
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
@@ -5706,7 +5906,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.2800002, y: -13.825}
+  m_ConnectedAnchor: {x: 0.2800002, y: -14.625}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!1001 &100100000

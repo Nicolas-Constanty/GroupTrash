@@ -127,30 +127,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
---- !u!1 &349603961 stripped
+--- !u!1 &445848937 stripped
 GameObject:
-  m_PrefabParentObject: {fileID: 135332, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
-  m_PrefabInternal: {fileID: 1306237533}
---- !u!50 &349603963 stripped
-Rigidbody2D:
-  m_PrefabParentObject: {fileID: 5091594, guid: bfe2916aa9ad7a046a01cd11652b3d64,
-    type: 2}
-  m_PrefabInternal: {fileID: 1306237533}
---- !u!255 &349603968
+  m_PrefabParentObject: {fileID: 159300, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
+  m_PrefabInternal: {fileID: 1458405281}
+--- !u!255 &445848941
 FixedJoint2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 349603961}
+  m_GameObject: {fileID: 445848937}
   m_Enabled: 1
   serializedVersion: 4
   m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 1515305117}
+  m_ConnectedRigidBody: {fileID: 1085376808}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.2800002, y: -13.825}
+  m_ConnectedAnchor: {x: 0.2800002, y: -14.625}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!1 &999875675
@@ -211,6 +206,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!50 &1085376808 stripped
+Rigidbody2D:
+  m_PrefabParentObject: {fileID: 5060276, guid: 6f8e2ffca684db54ead75bf6d8dac442,
+    type: 2}
+  m_PrefabInternal: {fileID: 1458405281}
 --- !u!1 &1092532074
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,18 +336,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 25531042, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 349603963}
-    - target: {fileID: 25531042, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
-      propertyPath: m_ConnectedAnchor.x
-      value: 0.40931505
-      objectReference: {fileID: 0}
-    - target: {fileID: 25531042, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.7451934
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
   m_IsPrefabParent: 0
@@ -448,11 +436,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5057876, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 25584090, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
   m_IsPrefabParent: 0
---- !u!50 &1515305117 stripped
-Rigidbody2D:
-  m_PrefabParentObject: {fileID: 5080956, guid: bfe2916aa9ad7a046a01cd11652b3d64,
-    type: 2}
-  m_PrefabInternal: {fileID: 1306237533}
