@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using Character;
 
 public class GameManager : MonoBehaviour {
 
@@ -11,9 +13,11 @@ public class GameManager : MonoBehaviour {
 	private GameObject canvasHUD;
 	[SerializeField]
 	private GameObject canvasWin;
+	[SerializeField]
+	private GameObject canvasWinText;
 
-	PlayerStats player1;
-	PlayerStats player2;
+	PlayerStats player1 = new PlayerStats();
+	PlayerStats player2 = new PlayerStats();
 
 	[HideInInspector]
 	public GameState state;
@@ -89,10 +93,35 @@ public class GameManager : MonoBehaviour {
 
 		if (player == player1.playerObj)
 		{
+			player2.nbVictories++;
 		}
 		else
 		{
+			player1.nbVictories++;
+		}
+	}
 
+	public void SetPlayerParts(int playerID, List<Part> _items)
+	{
+		if (playerID == 1)
+		{
+			player1.items = _items;
+		}
+		else if (playerID == 2)
+		{
+			player2.items = _items;
+		}
+	}
+
+	public void SetPlayerParts(int playerID, Part _item)
+	{
+		if (playerID == 1)
+		{
+			player1.items.Add(_item);
+		}
+		else if (playerID == 2)
+		{
+			player2.items.Add(_item);
 		}
 	}
 
@@ -101,6 +130,8 @@ public class GameManager : MonoBehaviour {
 		GameObject _playerObj;
 		int _nbVictories;
 		int _nbCandies;
+
+		List<Part> _items;
 
 		public GameObject playerObj
 		{
@@ -118,6 +149,12 @@ public class GameManager : MonoBehaviour {
 		{
 			get { return _nbCandies; }
 			set { _nbCandies = value; }
+		}
+
+		public List<Part> items
+		{
+			get { return _items; }
+			set { _items = value; }
 		}
 	}
 }
