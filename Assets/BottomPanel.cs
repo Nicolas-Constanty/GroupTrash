@@ -49,7 +49,7 @@ public class BottomPanel : MonoBehaviour {
     void Start () {
 
         // INIT MENUTAB
-        _items = GameObject.FindGameObjectWithTag("GameMAnager").GetComponent<GameManager>().GetPlayerParts(manette);
+        _items = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().GetPlayerParts(manette);
 
         // INIT MENU
         _itemActive = Inventory.transform.GetChild(0).gameObject.GetComponent<Image>();
@@ -63,7 +63,7 @@ public class BottomPanel : MonoBehaviour {
         Generate();
         for (int i = 0; i < Inventory.transform.childCount; i++)
         {
-            if (i < _items.Count)
+            if (i < _items[_type].Count)
                 Inventory.transform.GetChild(i).transform.GetChild(0).GetComponent<Image>().sprite = _items[_type][i].sprite;
         }
         for (int i = 0; i < shopContent.Length; i++)

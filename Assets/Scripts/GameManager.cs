@@ -209,7 +209,7 @@ public class GameManager : MonoBehaviour {
 		int _nbVictories;
 		int _nbCandies;
 
-		Dictionary<int, List<Part>> _items;
+		Dictionary<int, List<Part>> _items = new Dictionary<int, List<Part>>();
 
 		public GameObject playerObj
 		{
