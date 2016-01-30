@@ -14,6 +14,12 @@ public class PlayerSelect : MonoBehaviour {
 	private GameObject[] buttonsP2;
 	private int buttonIdxP2 = 0;
 
+	[SerializeField]
+	private Text timer;
+	[SerializeField]
+	private int waitTime = 30;
+	private int remainingTime;
+
 	private bool isP1MovingH = false;
 	private bool isP1MovingV = false;
 	private bool isP2Moving = false;
@@ -23,17 +29,30 @@ public class PlayerSelect : MonoBehaviour {
 		// Selectionne la tête par défaut
 		buttonsP1[buttonIdxP1].GetComponent<Image>().color = Color.red;
 		buttonsP2 [buttonIdxP2].GetComponent<Image> ().color = Color.red;
+		remainingTime = waitTime;
 	}
 	
 	void Update ()
 	{
 		MoveCursorP1 ();
+		// TODO: add P2
+
+		if (remainingTime > 0)
+		{
+			remainingTime = waitTime - (int)Time.timeSinceLevelLoad;
+			timer.text = remainingTime.ToString ();
+		}
+		else
+		{
+			timer.text = "Go !";
+		}
 	}
 
 	void MoveCursorP1()
 	{
 		float verticalP1 = Input.GetAxisRaw ("Vertical");
 		float horizontalP1 = Input.GetAxisRaw ("Horizontal");
+
 		if (verticalP1 != 0 && !isP1MovingV)
 		{
 			isP1MovingV = true;
@@ -45,7 +64,6 @@ public class PlayerSelect : MonoBehaviour {
 		if (horizontalP1 != 0 && !isP1MovingH)
 		{
 			isP1MovingH = true;
-			Debug.Log ("Selecting sprite");
 			buttonsP1 [buttonIdxP1].GetComponent<SpriteManager> ().NextSprite ();
 		}
 		if (verticalP1 == 0)
