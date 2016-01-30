@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Character;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
@@ -16,8 +17,17 @@ public class GameManager : MonoBehaviour {
 	[SerializeField]
 	private GameObject canvasWinText;
 
+	[SerializeField]
+	private Text timer;
+	[SerializeField]
+	private int waitTime = 30;
+	private int remainingTime;
+
 	PlayerStats player1 = new PlayerStats();
 	PlayerStats player2 = new PlayerStats();
+
+	public GameObject player1Prefab;
+	public GameObject player2Prefab;
 
 	[HideInInspector]
 	public GameState state;
@@ -37,8 +47,15 @@ public class GameManager : MonoBehaviour {
 		state = GameState.SELECTION;
 		lastState = state;
 
+		remainingTime = waitTime;
+
 		player1.playerObj = GameObject.FindGameObjectWithTag ("Player1");
 		player2.playerObj = GameObject.FindGameObjectWithTag ("Player2");
+
+		canvasHUD.SetActive (false);
+		canvasPause.SetActive (false);
+		canvasWin.SetActive (false);
+		SetSelection ();
 	}
 	
 	void Update ()
@@ -48,6 +65,20 @@ public class GameManager : MonoBehaviour {
 			if (Input.GetKeyDown ("joystick 1 button " + i))
 			{
 				Debug.Log ("Button " + i + " pressed !");
+			}
+		}
+
+		if (state == GameState.SELECTION)
+		{
+			if (remainingTime > 0)
+			{
+				remainingTime = waitTime - (int)Time.timeSinceLevelLoad;
+				timer.text = remainingTime.ToString ();
+			}
+			else
+			{
+				timer.text = "Go !";
+				StartGame ();
 			}
 		}
 
@@ -66,6 +97,15 @@ public class GameManager : MonoBehaviour {
 		{
 			player2.playerObj = GameObject.FindGameObjectWithTag ("Player2");
 		}
+	}
+
+	public void StartGame()
+	{
+		canvasSelection.SetActive (false);
+		canvasHUD.SetActive (true);
+		player1.playerObj = (GameObject)Instantiate (player1Prefab);
+		player2.playerObj = (GameObject)Instantiate (player2Prefab);
+		state = GameState.PLAYING;
 	}
 
 	void SetPause ()
@@ -99,9 +139,18 @@ public class GameManager : MonoBehaviour {
 		{
 			player1.nbVictories++;
 		}
+
+		Destroy (player1.playerObj);
+		Destroy (player2.playerObj);
+		// TODO: add candies and drops
 	}
 
-	public void SetPlayerParts(int playerID, List<Part> _items)
+	public void SetSelection()
+	{
+		canvasSelection.SetActive (true);
+	}
+
+	public void SetPlayerParts(int playerID, Dictionary<int, List<Part>> _items)
 	{
 		if (playerID == 1)
 		{
@@ -113,16 +162,17 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
-	public void SetPlayerParts(int playerID, Part _item)
+	public Dictionary<int, List<Part>> GetPlayerParts(int playerID)
 	{
 		if (playerID == 1)
 		{
-			player1.items.Add(_item);
+			return player1.items;
 		}
 		else if (playerID == 2)
 		{
-			player2.items.Add(_item);
+			return player2.items;
 		}
+		return null;
 	}
 
 	class PlayerStats
@@ -131,7 +181,7 @@ public class GameManager : MonoBehaviour {
 		int _nbVictories;
 		int _nbCandies;
 
-		List<Part> _items;
+		Dictionary<int, List<Part>> _items;
 
 		public GameObject playerObj
 		{
@@ -151,7 +201,7 @@ public class GameManager : MonoBehaviour {
 			set { _nbCandies = value; }
 		}
 
-		public List<Part> items
+		public Dictionary<int, List<Part>> items
 		{
 			get { return _items; }
 			set { _items = value; }

@@ -681,6 +681,7 @@ GameObject:
   - 92: {fileID: 1420428094}
   - 124: {fileID: 1420428093}
   - 81: {fileID: 1420428092}
+  - 114: {fileID: 1420428097}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -755,6 +756,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1420428097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420428091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bebeeccba5bafa4d99f267ea35b2cb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasPause: {fileID: 803399667}
+  canvasSelection: {fileID: 0}
+  canvasHUD: {fileID: 0}
+  canvasWin: {fileID: 0}
+  canvasWinText: {fileID: 0}
+  state: 0
 --- !u!1 &1594599607
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,7 +819,7 @@ MonoBehaviour:
   m_Script: {fileID: -619905303, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 105664755}
   m_sendNavigationEvents: 1
   m_DragThreshold: 5
 --- !u!4 &1594599610
