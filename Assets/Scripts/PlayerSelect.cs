@@ -9,7 +9,7 @@ public class PlayerSelect : MonoBehaviour {
 
     //public enum VISUAL { HEAD, LEFTARM, BODY, RIGHTARM, LEFTLEG, RIGHTLEG };
     [Range(1, 2)]
-    public int control;
+    public int control = 1;
 
 	[SerializeField]
 	private GameObject[] buttons;
