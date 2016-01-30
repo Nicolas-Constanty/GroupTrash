@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Character;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
@@ -15,6 +16,12 @@ public class GameManager : MonoBehaviour {
 	private GameObject canvasWin;
 	[SerializeField]
 	private GameObject canvasWinText;
+
+	[SerializeField]
+	private Text timer;
+	[SerializeField]
+	private int waitTime = 30;
+	private int remainingTime;
 
 	PlayerStats player1 = new PlayerStats();
 	PlayerStats player2 = new PlayerStats();
@@ -40,6 +47,8 @@ public class GameManager : MonoBehaviour {
 		state = GameState.SELECTION;
 		lastState = state;
 
+		remainingTime = waitTime;
+
 		player1.playerObj = GameObject.FindGameObjectWithTag ("Player1");
 		player2.playerObj = GameObject.FindGameObjectWithTag ("Player2");
 
@@ -56,6 +65,20 @@ public class GameManager : MonoBehaviour {
 			if (Input.GetKeyDown ("joystick 1 button " + i))
 			{
 				Debug.Log ("Button " + i + " pressed !");
+			}
+		}
+
+		if (state == GameState.SELECTION)
+		{
+			if (remainingTime > 0)
+			{
+				remainingTime = waitTime - (int)Time.timeSinceLevelLoad;
+				timer.text = remainingTime.ToString ();
+			}
+			else
+			{
+				timer.text = "Go !";
+				StartGame ();
 			}
 		}
 
@@ -82,6 +105,7 @@ public class GameManager : MonoBehaviour {
 		canvasHUD.SetActive (true);
 		player1.playerObj = (GameObject)Instantiate (player1Prefab);
 		player2.playerObj = (GameObject)Instantiate (player2Prefab);
+		state = GameState.PLAYING;
 	}
 
 	void SetPause ()
