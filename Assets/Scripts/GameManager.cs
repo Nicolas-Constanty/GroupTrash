@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour {
 	[SerializeField]
 	private int waitTime = 30;
 	private int remainingTime;
+	private float decreaseTime = 0;
 
 	PlayerStats player1 = new PlayerStats();
 	PlayerStats player2 = new PlayerStats();
@@ -69,9 +70,6 @@ public class GameManager : MonoBehaviour {
 		player1.playerObj = GameObject.FindGameObjectWithTag ("Player1");
 		player2.playerObj = GameObject.FindGameObjectWithTag ("Player2");
 
-		canvasHUD.SetActive (false);
-		canvasPause.SetActive (false);
-		canvasWin.SetActive (false);
 		SetSelection ();
     }
 
@@ -89,11 +87,13 @@ public class GameManager : MonoBehaviour {
 		{
 			if (remainingTime > 0)
 			{
-				remainingTime = waitTime - (int)Time.timeSinceLevelLoad;
+				remainingTime = waitTime - (int)decreaseTime;
+				decreaseTime += Time.deltaTime;
 				timer.text = remainingTime.ToString ();
 			}
 			else
 			{
+				decreaseTime = 0;
 				timer.text = "Go !";
 				StartGame ();
 			}
@@ -113,6 +113,11 @@ public class GameManager : MonoBehaviour {
 		if (player2 == null)
 		{
 			player2.playerObj = GameObject.FindGameObjectWithTag ("Player2");
+		}
+
+		if (Input.GetKeyDown (KeyCode.A))
+		{
+			SetWin (player1.playerObj);
 		}
 	}
 
@@ -142,7 +147,7 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
-	public void SetWin(Player player)
+	public void SetWin(GameObject player)
 	{
 		lastState = state;
 		state = GameState.WIN;
@@ -164,6 +169,12 @@ public class GameManager : MonoBehaviour {
 
 	public void SetSelection()
 	{
+		state = GameState.SELECTION;
+		remainingTime = waitTime;
+		decreaseTime = 0;
+		canvasHUD.SetActive (false);
+		canvasPause.SetActive (false);
+		canvasWin.SetActive (false);		
 		canvasSelection.SetActive (true);
 	}
 
