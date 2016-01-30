@@ -8,6 +8,7 @@ using Character;
 public class BottomPanel : MonoBehaviour {
 
     // PANEL //
+    public PlayerSelect visual;
     public Sprite actifTab;
     public Sprite inactifTab;
     public Sprite actifSlot;
@@ -18,6 +19,7 @@ public class BottomPanel : MonoBehaviour {
 
     public GameObject Inventory;
     public GameObject Shop;
+    public Carac Caracs;
     [Range(1, 2)]
     public int manette;
 
@@ -27,6 +29,7 @@ public class BottomPanel : MonoBehaviour {
     private int                         _current;
     private int                         _type = (int)PART.HEAD;
     private bool                        _move;
+    private int                         _lastType;
 
     // ITEMS //
 
@@ -38,6 +41,8 @@ public class BottomPanel : MonoBehaviour {
     //private List<Part> _items = new List<Part>();
     private List<Part> _allitems = new List<Part>();
     private Dictionary<int, List<Part>> _items;
+
+    private string[] NAME = { "Head", "Left Arm", "Body", "Right Arm", "Left Leg", "Right Leg" };
 
     public Dictionary<int, List<Part>> Items
     {
@@ -61,15 +66,28 @@ public class BottomPanel : MonoBehaviour {
         _axis.Add("RB", "RB" + manette.ToString());
         _axis.Add("Move", "Move" + manette.ToString());
         Generate();
+        _lastType = 0;
+        displayMenu();
+        ActiveItem(Inventory.transform.GetChild(0));
+    }
+
+    private void displayMenu()
+    {
         for (int i = 0; i < Inventory.transform.childCount; i++)
         {
             if (i < _items[_type].Count)
+            {
+                Inventory.transform.GetChild(i).GetComponent<Item>().Part = _items[_type][i];
                 Inventory.transform.GetChild(i).transform.GetChild(0).GetComponent<Image>().sprite = _items[_type][i].sprite;
+            }
         }
         for (int i = 0; i < shopContent.Length; i++)
         {
             if (i < shopContent.Length)
+            {
+                Shop.transform.GetChild(i).GetComponent<Item>().Part = shopContent[i];
                 Shop.transform.GetChild(i).transform.GetChild(0).GetComponent<Image>().sprite = shopContent[i].sprite;
+            }
         }
     }
 
@@ -103,6 +121,9 @@ public class BottomPanel : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        _type = visual.Index;
+        if (_type != _lastType)
+            displayMenu();
 	    if (Input.GetAxis(_axis["LB"]) != 0 && _isShop)
         {
             _isShop = false;
@@ -111,7 +132,7 @@ public class BottomPanel : MonoBehaviour {
             Shop.SetActive(false);
             Inventory.SetActive(true);
             _current = 0;
-            ActiveItem(Inventory.transform.GetChild(0).gameObject.GetComponent<Image>());
+            ActiveItem(Inventory.transform.GetChild(0));
         }
         else if (Input.GetAxis(_axis["RB"]) != 0 && !_isShop)
         {
@@ -121,16 +142,18 @@ public class BottomPanel : MonoBehaviour {
             Inventory.SetActive(false);
             Shop.SetActive(true);
             _current = 0;
-            ActiveItem(Shop.transform.GetChild(0).gameObject.GetComponent<Image>());
+            ActiveItem(Shop.transform.GetChild(0));
         }
         Move();
+        _lastType = _type;
     }
 
-    private void ActiveItem(Image img)
+    private void ActiveItem(Transform obj)
     {
         _itemActive.sprite = inactifSlot;
-        _itemActive = img;
+        _itemActive = obj.GetComponent<Image>();
         _itemActive.sprite = actifSlot;
+        Caracs.setObject(obj.GetComponent<Item>().Part, NAME[_type]);
     }
 
     private void Move()
@@ -143,12 +166,12 @@ public class BottomPanel : MonoBehaviour {
                 if (_current > 0)
                 {
                     --_current;
-                    ActiveItem(Shop.transform.GetChild(_current).GetComponent<Image>());
+                    ActiveItem(Shop.transform.GetChild(_current));
                 }
                 else
                 {
                     _current = Shop.transform.childCount - 1;
-                    ActiveItem(Shop.transform.GetChild(_current).GetComponent<Image>());
+                    ActiveItem(Shop.transform.GetChild(_current));
                 }
             }
             else if (Input.GetAxis(_axis["Move"]) > 0 && !_move)
@@ -157,12 +180,12 @@ public class BottomPanel : MonoBehaviour {
                 if (_current < Shop.transform.childCount - 1)
                 {
                     ++_current;
-                    ActiveItem(Shop.transform.GetChild(_current).GetComponent<Image>());
+                    ActiveItem(Shop.transform.GetChild(_current));
                 }
                 else
                 {
                     _current = 0;
-                    ActiveItem(Shop.transform.GetChild(_current).GetComponent<Image>());
+                    ActiveItem(Shop.transform.GetChild(_current));
                 }
             }
         }
@@ -174,12 +197,12 @@ public class BottomPanel : MonoBehaviour {
                 if (_current > 0)
                 {
                     --_current;
-                    ActiveItem(Inventory.transform.GetChild(_current).GetComponent<Image>());
+                    ActiveItem(Inventory.transform.GetChild(_current));
                 }
                 else
                 {
                     _current = Inventory.transform.childCount - 1;
-                    ActiveItem(Inventory.transform.GetChild(_current).GetComponent<Image>());
+                    ActiveItem(Inventory.transform.GetChild(_current));
                 }
             }
             else if (Input.GetAxis(_axis["Move"]) > 0 && !_move)
@@ -188,15 +211,24 @@ public class BottomPanel : MonoBehaviour {
                 if (_current < Inventory.transform.childCount - 1)
                 {
                     ++_current;
-                    ActiveItem(Inventory.transform.GetChild(_current).GetComponent<Image>());
+                    ActiveItem(Inventory.transform.GetChild(_current));
                 }
                 else
                 {
                     _current = 0;
-                    ActiveItem(Inventory.transform.GetChild(_current).GetComponent<Image>());
+                    ActiveItem(Inventory.transform.GetChild(_current));
                 }
             }
         }
+    }
+
+    private void setType(int value)
+    {
+        _type += value;
+        if (_type > (int)PART.RIGHTLEG)
+            _type = (int)PART.HEAD;
+        else if (_type < 0)
+            _type = (int)PART.RIGHTLEG;
     }
 
     IEnumerator  canMove()
