@@ -24,6 +24,8 @@ public class Player : MonoBehaviour {
 
     public GameObject puppeteer;
 
+    private Vector3 myPlayerPos, enemyPos;
+
     void Start()
     {
         if (displacementArea == Vector4.zero)
@@ -43,6 +45,17 @@ public class Player : MonoBehaviour {
 
         //body = new Body(new Part(), new Part(), new Part(), new Part(), new Part(), new Part());
 
+
+        if (player == 1)
+        {
+            myPlayerPos = GameObject.Find("RagdollP1").transform.GetChild(0).transform.position;
+            enemyPos = GameObject.Find("RagdollP2").transform.GetChild(0).transform.position;
+        }
+        else
+        {
+            myPlayerPos = GameObject.Find("RagdollP2").transform.GetChild(0).transform.position;
+            enemyPos = GameObject.Find("RagdollP1").transform.GetChild(0).transform.position;
+        }
     }
 
 
@@ -57,47 +70,67 @@ public class Player : MonoBehaviour {
         if (cooldownRF > 1)
             cooldownRF = Mathf.Max(1, cooldownRF - Time.deltaTime * (force / 2));
 
+
+
         if ((Input.GetButtonDown("LeftPunch1") && player == 1) ||
             (Input.GetButtonDown("LeftPunch2") && player == 2) ||
-            (Input.GetKeyDown(KeyCode.Joystick1Button3) && player == 1) )
+            (Input.GetKeyDown(KeyCode.Joystick1Button3) && player == 1) ||
+            (Input.GetKeyDown(KeyCode.Joystick2Button3) && player == 2) )
         {
             Debug.Log("LeftPunch");
-            leftHand.GetComponent<Rigidbody2D>().AddForce(-leftHand.transform.parent.transform.right * force * 1 / cooldownLH, ForceMode2D.Impulse);
+            //leftHand.GetComponent<Rigidbody2D>().AddForce(-leftHand.transform.parent.transform.right * force * 1 / cooldownLH, ForceMode2D.Impulse);
+            leftHand.GetComponent<Rigidbody2D>().AddForce( (enemyPos-myPlayerPos).normalized * force * 1 / cooldownLH, ForceMode2D.Impulse);
             cooldownLH = force;
         }
         else if ((Input.GetButtonDown("RightPunch1") && player == 1) ||
             (Input.GetButtonDown("RightPunch2") && player == 2) ||
-            (Input.GetKeyDown(KeyCode.Joystick1Button2) && player == 1))
+            (Input.GetKeyDown(KeyCode.Joystick1Button2) && player == 1) ||
+            (Input.GetKeyDown(KeyCode.Joystick2Button2) && player == 2))
         {
             Debug.Log("RightPunch");
-            rightHand.GetComponent<Rigidbody2D>().AddForce(-rightHand.transform.parent.transform.right * force * 1 / cooldownRH, ForceMode2D.Impulse);
+            //rightHand.GetComponent<Rigidbody2D>().AddForce(-rightHand.transform.parent.transform.right * force * 1 / cooldownRH, ForceMode2D.Impulse);
+            rightHand.GetComponent<Rigidbody2D>().AddForce((enemyPos - myPlayerPos).normalized * force * 1 / cooldownRH, ForceMode2D.Impulse);
             cooldownRH = force;
         }
         else if ((Input.GetButtonDown("LeftKick1") && player == 1) ||
             (Input.GetButtonDown("LeftKick2") && player == 2) ||
-            (Input.GetKeyDown(KeyCode.Joystick1Button1) && player == 1))
+            (Input.GetKeyDown(KeyCode.Joystick1Button1) && player == 1) ||
+            (Input.GetKeyDown(KeyCode.Joystick2Button1) && player == 2))
         {
             Debug.Log("LeftKick");
-            leftFoot.GetComponent<Rigidbody2D>().AddForce(-leftFoot.transform.parent.transform.right * force * 1 / cooldownLF, ForceMode2D.Impulse);
+            //leftFoot.GetComponent<Rigidbody2D>().AddForce(-leftFoot.transform.parent.transform.right * force * 1 / cooldownLF, ForceMode2D.Impulse);
+            leftFoot.GetComponent<Rigidbody2D>().AddForce((enemyPos - myPlayerPos).normalized * force * 1 / cooldownLF, ForceMode2D.Impulse);
             cooldownLF = force;
         }
         else if ((Input.GetButtonDown("RightKick1") && player == 1) ||
             (Input.GetButtonDown("RightKick2") && player == 2) ||
-            (Input.GetKeyDown(KeyCode.Joystick1Button0) && player == 1))
+            (Input.GetKeyDown(KeyCode.Joystick1Button0) && player == 1) ||
+            (Input.GetKeyDown(KeyCode.Joystick2Button0) && player == 2))
         {
             Debug.Log("RightKick");
-            rightFoot.GetComponent<Rigidbody2D>().AddForce(-rightFoot.transform.parent.transform.right * force * 1 / cooldownRF, ForceMode2D.Impulse);
+            //rightFoot.GetComponent<Rigidbody2D>().AddForce(-rightFoot.transform.parent.transform.right * force * 1 / cooldownRF, ForceMode2D.Impulse);
+            rightFoot.GetComponent<Rigidbody2D>().AddForce((enemyPos - myPlayerPos).normalized * force * 1 / cooldownRF, ForceMode2D.Impulse);
             cooldownRF = force;
         }
 
-        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
-        {
-            Vector2 newPos = new Vector2(Mathf.Min(Mathf.Max(displacementArea.x, puppeteer.transform.position.x + Input.GetAxis("Horizontal") / 20), displacementArea.z),
-                Mathf.Min(Mathf.Max(displacementArea.y, puppeteer.transform.position.y + Input.GetAxis("Vertical") / 20), displacementArea.w));
-            puppeteer.transform.position = newPos;
-        }
+        Vector2 newPos = Vector2.zero;
 
+        if ((Input.GetAxis("Horizontal1") != 0 && player == 1)||
+            (Input.GetAxis("Vertical1") != 0 && player == 1))
+        {
+            newPos = new Vector2(Mathf.Min(Mathf.Max(displacementArea.x, puppeteer.transform.position.x + Input.GetAxis("Horizontal1") / 20), displacementArea.z),
+                Mathf.Min(Mathf.Max(displacementArea.y, puppeteer.transform.position.y + Input.GetAxis("Vertical1") / 20), displacementArea.w));
+        }
+        if ((Input.GetAxis("Horizontal2") != 0 && player == 2) ||
+            (Input.GetAxis("Vertical2") != 0 && player == 2))
+        {
+            newPos = new Vector2(Mathf.Min(Mathf.Max(displacementArea.x, puppeteer.transform.position.x + Input.GetAxis("Horizontal2") / 20), displacementArea.z),
+                Mathf.Min(Mathf.Max(displacementArea.y, puppeteer.transform.position.y + Input.GetAxis("Vertical2") / 20), displacementArea.w));
+        }
+        if(newPos != Vector2.zero)
+            puppeteer.transform.position = newPos;
     }
+    
 
     void OnDrawGizmos()
     {
