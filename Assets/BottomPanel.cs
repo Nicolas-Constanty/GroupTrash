@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.UI;
+//using System.Linq;
 using Character;
 
 public class BottomPanel : MonoBehaviour {
@@ -35,6 +36,7 @@ public class BottomPanel : MonoBehaviour {
 
     private List<Part> _items = new List<Part>();
     private List<Part> _allitems = new List<Part>();
+    private Dictionary<int, List<Part>> menuTab = new Dictionary<int, List<Part>>();
 
     public List<Part> Items
     {
@@ -44,9 +46,23 @@ public class BottomPanel : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+
+        // INIT MENUTAB
+        menuTab = GameObject.FindGameObjectWithTag("GameMAnager").GetComponent<GameManager>().GetPlayerParts(manette);
+
+        //menuTab.Add((int)PART.HEAD, inventory[(int)PART.HEAD]);
+        //menuTab.Add((int)PART.BODY, inventory[(int)PART.BODY]);
+        //menuTab.Add((int)PART.LEFTARM, inventory[(int)PART.LEFTARM]);
+        //menuTab.Add((int)PART.RIGHTARM, inventory[(int)PART.RIGHTARM]);
+        //menuTab.Add((int)PART.LEFTLEG, inventory[(int)PART.LEFTLEG]);
+        //menuTab.Add((int)PART.RIGHTLEG, inventory[(int)PART.RIGHTLEG]);
+
+        // INIT MENU
         _itemActive = Inventory.transform.GetChild(0).gameObject.GetComponent<Image>();
         _itemActive.sprite = actifSlot;
         Shop.SetActive(false);
+
+        // INIT AXIS
         _axis.Add("LB", "LB" + manette.ToString());
         _axis.Add("RB", "RB" + manette.ToString());
         _axis.Add("Move", "Move" + manette.ToString());
@@ -74,11 +90,12 @@ public class BottomPanel : MonoBehaviour {
             _allitems.Add(body.getPart(4));
             _allitems.Add(body.getPart(5));
         }
-        for (int i = 0; i < bodies.Length; i++)
+        for (int i = 0; i < 6; i++)
         {
             int dice = Random.Range(0, bodies.Length);
             _items.Add(bodies[dice].getPart(i));
             _allitems.Remove(_items[i]);
+            Inventor
         }
         for (int i = 0; i < MAX_RANDOM; i++)
         {
