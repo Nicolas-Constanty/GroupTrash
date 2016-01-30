@@ -14,12 +14,6 @@ public class PlayerSelect : MonoBehaviour {
 	private GameObject[] buttonsP2;
 	private int buttonIdxP2 = 0;
 
-	[SerializeField]
-	private Text timer;
-	[SerializeField]
-	private int waitTime = 30;
-	private int remainingTime;
-
 	private bool isP1MovingH = false;
 	private bool isP1MovingV = false;
 	private bool isP2MovingH = false;
@@ -30,24 +24,12 @@ public class PlayerSelect : MonoBehaviour {
 		// Selectionne la tête par défaut
 		buttonsP1[buttonIdxP1].GetComponent<Image>().color = Color.red;
 		buttonsP2 [buttonIdxP2].GetComponent<Image> ().color = Color.red;
-		remainingTime = waitTime;
 	}
 	
 	void Update ()
 	{
 		MoveCursorP1 ();
 		MoveCursorP2 ();
-
-		if (remainingTime > 0)
-		{
-			remainingTime = waitTime - (int)Time.timeSinceLevelLoad;
-			timer.text = remainingTime.ToString ();
-		}
-		else
-		{
-			timer.text = "Go !";
-			GameObject.FindGameObjectWithTag ("GameManager").GetComponent<GameManager> ().StartGame ();
-		}
 	}
 
 	void MoveCursorP1()

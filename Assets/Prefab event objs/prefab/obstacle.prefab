@@ -12,7 +12,7 @@ GameObject:
   - 50: {fileID: 5034096}
   - 60: {fileID: 6025566}
   m_Layer: 0
-  m_Name: New Sprite (7)
+  m_Name: obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
