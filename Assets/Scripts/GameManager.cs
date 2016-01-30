@@ -203,11 +203,24 @@ public class GameManager : MonoBehaviour {
 		return null;
 	}
 
+	public int GetNbCandies(int playerID)
+	{
+		if (playerID == 1)
+		{
+			return player1.nbCandies;
+		}
+		else if (playerID == 2)
+		{
+			return player2.nbCandies;
+		}
+		return 0;
+	}
+
 	class PlayerStats
 	{
-		GameObject _playerObj;
-		int _nbVictories;
-		int _nbCandies;
+		GameObject _playerObj = null;
+		int _nbVictories = 0;
+		int _nbCandies = 0;
 
 		Dictionary<int, List<Part>> _items = new Dictionary<int, List<Part>>();
 
