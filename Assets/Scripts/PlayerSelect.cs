@@ -38,7 +38,7 @@ public class PlayerSelect : MonoBehaviour {
 	void MoveCursor()
 	{
 		float verticalP1 = Input.GetAxisRaw ("Vertical" + control.ToString());
-		float horizontalP1 = Input.GetAxisRaw ("Horizontal" + control.ToString());
+		//float horizontalP1 = Input.GetAxisRaw ("Horizontal" + control.ToString());
 
 		if (verticalP1 != 0 && !isMoving)
 		{
