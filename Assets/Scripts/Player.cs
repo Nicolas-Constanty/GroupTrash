@@ -33,13 +33,13 @@ public class Player : MonoBehaviour {
         if (Input.GetButtonDown("LeftPunch"))
         {
             Debug.Log("LeftPunch");
-            leftHand.GetComponent<Rigidbody2D>().AddForce(leftHand.transform.parent.transform.up * force * 1 / cooldownLH, ForceMode2D.Impulse);
+            leftHand.GetComponent<Rigidbody2D>().AddForce(-leftHand.transform.parent.transform.right * force * 1 / cooldownLH, ForceMode2D.Impulse);
             cooldownLH = force;
         }
         else if (Input.GetButtonDown("RightPunch"))
         {
             Debug.Log("RightPunch");
-            rightHand.GetComponent<Rigidbody2D>().AddForce(rightHand.transform.parent.transform.up * force * 1 / cooldownRH, ForceMode2D.Impulse);
+            rightHand.GetComponent<Rigidbody2D>().AddForce(-rightHand.transform.parent.transform.right * force * 1 / cooldownRH, ForceMode2D.Impulse);
             cooldownRH = force;
         }
         else if (Input.GetButtonDown("LeftKick"))
@@ -54,8 +54,6 @@ public class Player : MonoBehaviour {
             rightFoot.GetComponent<Rigidbody2D>().AddForce(-rightFoot.transform.parent.transform.right * force * 1 / cooldownRF, ForceMode2D.Impulse);
             cooldownRF = force;
         }
-
-
 
 
     }

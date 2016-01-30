@@ -432,6 +432,27 @@ GameObject:
 GameObject:
   m_PrefabParentObject: {fileID: 129884, guid: ba7abf9fc2af0e2409854d0c1c39b60b, type: 2}
   m_PrefabInternal: {fileID: 2093173116}
+--- !u!1 &1301339491 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 138856, guid: ba7abf9fc2af0e2409854d0c1c39b60b, type: 2}
+  m_PrefabInternal: {fileID: 2093173116}
+--- !u!255 &1301339495
+FixedJoint2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1301339491}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 1395015995}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0.79999995}
+  m_DampingRatio: 0
+  m_Frequency: 0
 --- !u!1001 &1319708369
 Prefab:
   m_ObjectHideFlags: 0
@@ -481,6 +502,11 @@ Prefab:
 --- !u!1 &1372335649 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 172074, guid: ba7abf9fc2af0e2409854d0c1c39b60b, type: 2}
+  m_PrefabInternal: {fileID: 2093173116}
+--- !u!50 &1395015995 stripped
+Rigidbody2D:
+  m_PrefabParentObject: {fileID: 5061470, guid: ba7abf9fc2af0e2409854d0c1c39b60b,
+    type: 2}
   m_PrefabInternal: {fileID: 2093173116}
 --- !u!1 &1488857368 stripped
 GameObject:
@@ -703,13 +729,38 @@ Prefab:
       value: 
       objectReference: {fileID: 245347899}
     - target: {fileID: 23340216, guid: ba7abf9fc2af0e2409854d0c1c39b60b, type: 2}
-      propertyPath: m_AngleLimits.m_LowerAngle
-      value: -10
+      propertyPath: m_AutoConfigureConnectedAnchor
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 23340216, guid: ba7abf9fc2af0e2409854d0c1c39b60b, type: 2}
-      propertyPath: m_AngleLimits.m_UpperAngle
-      value: 10
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 23337880, guid: ba7abf9fc2af0e2409854d0c1c39b60b, type: 2}
+      propertyPath: m_AngleLimits.m_LowerAngle
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 23337880, guid: ba7abf9fc2af0e2409854d0c1c39b60b, type: 2}
+      propertyPath: m_AngleLimits.m_UpperAngle
+      value: -125
+      objectReference: {fileID: 0}
+    - target: {fileID: 23350328, guid: ba7abf9fc2af0e2409854d0c1c39b60b, type: 2}
+      propertyPath: m_AngleLimits.m_LowerAngle
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 23350328, guid: ba7abf9fc2af0e2409854d0c1c39b60b, type: 2}
+      propertyPath: m_AngleLimits.m_UpperAngle
+      value: -125
+      objectReference: {fileID: 0}
+    - target: {fileID: 21291342, guid: ba7abf9fc2af0e2409854d0c1c39b60b, type: 2}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 21258990, guid: ba7abf9fc2af0e2409854d0c1c39b60b, type: 2}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 23340216, guid: ba7abf9fc2af0e2409854d0c1c39b60b, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ba7abf9fc2af0e2409854d0c1c39b60b, type: 2}
   m_IsPrefabParent: 0
