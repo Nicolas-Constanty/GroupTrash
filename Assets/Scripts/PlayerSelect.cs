@@ -22,7 +22,8 @@ public class PlayerSelect : MonoBehaviour {
 
 	private bool isP1MovingH = false;
 	private bool isP1MovingV = false;
-	private bool isP2Moving = false;
+	private bool isP2MovingH = false;
+	private bool isP2MovingV = false;
 
 	void Start ()
 	{
@@ -36,6 +37,7 @@ public class PlayerSelect : MonoBehaviour {
 	{
 		MoveCursorP1 ();
 		// TODO: add P2
+		MoveCursorP2();
 
 		if (remainingTime > 0)
 		{
@@ -73,6 +75,34 @@ public class PlayerSelect : MonoBehaviour {
 		if (horizontalP1 == 0)
 		{
 			isP1MovingH = false;
+		}
+	}
+
+	void MoveCursorP2 ()
+	{
+		float verticalP2 = Input.GetAxisRaw ("Vertical2");
+		float horizontalP2 = Input.GetAxisRaw ("Horizontal2");
+
+		if (verticalP2 != 0 && !isP2MovingV)
+		{
+			isP2MovingV = true;
+			buttonsP2[buttonIdxP2].GetComponent<Image>().color = Color.white;
+			buttonIdxP2 -= (int)verticalP2;
+			buttonIdxP2 = (buttonIdxP2 < 0) ? buttonsP2.Length - 1 : (buttonIdxP2 > buttonsP2.Length - 1) ? 0 : buttonIdxP2;
+			buttonsP2[buttonIdxP2].GetComponent<Image>().color = Color.red;
+		}
+		if (horizontalP2 != 0 && !isP2MovingH)
+		{
+			isP2MovingH = true;
+			buttonsP2 [buttonIdxP2].GetComponent<SpriteManager> ().NextSprite ();
+		}
+		if (verticalP2 == 0)
+		{
+			isP2MovingV = false;
+		}
+		if (horizontalP2 == 0)
+		{
+			isP2MovingH = false;
 		}
 	}
 }
