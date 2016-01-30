@@ -103,7 +103,6 @@ public class Player : MonoBehaviour {
                 Mathf.Min(Mathf.Max(displacementArea.y, puppeteer.transform.position.y + Input.GetAxis("Vertical") / 20), displacementArea.w));
             puppeteer.transform.position = newPos;
         }
-
     }
 
     void OnDrawGizmos()

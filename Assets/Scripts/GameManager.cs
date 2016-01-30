@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour {
 	[SerializeField]
 	private int waitTime = 30;
 	private int remainingTime;
+	private float decreaseTime = 0;
 
 	PlayerStats player1 = new PlayerStats();
 	PlayerStats player2 = new PlayerStats();
@@ -42,6 +43,23 @@ public class GameManager : MonoBehaviour {
 		WIN
 	}
 
+    void Awake()
+    {
+        player1.items.Add((int)PART.HEAD, new List<Part>());
+        player1.items.Add((int)PART.BODY, new List<Part>());
+        player1.items.Add((int)PART.LEFTARM, new List<Part>());
+        player1.items.Add((int)PART.RIGHTARM, new List<Part>());
+        player1.items.Add((int)PART.LEFTLEG, new List<Part>());
+        player1.items.Add((int)PART.RIGHTLEG, new List<Part>());
+
+        player2.items.Add((int)PART.HEAD, new List<Part>());
+        player2.items.Add((int)PART.BODY, new List<Part>());
+        player2.items.Add((int)PART.LEFTARM, new List<Part>());
+        player2.items.Add((int)PART.RIGHTARM, new List<Part>());
+        player2.items.Add((int)PART.LEFTLEG, new List<Part>());
+        player2.items.Add((int)PART.RIGHTLEG, new List<Part>());
+    }
+
 	void Start ()
 	{
 		state = GameState.SELECTION;
@@ -52,13 +70,10 @@ public class GameManager : MonoBehaviour {
 		player1.playerObj = GameObject.FindGameObjectWithTag ("Player1");
 		player2.playerObj = GameObject.FindGameObjectWithTag ("Player2");
 
-		canvasHUD.SetActive (false);
-		canvasPause.SetActive (false);
-		canvasWin.SetActive (false);
 		SetSelection ();
-	}
-	
-	void Update ()
+    }
+
+    void Update ()
 	{
 		for (int i = 0; i < 20; i++)
 		{
@@ -72,11 +87,13 @@ public class GameManager : MonoBehaviour {
 		{
 			if (remainingTime > 0)
 			{
-				remainingTime = waitTime - (int)Time.timeSinceLevelLoad;
+				remainingTime = waitTime - (int)decreaseTime;
+				decreaseTime += Time.deltaTime;
 				timer.text = remainingTime.ToString ();
 			}
 			else
 			{
+				decreaseTime = 0;
 				timer.text = "Go !";
 				StartGame ();
 			}
@@ -96,6 +113,11 @@ public class GameManager : MonoBehaviour {
 		if (player2 == null)
 		{
 			player2.playerObj = GameObject.FindGameObjectWithTag ("Player2");
+		}
+
+		if (Input.GetKeyDown (KeyCode.A))
+		{
+			SetWin (player1.playerObj);
 		}
 	}
 
@@ -125,7 +147,7 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
-	public void SetWin(Player player)
+	public void SetWin(GameObject player)
 	{
 		lastState = state;
 		state = GameState.WIN;
@@ -147,6 +169,12 @@ public class GameManager : MonoBehaviour {
 
 	public void SetSelection()
 	{
+		state = GameState.SELECTION;
+		remainingTime = waitTime;
+		decreaseTime = 0;
+		canvasHUD.SetActive (false);
+		canvasPause.SetActive (false);
+		canvasWin.SetActive (false);		
 		canvasSelection.SetActive (true);
 	}
 
@@ -181,7 +209,7 @@ public class GameManager : MonoBehaviour {
 		int _nbVictories;
 		int _nbCandies;
 
-		Dictionary<int, List<Part>> _items;
+		Dictionary<int, List<Part>> _items = new Dictionary<int, List<Part>>();
 
 		public GameObject playerObj
 		{
