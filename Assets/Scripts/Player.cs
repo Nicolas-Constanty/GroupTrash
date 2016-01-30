@@ -36,7 +36,7 @@ public class Player : MonoBehaviour {
         if (rightFoot == null)
             Debug.LogError("Stp met le pied droit du perso dans " + gameObject.name, gameObject);
 
-        body = new Body(new Part(0), new Part(1), new Part(2), new Part(3), new Part(4), new Part(5));
+        //body = new Body(new Part(), new Part(), new Part(), new Part(), new Part(), new Part());
 
     }
 

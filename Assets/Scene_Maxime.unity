@@ -166,9 +166,36 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11419294, guid: 8566cfbc57c404544a4d949c40e212ca, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 8566cfbc57c404544a4d949c40e212ca, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &586028295 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 158024, guid: 8566cfbc57c404544a4d949c40e212ca, type: 2}
+  m_PrefabInternal: {fileID: 545353847}
+--- !u!114 &586028296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 586028295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c298a0e0a8534314ab65d1deb7b78f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displacementArea: {x: 0, y: 0, z: 0, w: 0}
+  player: 1
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
+  leftFoot: {fileID: 0}
+  rightFoot: {fileID: 0}
+  force: 10
+  cooldownLH: 1
+  cooldownRH: 1
+  cooldownLF: 1
+  cooldownRF: 1
 --- !u!1 &999875675
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,7 +379,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11443818, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1396196542
@@ -413,3 +441,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!1 &1564862087 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 176038, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
+  m_PrefabInternal: {fileID: 1151882097}
+--- !u!114 &1564862088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1564862087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c298a0e0a8534314ab65d1deb7b78f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displacementArea: {x: 0, y: 0, z: 0, w: 0}
+  player: 1
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
+  leftFoot: {fileID: 0}
+  rightFoot: {fileID: 0}
+  force: 10
+  cooldownLH: 1
+  cooldownRH: 1
+  cooldownLF: 1
+  cooldownRF: 1
