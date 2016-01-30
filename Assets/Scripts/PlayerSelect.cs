@@ -11,8 +11,7 @@ public class PlayerSelect : MonoBehaviour {
     public Carac CaracsPerso;
     public BottomPanel panel;
 
-    [SerializeField]
-	private GameObject[] buttons;
+	public GameObject[] buttons;
 	private int buttonIdx = 0;
     public int Index
     {

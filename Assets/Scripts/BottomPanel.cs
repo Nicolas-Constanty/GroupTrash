@@ -144,6 +144,12 @@ public class BottomPanel : MonoBehaviour {
         ActiveItem(Inventory.transform.GetChild(0));
     }
 
+	// Update visual
+	private void UpdateCharacter()
+	{
+		visual.buttons [_type].GetComponent<Image> ().sprite = _items[_type][_current].sprite;
+	}
+
     public void Generate()
     {
         foreach (Body body in bodies)
@@ -210,6 +216,7 @@ public class BottomPanel : MonoBehaviour {
             StartCoroutine(waitClick());
             _GM.SetPlayerPart(manette, _type, _itemActive.GetComponent<Item>().Part);
             CaracTotal.setObject(mixParts(), "Total");
+			UpdateCharacter ();
         }
     }
 
