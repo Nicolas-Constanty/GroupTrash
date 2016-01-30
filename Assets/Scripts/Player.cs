@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
-
+using System.Collections;
+using Character;
 
 public class Player : MonoBehaviour {
+
     public Vector4 displacementArea = Vector4.zero;
 
+    public int player = 1;
 
     public GameObject leftHand;
     public GameObject rightHand;
@@ -15,13 +18,16 @@ public class Player : MonoBehaviour {
     public float cooldownLH = 1;
     public float cooldownRH = 1;
     public float cooldownLF = 1;
-    public float cooldownRF = 1; 
+    public float cooldownRF = 1;
 
-	void Start () {
+    public Body body;
+
+    void Start()
+    {
         if (displacementArea == Vector4.zero)
             Debug.LogError("Stp met des valeurs à Displacement Area dans " + gameObject.name, gameObject);
 
-        if(leftHand == null)
+        if (leftHand == null)
             Debug.LogError("Stp met la main gauche du perso dans " + gameObject.name, gameObject);
         if (rightHand == null)
             Debug.LogError("Stp met la main droite du perso dans " + gameObject.name, gameObject);
@@ -29,10 +35,14 @@ public class Player : MonoBehaviour {
             Debug.LogError("Stp met le pied gauche du perso dans " + gameObject.name, gameObject);
         if (rightFoot == null)
             Debug.LogError("Stp met le pied droit du perso dans " + gameObject.name, gameObject);
-    }
-	
 
-	void Update () {
+        body = new Body(new Part(0), new Part(1), new Part(2), new Part(3), new Part(4), new Part(5));
+
+    }
+
+
+    void Update()
+    {
         if (cooldownLH > 1)
             cooldownLH = Mathf.Max(1, cooldownLH - Time.deltaTime * 50);
         if (cooldownRH > 1)
@@ -67,9 +77,9 @@ public class Player : MonoBehaviour {
             cooldownRF = force;
         }
 
-        if(Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
         {
-            Vector2 newPos = new Vector2(Mathf.Min(Mathf.Max(displacementArea.x, transform.position.x + Input.GetAxis("Horizontal")/20 ), displacementArea.z),
+            Vector2 newPos = new Vector2(Mathf.Min(Mathf.Max(displacementArea.x, transform.position.x + Input.GetAxis("Horizontal") / 20), displacementArea.z),
                 Mathf.Min(Mathf.Max(displacementArea.y, transform.position.y + Input.GetAxis("Vertical") / 20), displacementArea.w));
             transform.position = newPos;
         }
