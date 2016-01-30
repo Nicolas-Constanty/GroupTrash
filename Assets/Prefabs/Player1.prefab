@@ -3205,10 +3205,24 @@ MonoBehaviour:
   rightHand: {fileID: 124506}
   leftFoot: {fileID: 197880}
   rightFoot: {fileID: 104430}
+  abody:
+    head: {fileID: 164430}
+    body: {fileID: 117966}
+    leftArm: {fileID: 154856}
+    rightArm: {fileID: 119114}
+    leftLeg: {fileID: 179218}
+    rightLeg: {fileID: 110258}
+    tLeft: {fileID: 131964}
+    tRight: {fileID: 198796}
+    aLeft: {fileID: 186142}
+    aRight: {fileID: 162416}
   force: 100
   body:
     head:
       sprite: {fileID: 0}
+      spriteParts:
+      - {fileID: 0}
+      - {fileID: 0}
       damage: 0
       hp: 0
       speed: 0
@@ -3216,6 +3230,9 @@ MonoBehaviour:
       special: 0
     body:
       sprite: {fileID: 0}
+      spriteParts:
+      - {fileID: 0}
+      - {fileID: 0}
       damage: 0
       hp: 0
       speed: 0
@@ -3223,6 +3240,9 @@ MonoBehaviour:
       special: 0
     leftArm:
       sprite: {fileID: 0}
+      spriteParts:
+      - {fileID: 0}
+      - {fileID: 0}
       damage: 0
       hp: 0
       speed: 0
@@ -3230,6 +3250,9 @@ MonoBehaviour:
       special: 0
     rightArm:
       sprite: {fileID: 0}
+      spriteParts:
+      - {fileID: 0}
+      - {fileID: 0}
       damage: 0
       hp: 0
       speed: 0
@@ -3237,6 +3260,9 @@ MonoBehaviour:
       special: 0
     leftLeg:
       sprite: {fileID: 0}
+      spriteParts:
+      - {fileID: 0}
+      - {fileID: 0}
       damage: 0
       hp: 0
       speed: 0
@@ -3244,6 +3270,9 @@ MonoBehaviour:
       special: 0
     rightLeg:
       sprite: {fileID: 0}
+      spriteParts:
+      - {fileID: 0}
+      - {fileID: 0}
       damage: 0
       hp: 0
       speed: 0

@@ -14,6 +14,8 @@ public class Player : MonoBehaviour {
     public GameObject leftFoot;
     public GameObject rightFoot;
 
+    public AdvanceBody abody;
+
     public int force = 100;
 
     private float cooldownLH = 1;
@@ -61,21 +63,9 @@ public class Player : MonoBehaviour {
         }
 
         gM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        SetMember();
+        abody.Coffee(player, gM);
 
         Debug.Log("found hip at : ", gameObject.transform.Find("kneeL").gameObject);
-    }
-
-    private void SetMember()
-    {
-        body.body = gM.GetPlayerPart(player, (int)PART.BODY);
-        body.head = gM.GetPlayerPart(player, (int)PART.HEAD);
-        body.leftArm = gM.GetPlayerPart(player, (int)PART.LEFTARM);
-        body.rightArm = gM.GetPlayerPart(player, (int)PART.RIGHTARM);
-        body.leftArm = gM.GetPlayerPart(player, (int)PART.LEFTLEG);
-        body.rightArm = gM.GetPlayerPart(player, (int)PART.RIGHTLEG);
-
-
     }
 
     void Update()
