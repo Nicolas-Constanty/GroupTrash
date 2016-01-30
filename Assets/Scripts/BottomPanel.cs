@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.UI;
-//using System.Linq;
 using Character;
 
 public class BottomPanel : MonoBehaviour {
@@ -12,7 +11,7 @@ public class BottomPanel : MonoBehaviour {
     public Sprite actifTab;
     public Sprite inactifTab;
     public Sprite actifSlot;
-    public Sprite inactifSlot;
+    public Sprite inactifSlot; 
 
     public Image firstTab;
     public Image secondTab;
@@ -20,16 +19,19 @@ public class BottomPanel : MonoBehaviour {
     public GameObject Inventory;
     public GameObject Shop;
     public Carac Caracs;
+    public Carac CaracsPerso;
+    public Carac CaracTotal;
     [Range(1, 2)]
-    public int manette;
+    public int manette = 1;
 
     private bool                        _isShop = false;
-    private Image                       _itemActive;
+    private Transform                   _itemActive;
     private Dictionary<string, string>  _axis = new Dictionary<string, string>();
     private int                         _current;
     private int                         _type = (int)PART.HEAD;
     private bool                        _move;
     private int                         _lastType;
+    private bool                        _click = false;
 
     // ITEMS //
 
@@ -41,6 +43,7 @@ public class BottomPanel : MonoBehaviour {
     //private List<Part> _items = new List<Part>();
     private List<Part> _allitems = new List<Part>();
     private Dictionary<int, List<Part>> _items;
+    private GameManager _GM;
 
     private string[] NAME = { "Head", "Left Arm", "Body", "Right Arm", "Left Leg", "Right Leg" };
 
@@ -53,22 +56,71 @@ public class BottomPanel : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
+        _GM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         // INIT MENUTAB
-        _items = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().GetPlayerParts(manette);
+        _items = _GM.GetPlayerParts(manette);
 
         // INIT MENU
-        _itemActive = Inventory.transform.GetChild(0).gameObject.GetComponent<Image>();
-        _itemActive.sprite = actifSlot;
+        _itemActive = Inventory.transform.GetChild(0);
+        _itemActive.GetComponent<Image>().sprite = actifSlot;
         Shop.SetActive(false);
 
         // INIT AXIS
         _axis.Add("LB", "LB" + manette.ToString());
         _axis.Add("RB", "RB" + manette.ToString());
         _axis.Add("Move", "Move" + manette.ToString());
+        _axis.Add("Submit", "Submit" + manette.ToString());
         Generate();
         _lastType = 0;
         displayMenu();
         ActiveItem(Inventory.transform.GetChild(0));
+        CaracsPerso.setObject(Inventory.transform.GetChild(visual.Index).GetComponent<Item>().Part, NAME[visual.Index]);
+        CaracTotal.setObject(mixParts(), "Total");
+    }
+
+    private Part mixParts()
+    {
+        int damage = _GM.GetPlayerPart(manette, (int)PART.HEAD).damage +
+                    _GM.GetPlayerPart(manette, (int)PART.BODY).damage +
+                    _GM.GetPlayerPart(manette, (int)PART.LEFTARM).damage +
+                    _GM.GetPlayerPart(manette, (int)PART.RIGHTARM).damage +
+                    _GM.GetPlayerPart(manette, (int)PART.LEFTLEG).damage +
+                    _GM.GetPlayerPart(manette, (int)PART.RIGHTLEG).damage;
+
+        int hp = _GM.GetPlayerPart(manette, (int)PART.HEAD).hp +
+                    _GM.GetPlayerPart(manette, (int)PART.BODY).hp +
+                    _GM.GetPlayerPart(manette, (int)PART.LEFTARM).hp +
+                    _GM.GetPlayerPart(manette, (int)PART.RIGHTARM).hp +
+                    _GM.GetPlayerPart(manette, (int)PART.LEFTLEG).hp +
+                    _GM.GetPlayerPart(manette, (int)PART.RIGHTLEG).hp;
+
+        int speed = _GM.GetPlayerPart(manette, (int)PART.HEAD).speed +
+                    _GM.GetPlayerPart(manette, (int)PART.BODY).speed +
+                    _GM.GetPlayerPart(manette, (int)PART.LEFTARM).speed +
+                    _GM.GetPlayerPart(manette, (int)PART.RIGHTARM).speed +
+                    _GM.GetPlayerPart(manette, (int)PART.LEFTLEG).speed +
+                    _GM.GetPlayerPart(manette, (int)PART.RIGHTLEG).speed;
+
+        int special = _GM.GetPlayerPart(manette, (int)PART.HEAD).special +
+                    _GM.GetPlayerPart(manette, (int)PART.BODY).special +
+                    _GM.GetPlayerPart(manette, (int)PART.LEFTARM).special +
+                    _GM.GetPlayerPart(manette, (int)PART.RIGHTARM).special +
+                    _GM.GetPlayerPart(manette, (int)PART.LEFTLEG).special +
+                    _GM.GetPlayerPart(manette, (int)PART.RIGHTLEG).special;
+
+        int candies = _GM.GetPlayerPart(manette, (int)PART.HEAD).candies +
+                    _GM.GetPlayerPart(manette, (int)PART.BODY).candies +
+                    _GM.GetPlayerPart(manette, (int)PART.LEFTARM).candies +
+                    _GM.GetPlayerPart(manette, (int)PART.RIGHTARM).candies +
+                    _GM.GetPlayerPart(manette, (int)PART.LEFTLEG).candies +
+                    _GM.GetPlayerPart(manette, (int)PART.RIGHTLEG).candies;
+        Part mix = new Part();
+        mix.damage = damage / 6;
+        mix.hp = hp / 6;
+        mix.speed = speed / 6;
+        mix.special = special / 6;
+        mix.candies = candies / 6;
+        return mix;
     }
 
     private void displayMenu()
@@ -89,6 +141,7 @@ public class BottomPanel : MonoBehaviour {
                 Shop.transform.GetChild(i).transform.GetChild(0).GetComponent<Image>().sprite = shopContent[i].sprite;
             }
         }
+        ActiveItem(Inventory.transform.GetChild(0));
     }
 
     public void Generate()
@@ -107,6 +160,7 @@ public class BottomPanel : MonoBehaviour {
             int dice = Random.Range(0, bodies.Length);
             _items[i].Add(bodies[dice].getPart(i));
             _allitems.Remove(bodies[dice].getPart(i));
+            _GM.SetPlayerPart(manette, i, bodies[dice].getPart(i));
         }
         for (int i = 0; i < MAX_RANDOM; i++)
         {
@@ -145,16 +199,35 @@ public class BottomPanel : MonoBehaviour {
             ActiveItem(Shop.transform.GetChild(0));
         }
         Move();
+        Select();
         _lastType = _type;
+    }
+
+    private void Select()
+    {
+        if (Input.GetAxis(_axis["Submit"]) != 0 && !_click)
+        {
+            StartCoroutine(waitClick());
+            _GM.SetPlayerPart(manette, _type, _itemActive.GetComponent<Item>().Part);
+            CaracTotal.setObject(mixParts(), "Total");
+        }
     }
 
     private void ActiveItem(Transform obj)
     {
-        _itemActive.sprite = inactifSlot;
-        _itemActive = obj.GetComponent<Image>();
-        _itemActive.sprite = actifSlot;
+        _itemActive.GetComponent<Image>().sprite = inactifSlot;
+        _itemActive = obj;
+        _itemActive.GetComponent<Image>().sprite = actifSlot;
         Caracs.setObject(obj.GetComponent<Item>().Part, NAME[_type]);
     }
+
+    //public void Maj()
+    //{
+    //    if (_isShop)
+    //        Caracs.setObject(Shop.transform.GetChild(visual.Index).GetComponent<Item>().Part, NAME[_type]);
+    //    else
+    //        Caracs.setObject(Inventory.transform.GetChild(visual.Index).GetComponent<Item>().Part, NAME[visual.Index]);
+    //}
 
     private void Move()
     {
@@ -222,19 +295,16 @@ public class BottomPanel : MonoBehaviour {
         }
     }
 
-    private void setType(int value)
-    {
-        _type += value;
-        if (_type > (int)PART.RIGHTLEG)
-            _type = (int)PART.HEAD;
-        else if (_type < 0)
-            _type = (int)PART.RIGHTLEG;
-    }
-
     IEnumerator  canMove()
     {
         _move = true;
         yield return new WaitForSeconds(0.15f);
         _move = false;
+    }
+    IEnumerator waitClick()
+    {
+        _click = true;
+        yield return new WaitForSeconds(0.15f);
+        _click = true;
     }
 }
