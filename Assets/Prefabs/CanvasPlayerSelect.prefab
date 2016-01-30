@@ -7659,7 +7659,7 @@ MonoBehaviour:
   Inventory: {fileID: 187572}
   Shop: {fileID: 178658}
   Caracs: {fileID: 11459128}
-  CaracsPerso: {fileID: 11429390}
+  CaracsPerso: {fileID: 11459128}
   CaracTotal: {fileID: 11431016}
   manette: 1
   bodies:
@@ -7747,7 +7747,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 188738}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a45d779168e41949b6f159f6d3626f4, type: 3}
+  m_Script: {fileID: 11500000, guid: ab77f034d4650f24b920205b6f71fbf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 0.72156864, b: 0.15686275, a: 1}
@@ -11336,7 +11336,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 100456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a45d779168e41949b6f159f6d3626f4, type: 3}
+  m_Script: {fileID: 11500000, guid: ab77f034d4650f24b920205b6f71fbf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 0.72156864, b: 0.15686275, a: 1}
@@ -11719,7 +11719,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 123686}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a45d779168e41949b6f159f6d3626f4, type: 3}
+  m_Script: {fileID: 11500000, guid: ab77f034d4650f24b920205b6f71fbf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 0.72156864, b: 0.15686275, a: 1}
@@ -11991,7 +11991,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 156532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a45d779168e41949b6f159f6d3626f4, type: 3}
+  m_Script: {fileID: 11500000, guid: ab77f034d4650f24b920205b6f71fbf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 0.72156864, b: 0.15686275, a: 1}
@@ -15570,7 +15570,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 138964}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a45d779168e41949b6f159f6d3626f4, type: 3}
+  m_Script: {fileID: 11500000, guid: ab77f034d4650f24b920205b6f71fbf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 0.72156864, b: 0.15686275, a: 1}
@@ -16896,7 +16896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control: 2
-  CaracsPerso: {fileID: 11403586}
+  CaracsPerso: {fileID: 11459128}
   panel: {fileID: 11491424}
   buttons:
   - {fileID: 134470}
@@ -19284,7 +19284,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 114332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a45d779168e41949b6f159f6d3626f4, type: 3}
+  m_Script: {fileID: 11500000, guid: ab77f034d4650f24b920205b6f71fbf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 0.72156864, b: 0.15686275, a: 1}
@@ -20261,8 +20261,8 @@ MonoBehaviour:
   secondTab: {fileID: 11452162}
   Inventory: {fileID: 156512}
   Shop: {fileID: 118072}
-  Caracs: {fileID: 11426202}
-  CaracsPerso: {fileID: 11403586}
+  Caracs: {fileID: 11459128}
+  CaracsPerso: {fileID: 11459128}
   CaracTotal: {fileID: 11483634}
   manette: 2
   bodies:
