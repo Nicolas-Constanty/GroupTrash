@@ -46,6 +46,7 @@ public class PlayerSelect : MonoBehaviour {
 		else
 		{
 			timer.text = "Go !";
+			GameObject.FindGameObjectWithTag ("GameManager").GetComponent<GameManager> ().StartGame ();
 		}
 	}
 
