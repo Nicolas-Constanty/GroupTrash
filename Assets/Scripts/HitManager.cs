@@ -24,7 +24,7 @@ public class HitManager : MonoBehaviour
         if (coll.gameObject.layer == 8 || coll.gameObject.layer == 9)
         {
             HitManager hitted = coll.gameObject.GetComponentInChildren<HitManager>();
-            Debug.Log(hitted.life);
+
             hitted.life -= coll.transform.parent.GetChild(0).GetComponentInChildren<Rigidbody2D>().velocity.magnitude;
 
             //TODO timer ?
