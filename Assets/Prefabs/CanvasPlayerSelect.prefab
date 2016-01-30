@@ -2091,7 +2091,7 @@ GameObject:
   - 222: {fileID: 22280360}
   - 114: {fileID: 11478842}
   - 114: {fileID: 11421002}
-  - 114: {fileID: 11413494}
+  - 114: {fileID: 11475408}
   m_Layer: 5
   m_Name: P2Victories
   m_TagString: Untagged
@@ -5708,7 +5708,7 @@ GameObject:
   - 222: {fileID: 22285414}
   - 114: {fileID: 11465626}
   - 114: {fileID: 11446364}
-  - 114: {fileID: 11407722}
+  - 114: {fileID: 11458266}
   m_Layer: 5
   m_Name: P1Victories
   m_TagString: Untagged
@@ -8382,18 +8382,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &11407722
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 179738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96b606ad6820dc04f81d3976edaa073f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: 1
 --- !u!114 &11408024
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9398,18 +9386,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Damage
---- !u!114 &11413494
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96b606ad6820dc04f81d3976edaa073f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: 2
 --- !u!114 &11413510
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -15610,6 +15586,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11458266
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e724921e4a66a6489a8426716385224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: 1
 --- !u!114 &11458288
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18119,6 +18107,18 @@ MonoBehaviour:
     speed: 0
     candies: 0
     special: 0
+--- !u!114 &11475408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e724921e4a66a6489a8426716385224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: 2
 --- !u!114 &11475504
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -24287,7 +24287,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 22417716}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 42, y: 96}
@@ -25293,10 +25293,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 22417716}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -41.124954, y: -658.5}
+  m_AnchoredPosition: {x: -33.875, y: -625}
   m_SizeDelta: {x: 707.75, y: 1417}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22415168
@@ -25523,9 +25523,9 @@ RectTransform:
   m_Children:
   - {fileID: 22466434}
   - {fileID: 22435406}
+  - {fileID: 22415056}
   - {fileID: 22404498}
   - {fileID: 22419002}
-  - {fileID: 22415056}
   - {fileID: 22469742}
   m_Father: {fileID: 22474322}
   m_RootOrder: 1
@@ -25619,7 +25619,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 22417716}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -150, y: -0.000030518}
