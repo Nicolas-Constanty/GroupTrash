@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class TutoManager : MonoBehaviour {
 
@@ -12,7 +13,7 @@ public class TutoManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (hitPart1.enoughtHitted() && hitPart2.enoughtHitted())
-            Application.LoadLevel("Scene_Nicolas");
+		if (hitPart1.enoughtHitted () && hitPart2.enoughtHitted ())
+			SceneManager.LoadScene ("Level_Nicolas");
 	}
 }

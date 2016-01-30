@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour {
 	private float decreaseTime = 0;
 
 	[SerializeField]
+	private Text roundTimer;
+	[SerializeField]
 	private int roundTime = 66;
 	private int roundRemainingTime;
 	private float roundDecreaseTime = 0;
@@ -115,12 +117,12 @@ public class GameManager : MonoBehaviour {
 			{
 				roundRemainingTime = roundTime - (int)roundDecreaseTime;
 				roundDecreaseTime += Time.deltaTime;
-				timer.text = roundRemainingTime.ToString ();
+				roundTimer.text = roundRemainingTime.ToString ();
 			}
 			else
 			{
 				roundDecreaseTime = 0;
-				timer.text = "DIE";
+				SetWin (null);
 				// TODO: fire gaspar event
 			}
 		}
@@ -128,14 +130,14 @@ public class GameManager : MonoBehaviour {
 		// relance la partie après un win
 		if (state == GameState.WIN)
 		{
-			if (Input.GetKeyDown ("joystick 1 button 2") || Input.GetKeyDown(KeyCode.Return))
+			if (Input.GetKeyDown ("joystick 1 button 0") || Input.GetKeyDown(KeyCode.Return))
 			{
 				SetSelection ();
 			}
 		}
 
 		// Sets pause with start
-		if (Input.GetKeyDown ("joystick 1 button 9"))
+		if (Input.GetKeyDown ("joystick 1 button 7"))
 		{
 			SetPause ();
 		}
@@ -188,9 +190,15 @@ public class GameManager : MonoBehaviour {
 	{
 		lastState = state;
 		state = GameState.WIN;
+		canvasHUD.SetActive (false);
 		canvasWin.SetActive (true);
 
-		if (player == player1.playerObj)
+		if (player == null)
+		{
+			player1.nbCandies += 50;
+			player2.nbCandies += 50;
+		}
+		else if (player == player1.playerObj)
 		{
 			player2.nbVictories++;
 			player2.nbCandies += 75;
@@ -205,7 +213,6 @@ public class GameManager : MonoBehaviour {
 
 		Destroy (player1.playerObj);
 		Destroy (player2.playerObj);
-		// TODO: add candies and drops
 	}
 
 	public void SetSelection()
@@ -366,6 +373,13 @@ public class GameManager : MonoBehaviour {
         }
         return null;
     }
+
+	public int GetPlayerVictories(int playerID)
+	{
+		if (playerID == 1)
+			return player1.nbVictories;
+		return player2.nbVictories;
+	}
 
     class PlayerStats
 	{
