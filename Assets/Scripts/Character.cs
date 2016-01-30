@@ -1,7 +1,13 @@
-﻿using UnityEngine;
+﻿// //
+// // Created by  veyrie_f
+// //
+//
+using System;
+using UnityEngine;
 
 namespace Character
 {
+    public enum PART { HEAD, BODY, LEFTARM, RIGHTARM, LEFTLEG, RIGHTLEG };
     [System.Serializable]
 	public class Part
 	{
@@ -11,15 +17,6 @@ namespace Character
 		public int speed;
 		public int candies;
 		public int special;
-
-        public Part(Sprite spr, int d, int s, int c, int spe)
-        {
-            sprite = spr;
-            damage = d;
-            speed = s;
-            candies = c;
-            special = spe;
-        }
 	}
 
 	[System.Serializable]
@@ -31,17 +28,6 @@ namespace Character
 		public Part rightArm;
 		public Part leftLeg;
 		public Part rightLeg;
-		private enum PART {HEAD, BODY, LEFTARM, RIGHTARM, LEFTLEG, RIGHTLEG};
-
-        public Body(Part h, Part b, Part la, Part ra, Part ll, Part rl)
-        {
-            head = h;
-            body = b;
-            leftArm = la;
-            rightArm = ra;
-            leftLeg = ll;
-            rightLeg = rl;
-        }
 
 		public Part getPart(int part)
 		{
@@ -71,7 +57,7 @@ namespace Character
 			else if (part == (int)PART.LEFTLEG)
 				leftLeg = spr;
 			rightLeg = spr;
-		} 
+		}
 	}
 }
 
