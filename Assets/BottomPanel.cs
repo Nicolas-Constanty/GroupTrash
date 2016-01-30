@@ -25,6 +25,7 @@ public class BottomPanel : MonoBehaviour {
     private Image                       _itemActive;
     private Dictionary<string, string>  _axis = new Dictionary<string, string>();
     private int                         _current;
+    private int                         _type = (int)PART.HEAD;
     private bool                        _move;
 
     // ITEMS //
@@ -34,11 +35,11 @@ public class BottomPanel : MonoBehaviour {
 
     private const int MAX_RANDOM = 12;
 
-    private List<Part> _items = new List<Part>();
+    //private List<Part> _items = new List<Part>();
     private List<Part> _allitems = new List<Part>();
-    private Dictionary<int, List<Part>> menuTab = new Dictionary<int, List<Part>>();
+    private Dictionary<int, List<Part>> _items;
 
-    public List<Part> Items
+    public Dictionary<int, List<Part>> Items
     {
         get { return _items; }
         set { _items = value; }
@@ -48,14 +49,7 @@ public class BottomPanel : MonoBehaviour {
     void Start () {
 
         // INIT MENUTAB
-        menuTab = GameObject.FindGameObjectWithTag("GameMAnager").GetComponent<GameManager>().GetPlayerParts(manette);
-
-        //menuTab.Add((int)PART.HEAD, inventory[(int)PART.HEAD]);
-        //menuTab.Add((int)PART.BODY, inventory[(int)PART.BODY]);
-        //menuTab.Add((int)PART.LEFTARM, inventory[(int)PART.LEFTARM]);
-        //menuTab.Add((int)PART.RIGHTARM, inventory[(int)PART.RIGHTARM]);
-        //menuTab.Add((int)PART.LEFTLEG, inventory[(int)PART.LEFTLEG]);
-        //menuTab.Add((int)PART.RIGHTLEG, inventory[(int)PART.RIGHTLEG]);
+        _items = GameObject.FindGameObjectWithTag("GameMAnager").GetComponent<GameManager>().GetPlayerParts(manette);
 
         // INIT MENU
         _itemActive = Inventory.transform.GetChild(0).gameObject.GetComponent<Image>();
@@ -70,7 +64,7 @@ public class BottomPanel : MonoBehaviour {
         for (int i = 0; i < Inventory.transform.childCount; i++)
         {
             if (i < _items.Count)
-                Inventory.transform.GetChild(i).transform.GetChild(0).GetComponent<Image>().sprite = _items[i].sprite;
+                Inventory.transform.GetChild(i).transform.GetChild(0).GetComponent<Image>().sprite = _items[_type][i].sprite;
         }
         for (int i = 0; i < shopContent.Length; i++)
         {
@@ -93,16 +87,15 @@ public class BottomPanel : MonoBehaviour {
         for (int i = 0; i < 6; i++)
         {
             int dice = Random.Range(0, bodies.Length);
-            _items.Add(bodies[dice].getPart(i));
-            _allitems.Remove(_items[i]);
-            Inventor
+            _items[i].Add(bodies[dice].getPart(i));
+            _allitems.Remove(bodies[dice].getPart(i));
         }
         for (int i = 0; i < MAX_RANDOM; i++)
         {
             if (_allitems.Count > 0)
             {
                 int dice = Random.Range(0, _allitems.Count);
-                _items.Add(_allitems[dice]);
+                _items[i].Add(_allitems[dice]);
                 _allitems.Remove(_allitems[dice]);
             }
         }

@@ -42,6 +42,23 @@ public class GameManager : MonoBehaviour {
 		WIN
 	}
 
+    void Awake()
+    {
+        player1.items.Add((int)PART.HEAD, new List<Part>());
+        player1.items.Add((int)PART.BODY, new List<Part>());
+        player1.items.Add((int)PART.LEFTARM, new List<Part>());
+        player1.items.Add((int)PART.RIGHTARM, new List<Part>());
+        player1.items.Add((int)PART.LEFTLEG, new List<Part>());
+        player1.items.Add((int)PART.RIGHTLEG, new List<Part>());
+
+        player2.items.Add((int)PART.HEAD, new List<Part>());
+        player2.items.Add((int)PART.BODY, new List<Part>());
+        player2.items.Add((int)PART.LEFTARM, new List<Part>());
+        player2.items.Add((int)PART.RIGHTARM, new List<Part>());
+        player2.items.Add((int)PART.LEFTLEG, new List<Part>());
+        player2.items.Add((int)PART.RIGHTLEG, new List<Part>());
+    }
+
 	void Start ()
 	{
 		state = GameState.SELECTION;
@@ -56,9 +73,9 @@ public class GameManager : MonoBehaviour {
 		canvasPause.SetActive (false);
 		canvasWin.SetActive (false);
 		SetSelection ();
-	}
-	
-	void Update ()
+    }
+
+    void Update ()
 	{
 		for (int i = 0; i < 20; i++)
 		{
