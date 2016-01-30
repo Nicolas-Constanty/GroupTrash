@@ -104,6 +104,7 @@ public class Player : MonoBehaviour {
             puppeteer.transform.position = newPos;
         }
     }
+    
 
     void OnDrawGizmos()
     {
