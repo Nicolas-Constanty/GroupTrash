@@ -160,6 +160,10 @@ public class GameManager : MonoBehaviour {
 
 	public void StartGame()
 	{
+		if (player1.playerObj != null)
+			Destroy (player1.playerObj);
+		if (player2.playerObj != null)
+			Destroy (player2.playerObj);
 		canvasSelection.SetActive (false);
 		canvasHUD.SetActive (true);
 		background.SetActive (true);
@@ -211,8 +215,8 @@ public class GameManager : MonoBehaviour {
 			player2.nbCandies += 25;
 		}
 
-		Destroy (player1.playerObj);
-		Destroy (player2.playerObj);
+		player1.playerObj.GetComponent<Player>().enabled = false;
+		player2.playerObj.GetComponent<Player>().enabled = false;
 	}
 
 	public void SetSelection()
