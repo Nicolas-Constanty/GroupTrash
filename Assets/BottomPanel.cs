@@ -53,11 +53,13 @@ public class BottomPanel : MonoBehaviour {
         Generate();
         for (int i = 0; i < Inventory.transform.childCount; i++)
         {
-            Inventory.transform.GetChild(i).transform.GetChild(0).GetComponent<Image>().sprite = _items[i].sprite;
+            if (i < _items.Count)
+                Inventory.transform.GetChild(i).transform.GetChild(0).GetComponent<Image>().sprite = _items[i].sprite;
         }
         for (int i = 0; i < shopContent.Length; i++)
         {
-            Shop.transform.GetChild(i).transform.GetChild(0).GetComponent<Image>().sprite = shopContent[i].sprite;
+            if (i < shopContent.Length)
+                Shop.transform.GetChild(i).transform.GetChild(0).GetComponent<Image>().sprite = shopContent[i].sprite;
         }
     }
 
@@ -80,9 +82,12 @@ public class BottomPanel : MonoBehaviour {
         }
         for (int i = 0; i < MAX_RANDOM; i++)
         {
-            int dice = Random.Range(0, _allitems.Count);
-            _items.Add(_allitems[dice]);
-            _allitems.Remove(_items[dice]);
+            if (_allitems.Count > 0)
+            {
+                int dice = Random.Range(0, _allitems.Count);
+                _items.Add(_allitems[dice]);
+                _allitems.Remove(_allitems[dice]);
+            }
         }
     }
 
