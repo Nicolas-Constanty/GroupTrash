@@ -95,7 +95,7 @@ public class BottomPanel : MonoBehaviour {
             int dice = Random.Range(0, bodies.Length);
             _items.Add(bodies[dice].getPart(i));
             _allitems.Remove(_items[i]);
-            Inventor
+            //Inventor
         }
         for (int i = 0; i < MAX_RANDOM; i++)
         {

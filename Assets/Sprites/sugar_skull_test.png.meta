@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: 63c5acce14f72e24ebf6a0e6d5898ac4
+timeCreated: 1454143276
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: sugar_skull_test_0
+    21300002: sugar_skull_test_1
+    21300004: sugar_skull_test_2
+    21300006: sugar_skull_test_3
+    21300008: sugar_skull_test_4
+    21300010: sugar_skull_test_6
+    21300012: sugar_skull_test_7
+    21300014: sugar_skull_test_8
+    21300016: sugar_skull_test_9
+    21300018: sugar_skull_test_10
+    21300020: sugar_skull_test_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: sugar_skull_test_0
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 2594
+        width: 311
+        height: 377
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 72.776, y: 85.33728}
+        - {x: 24.776001, y: 127.33728}
+        - {x: -18.223999, y: 129.33728}
+        - {x: -70.224, y: 129.33728}
+        - {x: -97.224, y: 119.33728}
+        - {x: -86.224, y: 67.33728}
+        - {x: -106.224, y: 21.33728}
+        - {x: -106.224, y: -21.66272}
+        - {x: -57.224, y: -98.66272}
+        - {x: -26.223999, y: -121.66272}
+        - {x: 32.776, y: -128.66272}
+        - {x: 63.776, y: -128.66272}
+        - {x: 82.776, y: -109.66272}
+        - {x: 106.776, y: -58.66272}
+        - {x: 106.776, y: 69.33728}
+    - name: sugar_skull_test_1
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 1953
+        width: 358
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 122.59601, y: -70.252075}
+        - {x: 122.59601, y: -46.252075}
+        - {x: 90.59601, y: -10.252075}
+        - {x: 105.59601, y: 30.747925}
+        - {x: 105.59601, y: 82.747925}
+        - {x: 100.59601, y: 114.747925}
+        - {x: 77.59601, y: 158.74792}
+        - {x: 36.59601, y: 172.74792}
+        - {x: 38.59601, y: 203.74792}
+        - {x: 21.596008, y: 221.74792}
+        - {x: -22.403992, y: 221.74792}
+        - {x: -39.40399, y: 183.74792}
+        - {x: -90.40399, y: 172.74792}
+        - {x: -120.40399, y: 154.74792}
+        - {x: -122.40399, y: 142.74792}
+        - {x: -122.40399, y: 100.747925}
+        - {x: -116.40399, y: 90.747925}
+        - {x: -56.40399, y: 25.747925}
+        - {x: -85.40399, y: -19.252075}
+        - {x: -86.40399, y: -74.252075}
+        - {x: -91.40399, y: -119.252075}
+        - {x: -81.40399, y: -175.25208}
+        - {x: -60.40399, y: -211.25208}
+        - {x: -39.40399, y: -219.25208}
+        - {x: -29.403992, y: -221.25208}
+        - {x: 7.5960083, y: -221.25208}
+        - {x: 59.59601, y: -206.25208}
+        - {x: 100.59601, y: -159.25208}
+        - {x: 119.59601, y: -94.252075}
+    - name: sugar_skull_test_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 2197
+        width: 193
+        height: 313
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -60.52133, y: 108.3186}
+        - {x: -65.52133, y: 70.3186}
+        - {x: -65.52133, y: -106.6814}
+        - {x: 16.478668, y: -106.6814}
+        - {x: 40.47867, y: -100.6814}
+        - {x: 67.47867, y: -16.681396}
+        - {x: 67.47867, y: 80.3186}
+        - {x: 42.47867, y: 108.3186}
+    - name: sugar_skull_test_3
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 2148
+        width: 171
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.23468, y: 96.86804}
+        - {x: -58.23468, y: 70.86804}
+        - {x: -58.23468, y: -4.131958}
+        - {x: 1.7653198, y: -97.13196}
+        - {x: 59.76532, y: -97.13196}
+        - {x: 59.76532, y: 37.868042}
+        - {x: 22.76532, y: 96.86804}
+    - name: sugar_skull_test_4
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1611
+        width: 104
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.608002, y: 144.276}
+        - {x: -35.608, y: 137.276}
+        - {x: -35.608, y: -124.724}
+        - {x: -8.608002, y: -170.724}
+        - {x: 8.391998, y: -170.724}
+        - {x: 36.392, y: -86.724}
+        - {x: 36.392, y: 135.276}
+        - {x: 27.391998, y: 144.276}
+      - - {x: -19.608002, y: 169.276}
+        - {x: -17.608002, y: 167.276}
+        - {x: -14.608002, y: 168.276}
+        - {x: -14.608002, y: 171.276}
+        - {x: -15.608002, y: 172.276}
+        - {x: -19.608002, y: 172.276}
+    - name: sugar_skull_test_5
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1636
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: sugar_skull_test_6
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1467
+        width: 226
+        height: 397
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.035995, y: 136.47198}
+        - {x: -77.035995, y: 19.471985}
+        - {x: -77.035995, y: -102.528015}
+        - {x: -67.035995, y: -135.52802}
+        - {x: -6.0359955, y: -135.52802}
+        - {x: 6.9640045, y: -132.52802}
+        - {x: 8.9640045, y: -120.528015}
+        - {x: 8.9640045, y: -117.528015}
+        - {x: 8.9640045, y: -120.528015}
+        - {x: 7.9640045, y: -127.528015}
+        - {x: 17.964005, y: -135.52802}
+        - {x: 74.964005, y: -135.52802}
+        - {x: 77.964005, y: -125.528015}
+        - {x: 77.964005, y: 108.471985}
+        - {x: 42.964005, y: 136.47198}
+    - name: sugar_skull_test_7
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 1433
+        width: 207
+        height: 391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.339996, y: 134.26135}
+        - {x: -51.660004, y: 134.26135}
+        - {x: -70.66, y: 105.26135}
+        - {x: -70.66, y: 15.261353}
+        - {x: -67.66, y: -67.73865}
+        - {x: -48.660004, y: -133.73865}
+        - {x: 65.34, y: -133.73865}
+        - {x: 72.34, y: -124.73865}
+        - {x: 72.34, y: -38.738647}
+        - {x: 36.339996, y: 124.26135}
+    - name: sugar_skull_test_8
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 1353
+        width: 197
+        height: 382
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.281372, y: 131.64801}
+        - {x: -64.28137, y: 131.64801}
+        - {x: -67.28137, y: 120.64801}
+        - {x: -67.28137, y: 50.64801}
+        - {x: 10.718628, y: -130.35199}
+        - {x: 44.718628, y: -130.35199}
+        - {x: 52.718628, y: -129.35199}
+        - {x: 67.71863, y: -106.35199}
+        - {x: 67.71863, y: -17.35199}
+        - {x: -4.281372, y: 118.64801}
+    - name: sugar_skull_test_9
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 720
+        width: 236
+        height: 683
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81.274666, y: 219.01999}
+        - {x: 68.274666, y: 234.01999}
+        - {x: 9.274666, y: 234.01999}
+        - {x: -1.7253342, y: 225.01999}
+        - {x: -17.725334, y: 146.01999}
+        - {x: -38.725334, y: -14.980011}
+        - {x: -58.725334, y: -50.98001}
+        - {x: -76.725334, y: -97.98001}
+        - {x: -80.725334, y: -108.98001}
+        - {x: -80.725334, y: -176.98001}
+        - {x: -43.725334, y: -231.98001}
+        - {x: -17.725334, y: -231.98001}
+        - {x: 26.274666, y: -154.98001}
+        - {x: 68.274666, y: 97.01999}
+        - {x: 81.274666, y: 172.01999}
+    - name: sugar_skull_test_10
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 661
+        width: 177
+        height: 658
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47.328003, y: 200.24268}
+        - {x: 44.328003, y: 214.24268}
+        - {x: 21.328003, y: 225.24268}
+        - {x: -9.671997, y: 225.24268}
+        - {x: -20.671997, y: 222.24268}
+        - {x: -42.671997, y: 195.24268}
+        - {x: -36.671997, y: 2.2426758}
+        - {x: -60.671997, y: -83.757324}
+        - {x: -60.671997, y: -153.75732}
+        - {x: -11.671997, y: -200.75732}
+        - {x: -10.671997, y: -224.75732}
+        - {x: 16.328003, y: -224.75732}
+        - {x: 61.328003, y: -154.75732}
+        - {x: 61.328003, y: -77.757324}
+        - {x: 47.328003, y: -22.757324}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
