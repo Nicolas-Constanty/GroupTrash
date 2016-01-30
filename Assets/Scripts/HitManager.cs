@@ -5,7 +5,9 @@ public class HitManager : MonoBehaviour
 {
     public Player player;
 
-    public float life = 100;
+    public float life = 100f;
+
+    private bool detach = false;
 
     // Use this for initialization
     void Start()
@@ -16,21 +18,30 @@ public class HitManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (life < 0f && !detach)
+        {
+            Destroy(transform.parent.gameObject.GetComponent<HingeJoint2D>());
+            Destroy(transform.gameObject.GetComponent<HingeJoint2D>());
+            detach = true;
+        }
     }
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.layer == 8 || coll.gameObject.layer == 9)
+        if (life < 0f)
+            return;
+
+        if (coll.gameObject.layer == LayerMask.NameToLayer("Player1") || coll.gameObject.layer == LayerMask.NameToLayer("Player2"))
         {
             HitManager hitted = coll.gameObject.GetComponentInChildren<HitManager>();
+            float magnitude = coll.transform.parent.GetChild(0).GetComponentInChildren<Rigidbody2D>().velocity.magnitude;
 
-            hitted.life -= coll.transform.parent.GetChild(0).GetComponentInChildren<Rigidbody2D>().velocity.magnitude;
-
-            //TODO timer ?
-            if(hitted.life < 0)
+            if (transform.parent.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude > magnitude)
+                hitted.life -= magnitude;
+            if (hitted.life < 0f)
             {
-                foreach(HingeJoint2D joint in hitted.transform.parent.GetComponentsInChildren<HingeJoint2D>())
+                Destroy(hitted.GetComponent<HingeJoint2D>());
+                foreach (HingeJoint2D joint in hitted.transform.parent.GetComponentsInChildren<HingeJoint2D>())
                 {
                     Destroy(joint);
                 }
