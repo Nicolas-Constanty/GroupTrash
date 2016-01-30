@@ -3,51 +3,66 @@ using System.Collections.Generic;
 
 public class RandomItem : MonoBehaviour {
 
-    [System.Serializable]
-    public class Body {
-        public Sprite head;
-        public Sprite body;
-        public Sprite leftArm;
-        public Sprite rightArm;
-        public Sprite leftLeg;
-        public Sprite rightLeg;
-        private enum PART { HEAD, BODY, LEFTARM, RIGHTARM, LEFTLEG, RIGHTLEG};
+	[System.Serializable]
+	public class Part
+	{
+		public Sprite sprite;
+		// Add stats
+		public int damage;
+		public int speed;
+		public int candies;
+		public int special;
+	}
 
-        public Sprite getPart(int part)
+    [System.Serializable]
+    public class Body
+	{
+		public Part head;
+		public Part body;
+		public Part leftArm;
+		public Part rightArm;
+		public Part leftLeg;
+		public Part rightLeg;
+        private enum PART {HEAD, BODY, LEFTARM, RIGHTARM, LEFTLEG, RIGHTLEG};
+
+		public Part getPart(int part)
         {
             if (part == (int)PART.HEAD)
-                return head;
+				return head;
             else if (part == (int)PART.BODY)
-                return body;
+				return body;
             else if (part == (int)PART.LEFTARM)
-                return leftArm;
+				return leftArm;
             else if (part == (int)PART.RIGHTARM)
-                return rightArm;
+				return rightArm;
             else if (part == (int)PART.LEFTLEG)
-                return leftLeg;
-            return rightLeg;
+				return leftLeg;
+			return rightLeg;
         }
-        public void setPart(int part, Sprite spr)
+
+		public void setPart(int part, Part spr)
         {
             if (part == (int)PART.HEAD)
-                head = spr;
+				head = spr;
             else if (part == (int)PART.BODY)
-                body = spr;
+				body = spr;
             else if (part == (int)PART.LEFTARM)
-                leftArm = spr;
+				leftArm = spr;
             else if (part == (int)PART.RIGHTARM)
-                rightArm = spr;
+				rightArm = spr;
             else if (part == (int)PART.LEFTLEG)
-                leftLeg = spr;
-            rightLeg = spr;
+				leftLeg = spr;
+			rightLeg = spr;
         }
     }
-    private List<Sprite> items;
-    private List<Sprite> allitems;
+
+	private List<Part> items;
+	private List<Part> allitems;
     public Body[] bodies;
-    private Sprite empty;
-    // Use this for initialization
-    void Start () {
+	private Part empty;
+
+	void Start ()
+	{
         Generate();    
 	}
 
@@ -62,9 +77,4 @@ public class RandomItem : MonoBehaviour {
         }
 
     }
-
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
