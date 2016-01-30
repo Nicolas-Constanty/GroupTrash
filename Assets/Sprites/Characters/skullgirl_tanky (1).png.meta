@@ -1,0 +1,331 @@
+fileFormatVersion: 2
+guid: bc97e89e88b09dd4790bcf630ae7cc5e
+timeCreated: 1454158049
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: skullgirl_tanky (1)_0
+    21300002: skullgirl_tanky (1)_1
+    21300004: skullgirl_tanky (1)_2
+    21300006: skullgirl_tanky (1)_3
+    21300008: skullgirl_tanky (1)_4
+    21300010: skullgirl_tanky (1)_5
+    21300012: skullgirl_tanky (1)_6
+    21300014: skullgirl_tanky (1)_7
+    21300016: skullgirl_tanky (1)_8
+    21300018: skullgirl_tanky (1)_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: skullgirl_tanky (1)_0
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 2125.5
+        width: 707.75
+        height: 708.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.416016, y: 110}
+        - {x: 39.416016, y: 113}
+        - {x: 10.416016, y: 113}
+        - {x: -4.5839844, y: 102}
+        - {x: -95.583984, y: 102}
+        - {x: -118.583984, y: 101}
+        - {x: -169.58398, y: 50}
+        - {x: -155.58398, y: 6}
+        - {x: -173.58398, y: -32}
+        - {x: -173.58398, y: -43}
+        - {x: -170.58398, y: -48}
+        - {x: -161.58398, y: -46}
+        - {x: -121.583984, y: -93}
+        - {x: -71.583984, y: -120}
+        - {x: 6.4160156, y: -130}
+        - {x: 68.416016, y: -130}
+        - {x: 103.416016, y: -84}
+        - {x: 103.416016, y: 13}
+        - {x: 70.416016, y: 67}
+    - name: skullgirl_tanky (1)_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1417.5
+        width: 707.75
+        height: 708.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 94.86133}
+        - {x: -56, y: 38.86133}
+        - {x: -56, y: -121.13867}
+        - {x: -17, y: -121.13867}
+        - {x: -7, y: -119.13867}
+        - {x: 72, y: -11.138672}
+        - {x: 72, y: 70.86133}
+        - {x: 57, y: 94.86133}
+    - name: skullgirl_tanky (1)_2
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1417.5
+        width: 707.75
+        height: 708.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 113.416016, y: 24.861328}
+        - {x: 119.416016, y: 94.86133}
+        - {x: 91.416016, y: 150.86133}
+        - {x: 61.416016, y: 178.86133}
+        - {x: 34.416016, y: 218.86133}
+        - {x: 20.416016, y: 248.86133}
+        - {x: -17.583984, y: 248.86133}
+        - {x: -32.583984, y: 238.86133}
+        - {x: -38.583984, y: 224.86133}
+        - {x: -96.583984, y: 174.86133}
+        - {x: -113.583984, y: 156.86133}
+        - {x: -118.583984, y: 146.86133}
+        - {x: -118.583984, y: 119.86133}
+        - {x: -116.583984, y: 110.86133}
+        - {x: -99.583984, y: 92.86133}
+        - {x: -81.583984, y: 78.86133}
+        - {x: -73.583984, y: 14.861328}
+        - {x: -47.583984, y: 5.861328}
+        - {x: -57.583984, y: -61.13867}
+        - {x: -76.583984, y: -81.13867}
+        - {x: -87.583984, y: -131.13867}
+        - {x: -106.583984, y: -150.13867}
+        - {x: -103.583984, y: -181.13867}
+        - {x: -78.583984, y: -190.13867}
+        - {x: -57.583984, y: -185.13867}
+        - {x: 25.416016, y: -228.13867}
+        - {x: 71.416016, y: -228.13867}
+        - {x: 76.416016, y: -227.13867}
+        - {x: 133.41602, y: -158.13867}
+        - {x: 133.41602, y: -115.13867}
+        - {x: 92.416016, y: -71.13867}
+    - name: skullgirl_tanky (1)_3
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 1417.5
+        width: 707.75
+        height: 708.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0.24804688, y: 87.86133}
+        - {x: -40.751953, y: 58.86133}
+        - {x: -40.751953, y: 0.8613281}
+        - {x: 26.248047, y: -100.13867}
+        - {x: 63.248047, y: -100.13867}
+        - {x: 77.24805, y: -95.13867}
+        - {x: 80.24805, y: -86.13867}
+        - {x: 80.24805, y: 27.861328}
+        - {x: 59.248047, y: 87.86133}
+    - name: skullgirl_tanky (1)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 709.5
+        width: 707.75
+        height: 708.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 58, y: 108.22266}
+        - {x: 18, y: 110.22266}
+        - {x: 8, y: 162.22266}
+        - {x: -52, y: 173.22266}
+        - {x: -78, y: 173.22266}
+        - {x: -89, y: 166.22266}
+        - {x: -106, y: 27.222656}
+        - {x: -106, y: -61.777344}
+        - {x: -86, y: -87.77734}
+        - {x: -65, y: -91.77734}
+        - {x: -54, y: -134.77734}
+        - {x: -26, y: -172.77734}
+        - {x: -10, y: -172.77734}
+        - {x: 2, y: -163.77734}
+        - {x: 37, y: -108.77734}
+        - {x: 64, y: 45.222656}
+        - {x: 64, y: 103.22266}
+    - name: skullgirl_tanky (1)_5
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 709.5
+        width: 707.75
+        height: 708.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 43.416016, y: 131.22266}
+        - {x: 28.416016, y: 137.22266}
+        - {x: -17.583984, y: 137.22266}
+        - {x: -45.583984, y: 126.22266}
+        - {x: -53.583984, y: 98.22266}
+        - {x: -59.583984, y: 18.222656}
+        - {x: -63.583984, y: -64.77734}
+        - {x: -63.583984, y: -184.77734}
+        - {x: -41.583984, y: -203.77734}
+        - {x: -37.583984, y: -206.77734}
+        - {x: 6.4160156, y: -206.77734}
+        - {x: 16.416016, y: -204.77734}
+        - {x: 55.416016, y: -78.77734}
+        - {x: 63.416016, y: -6.7773438}
+        - {x: 63.416016, y: 88.22266}
+    - name: skullgirl_tanky (1)_6
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 709.5
+        width: 707.75
+        height: 708.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38.33203, y: 119.22266}
+        - {x: 26.332031, y: 137.22266}
+        - {x: -32.66797, y: 137.22266}
+        - {x: -58.66797, y: 110.22266}
+        - {x: -58.66797, y: 40.222656}
+        - {x: -51.66797, y: 11.222656}
+        - {x: 4.3320312, y: -164.77734}
+        - {x: 17.332031, y: -182.77734}
+        - {x: 69.33203, y: -182.77734}
+        - {x: 88.33203, y: -178.77734}
+        - {x: 88.33203, y: -132.77734}
+        - {x: 64.33203, y: 57.222656}
+    - name: skullgirl_tanky (1)_7
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 709.5
+        width: 707.75
+        height: 708.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.751953, y: 148.22266}
+        - {x: -40.751953, y: 41.222656}
+        - {x: 13.248047, y: -115.77734}
+        - {x: 76.24805, y: -115.77734}
+        - {x: 115.24805, y: -87.77734}
+        - {x: 115.24805, y: 64.22266}
+        - {x: 29.248047, y: 148.22266}
+    - name: skullgirl_tanky (1)_8
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1.5
+        width: 707.75
+        height: 708.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 58.416016, y: 108.583984}
+        - {x: 69.416016, y: 129.58398}
+        - {x: 76.416016, y: 162.58398}
+        - {x: 76.416016, y: 208.58398}
+        - {x: 71.416016, y: 234.58398}
+        - {x: 63.416016, y: 239.58398}
+        - {x: 11.416016, y: 239.58398}
+        - {x: -8.583984, y: 238.58398}
+        - {x: -62.583984, y: 216.58398}
+        - {x: -78.583984, y: 190.58398}
+        - {x: -82.583984, y: 94.583984}
+        - {x: -81.583984, y: -50.416016}
+        - {x: -72.583984, y: -64.416016}
+        - {x: -89.583984, y: -116.416016}
+        - {x: -89.583984, y: -178.41602}
+        - {x: -88.583984, y: -193.41602}
+        - {x: -73.583984, y: -215.41602}
+        - {x: -41.583984, y: -241.41602}
+        - {x: -13.583984, y: -241.41602}
+        - {x: 21.416016, y: -183.41602}
+        - {x: 12.416016, y: -119.416016}
+        - {x: 16.416016, y: 8.583984}
+    - name: skullgirl_tanky (1)_9
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 1.5
+        width: 707.75
+        height: 708.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 82.33203, y: 199.58398}
+        - {x: 68.33203, y: 220.58398}
+        - {x: 47.33203, y: 235.58398}
+        - {x: 15.332031, y: 235.58398}
+        - {x: 1.3320312, y: 230.58398}
+        - {x: -19.667969, y: 207.58398}
+        - {x: -28.667969, y: -6.4160156}
+        - {x: -34.66797, y: -20.416016}
+        - {x: -34.66797, y: -114.416016}
+        - {x: -8.667969, y: -199.41602}
+        - {x: 41.33203, y: -199.41602}
+        - {x: 63.33203, y: -111.416016}
+        - {x: 84.33203, y: 44.583984}
+        - {x: 84.33203, y: 190.58398}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

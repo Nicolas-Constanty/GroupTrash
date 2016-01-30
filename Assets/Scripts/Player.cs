@@ -59,7 +59,8 @@ public class Player : MonoBehaviour {
 
         if ((Input.GetButtonDown("LeftPunch1") && player == 1) ||
             (Input.GetButtonDown("LeftPunch2") && player == 2) ||
-            (Input.GetKeyDown(KeyCode.Joystick1Button3) && player == 1) )
+            (Input.GetKeyDown(KeyCode.Joystick1Button3) && player == 1) ||
+            (Input.GetKeyDown(KeyCode.Joystick2Button3) && player == 2) )
         {
             Debug.Log("LeftPunch");
             leftHand.GetComponent<Rigidbody2D>().AddForce(-leftHand.transform.parent.transform.right * force * 1 / cooldownLH, ForceMode2D.Impulse);
@@ -67,7 +68,8 @@ public class Player : MonoBehaviour {
         }
         else if ((Input.GetButtonDown("RightPunch1") && player == 1) ||
             (Input.GetButtonDown("RightPunch2") && player == 2) ||
-            (Input.GetKeyDown(KeyCode.Joystick1Button2) && player == 1))
+            (Input.GetKeyDown(KeyCode.Joystick1Button2) && player == 1) ||
+            (Input.GetKeyDown(KeyCode.Joystick2Button2) && player == 2))
         {
             Debug.Log("RightPunch");
             rightHand.GetComponent<Rigidbody2D>().AddForce(-rightHand.transform.parent.transform.right * force * 1 / cooldownRH, ForceMode2D.Impulse);
@@ -75,7 +77,8 @@ public class Player : MonoBehaviour {
         }
         else if ((Input.GetButtonDown("LeftKick1") && player == 1) ||
             (Input.GetButtonDown("LeftKick2") && player == 2) ||
-            (Input.GetKeyDown(KeyCode.Joystick1Button1) && player == 1))
+            (Input.GetKeyDown(KeyCode.Joystick1Button1) && player == 1) ||
+            (Input.GetKeyDown(KeyCode.Joystick2Button1) && player == 2))
         {
             Debug.Log("LeftKick");
             leftFoot.GetComponent<Rigidbody2D>().AddForce(-leftFoot.transform.parent.transform.right * force * 1 / cooldownLF, ForceMode2D.Impulse);
@@ -83,21 +86,25 @@ public class Player : MonoBehaviour {
         }
         else if ((Input.GetButtonDown("RightKick1") && player == 1) ||
             (Input.GetButtonDown("RightKick2") && player == 2) ||
-            (Input.GetKeyDown(KeyCode.Joystick1Button0) && player == 1))
+            (Input.GetKeyDown(KeyCode.Joystick1Button0) && player == 1) ||
+            (Input.GetKeyDown(KeyCode.Joystick2Button0) && player == 2))
         {
             Debug.Log("RightKick");
             rightFoot.GetComponent<Rigidbody2D>().AddForce(-rightFoot.transform.parent.transform.right * force * 1 / cooldownRF, ForceMode2D.Impulse);
             cooldownRF = force;
         }
 
-        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+        if ((Input.GetAxis("Horizontal") != 0 && player == 1)||
+            (Input.GetAxis("Vertical") != 0 && player == 1) ||
+            (Input.GetAxis("Horizontal2") != 0 && player == 2) ||
+            (Input.GetAxis("Vertical2") != 0 && player == 2))
         {
             Vector2 newPos = new Vector2(Mathf.Min(Mathf.Max(displacementArea.x, puppeteer.transform.position.x + Input.GetAxis("Horizontal") / 20), displacementArea.z),
                 Mathf.Min(Mathf.Max(displacementArea.y, puppeteer.transform.position.y + Input.GetAxis("Vertical") / 20), displacementArea.w));
             puppeteer.transform.position = newPos;
         }
-
     }
+    
 
     void OnDrawGizmos()
     {
