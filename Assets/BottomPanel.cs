@@ -8,6 +8,7 @@ using Character;
 public class BottomPanel : MonoBehaviour {
 
     // PANEL //
+    public PlayerSelect visual;
     public Sprite actifTab;
     public Sprite inactifTab;
     public Sprite actifSlot;
@@ -27,6 +28,7 @@ public class BottomPanel : MonoBehaviour {
     private int                         _current;
     private int                         _type = (int)PART.HEAD;
     private bool                        _move;
+    private int                         _lastType;
 
     // ITEMS //
 
@@ -61,6 +63,12 @@ public class BottomPanel : MonoBehaviour {
         _axis.Add("RB", "RB" + manette.ToString());
         _axis.Add("Move", "Move" + manette.ToString());
         Generate();
+        _lastType = 0;
+        displayMenu();
+    }
+
+    private void displayMenu()
+    {
         for (int i = 0; i < Inventory.transform.childCount; i++)
         {
             if (i < _items[_type].Count)
@@ -103,6 +111,9 @@ public class BottomPanel : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        _type = visual.Index;
+        if (_type != _lastType)
+            displayMenu();
 	    if (Input.GetAxis(_axis["LB"]) != 0 && _isShop)
         {
             _isShop = false;
@@ -124,6 +135,7 @@ public class BottomPanel : MonoBehaviour {
             ActiveItem(Shop.transform.GetChild(0).gameObject.GetComponent<Image>());
         }
         Move();
+        _lastType = _type;
     }
 
     private void ActiveItem(Image img)
@@ -197,6 +209,15 @@ public class BottomPanel : MonoBehaviour {
                 }
             }
         }
+    }
+
+    private void setType(int value)
+    {
+        _type += value;
+        if (_type > (int)PART.RIGHTLEG)
+            _type = (int)PART.HEAD;
+        else if (_type < 0)
+            _type = (int)PART.RIGHTLEG;
     }
 
     IEnumerator  canMove()

@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Character
 {
-    public enum PART { HEAD, BODY, LEFTARM, RIGHTARM, LEFTLEG, RIGHTLEG };
+    public enum PART { HEAD, LEFTARM, BODY, RIGHTARM, LEFTLEG, RIGHTLEG };
     [System.Serializable]
 	public class Part
 	{
