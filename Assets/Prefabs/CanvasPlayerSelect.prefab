@@ -876,6 +876,7 @@ GameObject:
   - 224: {fileID: 22419302}
   - 222: {fileID: 22286462}
   - 114: {fileID: 11443896}
+  - 114: {fileID: 11479772}
   m_Layer: 5
   m_Name: Money
   m_TagString: Untagged
@@ -1157,6 +1158,7 @@ GameObject:
   - 222: {fileID: 22215016}
   - 114: {fileID: 11406150}
   - 114: {fileID: 11410752}
+  - 114: {fileID: 11405076}
   m_Layer: 5
   m_Name: PanelP2
   m_TagString: Untagged
@@ -1629,6 +1631,7 @@ GameObject:
   - 224: {fileID: 22489534}
   - 222: {fileID: 22296368}
   - 114: {fileID: 11434448}
+  - 114: {fileID: 11451312}
   m_Layer: 5
   m_Name: Money
   m_TagString: Untagged
@@ -2136,6 +2139,7 @@ GameObject:
   - 222: {fileID: 22260584}
   - 114: {fileID: 11471146}
   - 114: {fileID: 11406794}
+  - 114: {fileID: 11465266}
   m_Layer: 5
   m_Name: PanelP1
   m_TagString: Untagged
@@ -4506,6 +4510,25 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11405076
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994a754c34fd2a241b8a686e7db0a400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  control: 2
+  buttons:
+  - {fileID: 172778}
+  - {fileID: 108576}
+  - {fileID: 172062}
+  - {fileID: 127946}
+  - {fileID: 191948}
+  - {fileID: 186188}
 --- !u!114 &11405394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7115,7 +7138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a9386f637da10a48a85fba2555388d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visual: {fileID: 11410752}
+  visual: {fileID: 11405076}
   actifTab: {fileID: 21300000, guid: 0cfb628ba688e3b4b9fe51ebb9c35c97, type: 3}
   inactifTab: {fileID: 21300000, guid: de7c59d6adcb38d41ad69efcda56a549, type: 3}
   actifSlot: {fileID: 21300000, guid: a16a452dfd8e1aa4184daee9eeff1c5b, type: 3}
@@ -7398,7 +7421,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Player 1
+  m_Text: Player 2
 --- !u!114 &11439186
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7811,7 +7834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a9386f637da10a48a85fba2555388d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visual: {fileID: 11406794}
+  visual: {fileID: 11465266}
   actifTab: {fileID: 21300000, guid: 0cfb628ba688e3b4b9fe51ebb9c35c97, type: 3}
   inactifTab: {fileID: 21300000, guid: de7c59d6adcb38d41ad69efcda56a549, type: 3}
   actifSlot: {fileID: 21300000, guid: a16a452dfd8e1aa4184daee9eeff1c5b, type: 3}
@@ -8602,6 +8625,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11451312
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 893929023801f764aa334f01b413437b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 11434448}
+  player: 1
 --- !u!114 &11451438
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9583,6 +9619,25 @@ MonoBehaviour:
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
+--- !u!114 &11465266
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994a754c34fd2a241b8a686e7db0a400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  control: 1
+  buttons:
+  - {fileID: 138376}
+  - {fileID: 161710}
+  - {fileID: 133408}
+  - {fileID: 154622}
+  - {fileID: 165362}
+  - {fileID: 195478}
 --- !u!114 &11465440
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10975,6 +11030,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11479772
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 893929023801f764aa334f01b413437b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 11443896}
+  player: 2
 --- !u!114 &11480564
 MonoBehaviour:
   m_ObjectHideFlags: 1
