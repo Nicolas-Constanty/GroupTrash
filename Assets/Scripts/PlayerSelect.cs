@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class PlayerSelect : MonoBehaviour {
 
-	public EventSystem ev;
-
 	[SerializeField]
 	private GameObject[] buttonsP1;
 	private int buttonIdxP1 = 0;
@@ -16,25 +14,9 @@ public class PlayerSelect : MonoBehaviour {
 	private GameObject[] buttonsP2;
 	private int buttonIdxP2 = 0;
 
-	[Header("Player 1")]
-	public List<Sprite> head1;
-	public List<Sprite> torso1;
-	public List<Sprite> armLeft1;
-	public List<Sprite> armRight1;
-	public List<Sprite> legLeft1;
-	public List<Sprite> legRight1;
-
-	[Header("Player 2")]
-	public List<Sprite> head2;
-	public List<Sprite> torso2;
-	public List<Sprite> armLeft2;
-	public List<Sprite> armRight2;
-	public List<Sprite> legLeft2;
-	public List<Sprite> legRight2;
-
-	private int buttonIdx = 0;
-
-	bool isP1Moving = false;
+	private bool isP1MovingH = false;
+	private bool isP1MovingV = false;
+	private bool isP2Moving = false;
 
 	void Start ()
 	{
@@ -45,19 +27,34 @@ public class PlayerSelect : MonoBehaviour {
 	
 	void Update ()
 	{
+		MoveCursorP1 ();
+	}
+
+	void MoveCursorP1()
+	{
 		float verticalP1 = Input.GetAxisRaw ("Vertical");
-		if (verticalP1 != 0 && !isP1Moving)
+		float horizontalP1 = Input.GetAxisRaw ("Horizontal");
+		if (verticalP1 != 0 && !isP1MovingV)
 		{
-			isP1Moving = true;
-			Debug.Log ("Vertical axis = " + verticalP1);
+			isP1MovingV = true;
 			buttonsP1[buttonIdxP1].GetComponent<Image>().color = Color.white;
 			buttonIdxP1 -= (int)verticalP1;
 			buttonIdxP1 = (buttonIdxP1 < 0) ? buttonsP1.Length - 1 : (buttonIdxP1 > buttonsP1.Length - 1) ? 0 : buttonIdxP1;
 			buttonsP1[buttonIdxP1].GetComponent<Image>().color = Color.red;
 		}
+		if (horizontalP1 != 0 && !isP1MovingH)
+		{
+			isP1MovingH = true;
+			Debug.Log ("Selecting sprite");
+			buttonsP1 [buttonIdxP1].GetComponent<SpriteManager> ().NextSprite ();
+		}
 		if (verticalP1 == 0)
 		{
-			isP1Moving = false;
+			isP1MovingV = false;
+		}
+		if (horizontalP1 == 0)
+		{
+			isP1MovingH = false;
 		}
 	}
 }
