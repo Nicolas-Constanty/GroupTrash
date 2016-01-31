@@ -17651,7 +17651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control: 2
-  CaracsPerso: {fileID: 11459128}
+  CaracsPerso: {fileID: 11403586}
   panel: {fileID: 11491424}
   buttons:
   - {fileID: 134470}

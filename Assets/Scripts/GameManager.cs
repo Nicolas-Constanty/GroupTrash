@@ -56,11 +56,21 @@ public class GameManager : MonoBehaviour {
 	private Text P2CandiesText;
 
 	[SerializeField]
+<<<<<<< HEAD
 	public GameObject spectators;
 
 	public AudioClip[] audioClips;
 
     public GameObject confetis;
+=======
+	private GameObject spectators;
+	[SerializeField]
+	private GameObject confettis;
+
+	public AudioClip[] audioClips;
+
+	private bool canSelect = true;
+>>>>>>> c64b027eba46f73ffbe591e2dc65c3780fe63dd2
 
 	// Enum for current game state
 	public enum GameState
@@ -105,18 +115,27 @@ public class GameManager : MonoBehaviour {
 		SetSelection ();
     }
 
+	void AllowSelection()
+	{
+		canSelect = true;
+	}
+
     void Update ()
 	{
         for (int i = 0; i < 20; i++)
         {
-            if (Input.GetKeyDown("joystick button " + i))
+            if (Input.GetKeyDown("joystick 1 button " + i))
             {
-                Debug.Log("Button " + i + " pressed !");
+                Debug.Log("1 Button " + i + " pressed !");
+            }
+            if(Input.GetKeyDown("joystick 2 button " + i))
+            {
+                Debug.Log("2 Button " + i + " pressed !");
             }
         }
 
         // fait le décompte sur la selection
-        if (state == GameState.SELECTION)
+		if (state == GameState.SELECTION && canSelect)
 		{
 			if (remainingTime > 0)
 			{
@@ -152,7 +171,7 @@ public class GameManager : MonoBehaviour {
 		// relance la partie après un win
 		if (state == GameState.WIN)
 		{
-			if (Input.GetKeyDown ("joystick button 0") || Input.GetKeyDown(KeyCode.Return))
+			if ((Input.GetKeyDown ("joystick button 0") || Input.GetKeyDown(KeyCode.Return)) && canSelect)
 			{
 				SetSelection ();
 			}
@@ -190,6 +209,7 @@ public class GameManager : MonoBehaviour {
 		Camera.main.GetComponent<AudioSource> ().clip = audioClips[1];
 		Camera.main.GetComponent<AudioSource> ().Play ();
 		state = GameState.PLAYING;
+		canSelect = false;
 	}
 
 	void SetPause ()
@@ -215,8 +235,13 @@ public class GameManager : MonoBehaviour {
 		state = GameState.WIN;
 		canvasHUD.SetActive (false);
 		canvasWin.SetActive (true);
+<<<<<<< HEAD
         //spectators.SetActive (true);
         spectators.GetComponent<Animator>().SetBool("HouraBool", true);
+=======
+		spectators.SetActive (true);
+		confettis.SetActive (true);
+>>>>>>> c64b027eba46f73ffbe591e2dc65c3780fe63dd2
 
 		if (player == null)
 		{
@@ -253,6 +278,8 @@ public class GameManager : MonoBehaviour {
 
 		player1.playerObj.GetComponent<Player>().enabled = false;
 		player2.playerObj.GetComponent<Player>().enabled = false;
+
+		Invoke ("AllowSelection", 2);
 	}
 
 	public void SetSelection()
@@ -264,7 +291,12 @@ public class GameManager : MonoBehaviour {
 		canvasPause.SetActive (false);
 		canvasWin.SetActive (false);
 		background.SetActive (false);
+<<<<<<< HEAD
 		//spectators.SetActive (false);
+=======
+		spectators.SetActive (false);
+		confettis.SetActive (false);
+>>>>>>> c64b027eba46f73ffbe591e2dc65c3780fe63dd2
 		canvasSelection.SetActive (true);
 		Camera.main.GetComponent<AudioSource> ().clip = audioClips[0];
 		Camera.main.GetComponent<AudioSource> ().Play ();
