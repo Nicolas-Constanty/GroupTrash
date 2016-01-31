@@ -40,7 +40,8 @@ public class Item : MonoBehaviour {
                     {
                         GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SetWin(transform.parent.gameObject);
                     }
-
+                    if (joint.GetComponent<CandiesEmitter>() != null)
+                        joint.GetComponent<CandiesEmitter>().EmitCandies();
                     Destroy(joint);
                 }
                 foreach (FixedJoint2D joint in parent.GetComponentsInChildren<FixedJoint2D>())
@@ -49,6 +50,8 @@ public class Item : MonoBehaviour {
                     {
                         GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SetWin(transform.parent.gameObject);
                     }
+                    if (joint.GetComponent<CandiesEmitter>() != null)
+                        joint.GetComponent<CandiesEmitter>().EmitCandies();
                     Destroy(joint);
                 }
             }

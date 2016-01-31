@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Character;
 
 public class Translate : MonoBehaviour {
 
@@ -7,6 +8,8 @@ public class Translate : MonoBehaviour {
     public float gogopowerjump = 300;
     [Range(1, 2)]
     public int player = 1;
+
+    public AdvanceBody abody;
 
     private bool jumping = false;
 
