@@ -60,6 +60,8 @@ public class GameManager : MonoBehaviour {
 
 	public AudioClip[] audioClips;
 
+	private bool canSelect = true;
+
 	// Enum for current game state
 	public enum GameState
 	{
@@ -100,6 +102,11 @@ public class GameManager : MonoBehaviour {
 		SetSelection ();
     }
 
+	void AllowSelection()
+	{
+		canSelect = true;
+	}
+
     void Update ()
 	{
         for (int i = 0; i < 20; i++)
@@ -111,7 +118,7 @@ public class GameManager : MonoBehaviour {
         }
 
         // fait le décompte sur la selection
-        if (state == GameState.SELECTION)
+		if (state == GameState.SELECTION && canSelect)
 		{
 			if (remainingTime > 0)
 			{
@@ -147,7 +154,7 @@ public class GameManager : MonoBehaviour {
 		// relance la partie après un win
 		if (state == GameState.WIN)
 		{
-			if (Input.GetKeyDown ("joystick button 0") || Input.GetKeyDown(KeyCode.Return))
+			if (Input.GetKeyDown ("joystick button 0") || Input.GetKeyDown(KeyCode.Return) && canSelect)
 			{
 				SetSelection ();
 			}
@@ -185,6 +192,7 @@ public class GameManager : MonoBehaviour {
 		Camera.main.GetComponent<AudioSource> ().clip = audioClips[1];
 		Camera.main.GetComponent<AudioSource> ().Play ();
 		state = GameState.PLAYING;
+		canSelect = false;
 	}
 
 	void SetPause ()
@@ -247,6 +255,8 @@ public class GameManager : MonoBehaviour {
 
 		player1.playerObj.GetComponent<Player>().enabled = false;
 		player2.playerObj.GetComponent<Player>().enabled = false;
+
+		Invoke ("AllowSelection", 1);
 	}
 
 	public void SetSelection()
