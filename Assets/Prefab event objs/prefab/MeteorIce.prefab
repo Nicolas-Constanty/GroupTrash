@@ -9,9 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 485970}
   - 212: {fileID: 21286010}
-  - 114: {fileID: 11458672}
-  - 50: {fileID: 5048456}
-  - 58: {fileID: 5855144}
+  - 114: {fileID: 11496884}
+  - 95: {fileID: 9570582}
   m_Layer: 11
   m_Name: MeteorIce
   m_TagString: Untagged
@@ -26,43 +25,29 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 163268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.81, y: -3.03, z: 0}
+  m_LocalPosition: {x: -1.21, y: 6.02, z: 0}
   m_LocalScale: {x: 0.1875895, y: 0.18758969, z: 0.18758969}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!50 &5048456
-Rigidbody2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 163268}
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!58 &5855144
-CircleCollider2D:
+--- !u!95 &9570582
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 163268}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.3223137
---- !u!114 &11458672
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 089332ca1ef88ad4da70b6277b56606f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11496884
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -70,9 +55,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 163268}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaa0d46d647815240ab83e2f3bd4009c, type: 3}
+  m_Script: {fileID: 11500000, guid: 177f6248899307e428b4e03b3912db1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseObject: {fileID: 183740, guid: 255f5369c4597ea4988db38fde64fcc9, type: 2}
+  intensity: 28
+  frequency: 10
 --- !u!212 &21286010
 SpriteRenderer:
   m_ObjectHideFlags: 1
