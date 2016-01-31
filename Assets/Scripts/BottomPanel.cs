@@ -154,6 +154,7 @@ public class BottomPanel : MonoBehaviour {
     }
 
 	// Update visual
+	// The selection panel MUST BE ACTIVATED before these actions are done
 	private void UpdateCharacter()
 	{
 		//visual.buttons [_type].GetComponent<Image> ().sprite = _items[_type][_current].sprite;
@@ -234,6 +235,7 @@ public class BottomPanel : MonoBehaviour {
     {
         if (Input.GetAxis(_axis["Submit"]) != 0 && !_click)
         {
+			Debug.Log ("Submit");
             StartCoroutine(waitClick());
             _GM.SetPlayerPart(manette, _type, _itemActive.GetComponent<Item>().Part);
             CaracTotal.setObject(mixParts(), "Total");
@@ -333,6 +335,6 @@ public class BottomPanel : MonoBehaviour {
     {
         _click = true;
         yield return new WaitForSeconds(0.15f);
-        _click = true;
+		_click = false;
     }
 }
