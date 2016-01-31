@@ -82,19 +82,34 @@ namespace Character
         public void Coffee(int player, GameManager gM)
         {
             body.GetComponent<Item>().Part = gM.GetPlayerPart(player, (int)PART.BODY);
+            body.GetComponent<SpriteRenderer>().sprite = body.GetComponent<Item>().Part.spriteParts[0];
+
             head.GetComponent<Item>().Part = gM.GetPlayerPart(player, (int)PART.HEAD);
+            head.GetComponent<SpriteRenderer>().sprite = head.GetComponent<Item>().Part.spriteParts[0];
 
             leftArm.GetComponent<Item>().Part = gM.GetPlayerPart(player, (int)PART.LEFTARM);
+            leftArm.GetComponent<SpriteRenderer>().sprite = leftArm.GetComponent<Item>().Part.spriteParts[0];
+
             rightArm.GetComponent<Item>().Part = gM.GetPlayerPart(player, (int)PART.RIGHTARM);
+            rightArm.GetComponent<SpriteRenderer>().sprite = rightArm.GetComponent<Item>().Part.spriteParts[0];
 
             leftLeg.GetComponent<Item>().Part = gM.GetPlayerPart(player, (int)PART.LEFTLEG);
+            leftLeg.GetComponent<SpriteRenderer>().sprite = leftLeg.GetComponent<Item>().Part.spriteParts[0];
+
             rightLeg.GetComponent<Item>().Part = gM.GetPlayerPart(player, (int)PART.RIGHTLEG);
+            rightLeg.GetComponent<SpriteRenderer>().sprite = rightLeg.GetComponent<Item>().Part.spriteParts[0];
 
             tLeft.GetComponent<Item>().Part = leftLeg.GetComponent<Item>().Part;
+            tLeft.GetComponent<SpriteRenderer>().sprite = tLeft.GetComponent<Item>().Part.spriteParts[1];
+
             tRight.GetComponent<Item>().Part = rightLeg.GetComponent<Item>().Part;
+            tRight.GetComponent<SpriteRenderer>().sprite = tRight.GetComponent<Item>().Part.spriteParts[1];
 
             aLeft.GetComponent<Item>().Part = leftArm.GetComponent<Item>().Part;
+            aLeft.GetComponent<SpriteRenderer>().sprite = aLeft.GetComponent<Item>().Part.spriteParts[1];
+
             aRight.GetComponent<Item>().Part = rightArm.GetComponent<Item>().Part;
+            aRight.GetComponent<SpriteRenderer>().sprite = aRight.GetComponent<Item>().Part.spriteParts[1];
         }
     }
 }

@@ -114,6 +114,7 @@ public class BottomPanel : MonoBehaviour {
                     _GM.GetPlayerPart(manette, (int)PART.RIGHTARM).candies +
                     _GM.GetPlayerPart(manette, (int)PART.LEFTLEG).candies +
                     _GM.GetPlayerPart(manette, (int)PART.RIGHTLEG).candies;
+
         Part mix = new Part();
         mix.damage = damage / 6;
         mix.hp = hp / 6;
@@ -129,6 +130,7 @@ public class BottomPanel : MonoBehaviour {
         {
             if (i < _items[_type].Count)
             {
+                //print(_items[_type][i]);
                 Inventory.transform.GetChild(i).GetComponent<Item>().Part = _items[_type][i];
                 Inventory.transform.GetChild(i).transform.GetChild(0).GetComponent<Image>().sprite = _items[_type][i].sprite;
             }

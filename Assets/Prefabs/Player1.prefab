@@ -149,6 +149,7 @@ GameObject:
   - 212: {fileID: 21262656}
   - 61: {fileID: 6182332}
   - 114: {fileID: 11458932}
+  - 114: {fileID: 11454030}
   m_Layer: 8
   m_Name: modele_decoupey_legR
   m_TagString: Untagged
@@ -252,6 +253,7 @@ GameObject:
   - 212: {fileID: 21204424}
   - 61: {fileID: 6112182}
   - 114: {fileID: 11474442}
+  - 114: {fileID: 11412178}
   m_Layer: 8
   m_Name: modele_decoupey_hip
   m_TagString: Untagged
@@ -270,6 +272,7 @@ GameObject:
   - 212: {fileID: 21259592}
   - 61: {fileID: 6158312}
   - 114: {fileID: 11499388}
+  - 114: {fileID: 11400138}
   m_Layer: 8
   m_Name: modele_decoupey_armR
   m_TagString: Untagged
@@ -375,6 +378,7 @@ GameObject:
   - 212: {fileID: 21263708}
   - 61: {fileID: 6191768}
   - 114: {fileID: 11478036}
+  - 114: {fileID: 11442316}
   m_Layer: 8
   m_Name: modele_decoupey_kneeL
   m_TagString: Untagged
@@ -519,6 +523,7 @@ GameObject:
   - 212: {fileID: 21258244}
   - 61: {fileID: 6191810}
   - 114: {fileID: 11409260}
+  - 114: {fileID: 11419496}
   m_Layer: 8
   m_Name: modele_decoupey_elbowL
   m_TagString: Untagged
@@ -622,6 +627,7 @@ GameObject:
   - 212: {fileID: 21276042}
   - 61: {fileID: 6159436}
   - 114: {fileID: 11461638}
+  - 114: {fileID: 11490562}
   m_Layer: 8
   m_Name: modele_decoupey_armL
   m_TagString: Untagged
@@ -782,6 +788,7 @@ GameObject:
   - 50: {fileID: 5068330}
   - 255: {fileID: 25510220}
   - 114: {fileID: 11464860}
+  - 114: {fileID: 11469468}
   m_Layer: 8
   m_Name: neck
   m_TagString: Untagged
@@ -835,6 +842,7 @@ GameObject:
   - 212: {fileID: 21294420}
   - 61: {fileID: 6127654}
   - 114: {fileID: 11488136}
+  - 114: {fileID: 11467290}
   m_Layer: 8
   m_Name: modele_decoupey_kneeR
   m_TagString: Untagged
@@ -956,6 +964,7 @@ GameObject:
   - 212: {fileID: 21220442}
   - 61: {fileID: 6153176}
   - 114: {fileID: 11442610}
+  - 114: {fileID: 11479676}
   m_Layer: 8
   m_Name: modele_decoupey_legL
   m_TagString: Untagged
@@ -1077,6 +1086,7 @@ GameObject:
   - 50: {fileID: 5031760}
   - 233: {fileID: 23343670}
   - 114: {fileID: 11400132}
+  - 114: {fileID: 11411670}
   m_Layer: 8
   m_Name: elbowL
   m_TagString: Untagged
@@ -1148,6 +1158,7 @@ GameObject:
   - 212: {fileID: 21258582}
   - 61: {fileID: 6196772}
   - 114: {fileID: 11481302}
+  - 114: {fileID: 11467902}
   m_Layer: 8
   m_Name: modele_decoupey_elbowR
   m_TagString: Untagged
@@ -3112,6 +3123,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 11423308}
   life: 100
+--- !u!114 &11400138
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11407300
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3150,6 +3172,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 11423308}
   life: 100
+--- !u!114 &11411670
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 186142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11411906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3163,6 +3196,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 11423308}
   life: 100
+--- !u!114 &11412178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11412446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3175,6 +3219,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 164430}
+--- !u!114 &11419496
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11421398
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3208,14 +3263,14 @@ MonoBehaviour:
   abody:
     head: {fileID: 164430}
     body: {fileID: 117966}
-    leftArm: {fileID: 154856}
-    rightArm: {fileID: 119114}
-    leftLeg: {fileID: 179218}
-    rightLeg: {fileID: 110258}
-    tLeft: {fileID: 131964}
-    tRight: {fileID: 198796}
-    aLeft: {fileID: 186142}
-    aRight: {fileID: 162416}
+    leftArm: {fileID: 119114}
+    rightArm: {fileID: 154856}
+    leftLeg: {fileID: 110258}
+    rightLeg: {fileID: 179218}
+    tLeft: {fileID: 170798}
+    tRight: {fileID: 131448}
+    aLeft: {fileID: 192700}
+    aRight: {fileID: 142274}
   force: 100
   body:
     head:
@@ -3342,6 +3397,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 186288}
+--- !u!114 &11442316
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11442610
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3355,6 +3421,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 11423308}
   life: 100
+--- !u!114 &11454030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11458932
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3394,6 +3471,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 11423308}
   life: 100
+--- !u!114 &11467290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11467902
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11469468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11474442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3420,6 +3530,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 11423308}
   life: 100
+--- !u!114 &11479676
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11481302
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3471,6 +3592,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 11423308}
   life: 100
+--- !u!114 &11490562
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11495086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4209,7 +4341,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300018, guid: bc97e89e88b09dd4790bcf630ae7cc5e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

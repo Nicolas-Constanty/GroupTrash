@@ -3,7 +3,7 @@ using Character;
 
 public class Item : MonoBehaviour {
 
-    public Part _part;
+    private Part _part = new Part();
     public Part Part
     {
         get { return _part; }
@@ -12,7 +12,8 @@ public class Item : MonoBehaviour {
                 _part.candies = value.candies;
                 _part.special = value.special;
                 _part.speed = value.speed;
-             _part.sprite = value.sprite;
+                _part.sprite = value.sprite;
+                _part.spriteParts = value.spriteParts;
         }
     }
 

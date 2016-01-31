@@ -64,8 +64,6 @@ public class Player : MonoBehaviour {
 
         gM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         abody.Coffee(player, gM);
-
-        Debug.Log("found hip at : ", gameObject.transform.Find("kneeL").gameObject);
     }
 
     void Update()
