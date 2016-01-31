@@ -150,6 +150,7 @@ GameObject:
   - 212: {fileID: 21262656}
   - 61: {fileID: 6182332}
   - 114: {fileID: 11458932}
+  - 114: {fileID: 11454030}
   m_Layer: 8
   m_Name: modele_decoupey_legR
   m_TagString: Untagged
@@ -253,6 +254,7 @@ GameObject:
   - 212: {fileID: 21204424}
   - 61: {fileID: 6112182}
   - 114: {fileID: 11474442}
+  - 114: {fileID: 11412178}
   m_Layer: 8
   m_Name: modele_decoupey_hip
   m_TagString: Untagged
@@ -271,6 +273,7 @@ GameObject:
   - 212: {fileID: 21259592}
   - 61: {fileID: 6158312}
   - 114: {fileID: 11499388}
+  - 114: {fileID: 11400138}
   m_Layer: 8
   m_Name: modele_decoupey_armR
   m_TagString: Untagged
@@ -377,6 +380,7 @@ GameObject:
   - 212: {fileID: 21263708}
   - 61: {fileID: 6191768}
   - 114: {fileID: 11478036}
+  - 114: {fileID: 11442316}
   m_Layer: 8
   m_Name: modele_decoupey_kneeL
   m_TagString: Untagged
@@ -522,6 +526,7 @@ GameObject:
   - 212: {fileID: 21258244}
   - 61: {fileID: 6191810}
   - 114: {fileID: 11409260}
+  - 114: {fileID: 11419496}
   m_Layer: 8
   m_Name: modele_decoupey_elbowL
   m_TagString: Untagged
@@ -625,6 +630,7 @@ GameObject:
   - 212: {fileID: 21276042}
   - 61: {fileID: 6159436}
   - 114: {fileID: 11461638}
+  - 114: {fileID: 11490562}
   m_Layer: 8
   m_Name: modele_decoupey_armL
   m_TagString: Untagged
@@ -713,6 +719,7 @@ GameObject:
   - 212: {fileID: 21268544}
   - 50: {fileID: 5057876}
   - 255: {fileID: 25569046}
+  - 231: {fileID: 23141944}
   m_Layer: 8
   m_Name: hip
   m_TagString: Untagged
@@ -785,6 +792,8 @@ GameObject:
   - 50: {fileID: 5068330}
   - 255: {fileID: 25510220}
   - 114: {fileID: 11464860}
+  - 114: {fileID: 11469468}
+  - 233: {fileID: 23301138}
   m_Layer: 8
   m_Name: neck
   m_TagString: Untagged
@@ -838,6 +847,7 @@ GameObject:
   - 212: {fileID: 21294420}
   - 61: {fileID: 6127654}
   - 114: {fileID: 11488136}
+  - 114: {fileID: 11467290}
   m_Layer: 8
   m_Name: modele_decoupey_kneeR
   m_TagString: Untagged
@@ -959,6 +969,7 @@ GameObject:
   - 212: {fileID: 21220442}
   - 61: {fileID: 6153176}
   - 114: {fileID: 11442610}
+  - 114: {fileID: 11479676}
   m_Layer: 8
   m_Name: modele_decoupey_legL
   m_TagString: Untagged
@@ -1080,6 +1091,7 @@ GameObject:
   - 50: {fileID: 5031760}
   - 233: {fileID: 23343670}
   - 114: {fileID: 11400132}
+  - 114: {fileID: 11411670}
   m_Layer: 8
   m_Name: elbowL
   m_TagString: Untagged
@@ -1152,6 +1164,7 @@ GameObject:
   - 212: {fileID: 21258582}
   - 61: {fileID: 6196772}
   - 114: {fileID: 11481302}
+  - 114: {fileID: 11467902}
   m_Layer: 8
   m_Name: modele_decoupey_elbowR
   m_TagString: Untagged
@@ -3117,6 +3130,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 11423308}
   life: 100
+--- !u!114 &11400138
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!114 &11407300
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3155,6 +3180,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 11423308}
   life: 100
+--- !u!114 &11411670
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 186142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!114 &11411906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3168,6 +3205,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 11423308}
   life: 100
+--- !u!114 &11412178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!114 &11412446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3180,6 +3229,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 164430}
+--- !u!114 &11419496
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!114 &11421398
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3210,6 +3271,17 @@ MonoBehaviour:
   rightHand: {fileID: 124506}
   leftFoot: {fileID: 197880}
   rightFoot: {fileID: 104430}
+  abody:
+    head: {fileID: 164430}
+    body: {fileID: 117966}
+    leftArm: {fileID: 154856}
+    rightArm: {fileID: 119114}
+    leftLeg: {fileID: 179218}
+    rightLeg: {fileID: 110258}
+    tLeft: {fileID: 131964}
+    tRight: {fileID: 198796}
+    aLeft: {fileID: 186142}
+    aRight: {fileID: 162416}
   force: 100
   body:
     head:
@@ -3336,6 +3408,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 186288}
+--- !u!114 &11442316
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!114 &11442610
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3349,6 +3433,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 11423308}
   life: 100
+--- !u!114 &11454030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!114 &11458932
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3388,6 +3484,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 11423308}
   life: 100
+--- !u!114 &11467290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+--- !u!114 &11467902
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+--- !u!114 &11469468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!114 &11474442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3414,6 +3546,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 11423308}
   life: 100
+--- !u!114 &11479676
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!114 &11481302
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3465,6 +3609,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 11423308}
   life: 100
+--- !u!114 &11490562
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!114 &11495086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4703,6 +4859,48 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!231 &23141944
+SpringJoint2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159300}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 5060276}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 0
+  m_Distance: 5
+  m_DampingRatio: 0
+  m_Frequency: 1
+--- !u!233 &23301138
+HingeJoint2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164430}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 5015512}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: -0.014000134, y: 0.79000014}
+  m_UseMotor: 0
+  m_Motor:
+    m_MotorSpeed: 0
+    m_MaximumMotorForce: 10000
+  m_UseLimits: 1
+  m_AngleLimits:
+    m_LowerAngle: -5
+    m_UpperAngle: 20
 --- !u!233 &23303804
 HingeJoint2D:
   m_ObjectHideFlags: 1
@@ -4906,10 +5104,10 @@ HingeJoint2D:
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
-  m_UseLimits: 0
+  m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: 213
+    m_UpperAngle: 420.2
 --- !u!233 &23318420
 HingeJoint2D:
   m_ObjectHideFlags: 1
@@ -5185,7 +5383,7 @@ HingeJoint2D:
   m_UseLimits: 1
   m_AngleLimits:
     m_LowerAngle: 25
-    m_UpperAngle: -125
+    m_UpperAngle: -23.84
 --- !u!233 &23348448
 HingeJoint2D:
   m_ObjectHideFlags: 1
@@ -5392,7 +5590,7 @@ HingeJoint2D:
   m_UseLimits: 1
   m_AngleLimits:
     m_LowerAngle: 0
-    m_UpperAngle: 160
+    m_UpperAngle: 90.67
 --- !u!233 &23371288
 HingeJoint2D:
   m_ObjectHideFlags: 1
@@ -5460,8 +5658,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 25
-    m_UpperAngle: -125
+    m_LowerAngle: 16.13
+    m_UpperAngle: -14.9
 --- !u!233 &23376176
 HingeJoint2D:
   m_ObjectHideFlags: 1
@@ -5483,8 +5681,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: -130
-    m_UpperAngle: 140
+    m_LowerAngle: -92.3
+    m_UpperAngle: 40.64
 --- !u!233 &23376418
 HingeJoint2D:
   m_ObjectHideFlags: 1
@@ -5622,7 +5820,7 @@ HingeJoint2D:
   m_UseLimits: 1
   m_AngleLimits:
     m_LowerAngle: 0
-    m_UpperAngle: 160
+    m_UpperAngle: 98.7
 --- !u!233 &23382390
 HingeJoint2D:
   m_ObjectHideFlags: 1
@@ -5667,8 +5865,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: -130
-    m_UpperAngle: 140
+    m_LowerAngle: -59.9
+    m_UpperAngle: 41.3
 --- !u!233 &23385368
 HingeJoint2D:
   m_ObjectHideFlags: 1
@@ -5872,17 +6070,17 @@ HingeJoint2D:
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
-  m_UseLimits: 0
+  m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: -45.33
+    m_UpperAngle: 90.28
 --- !u!255 &25510220
 FixedJoint2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164430}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 5015512}
@@ -5916,7 +6114,7 @@ FixedJoint2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 159300}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 5060276}
@@ -5925,8 +6123,8 @@ FixedJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.2800002, y: -14.625}
-  m_DampingRatio: 0
-  m_Frequency: 0
+  m_DampingRatio: 1
+  m_Frequency: 141.88
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -8,7 +8,8 @@ using UnityEngine;
 namespace Character
 {
     public enum PART { HEAD, LEFTARM, BODY, RIGHTARM, LEFTLEG, RIGHTLEG };
-    
+    public enum ADVANCE { TLEFT, TRIGHT, ALEFT, ARIGHT };
+
     [System.Serializable]
 	public class Part
 	{
@@ -22,7 +23,8 @@ namespace Character
 		public int special;
 	}
 
-	[System.Serializable]
+
+    [System.Serializable]
 	public class Body
 	{
 		public Part head;
@@ -32,7 +34,7 @@ namespace Character
 		public Part leftLeg;
 		public Part rightLeg;
 
-		public Part getPart(int part)
+		virtual public Part getPart(int part)
 		{
 			if (part == (int)PART.HEAD)
 				return head;
@@ -47,7 +49,7 @@ namespace Character
 			return rightLeg;
 		}
 
-		public void setPart(int part, Part spr)
+		virtual public void setPart(int part, Part spr)
 		{
 			if (part == (int)PART.HEAD)
 				head = spr;
@@ -62,5 +64,53 @@ namespace Character
 			rightLeg = spr;
 		}
 	}
+
+    [System.Serializable]
+    public class AdvanceBody
+    {
+        public GameObject head;
+        public GameObject body;
+        public GameObject leftArm;
+        public GameObject rightArm;
+        public GameObject leftLeg;
+        public GameObject rightLeg;
+        public GameObject tLeft;
+        public GameObject tRight;
+        public GameObject aLeft;
+        public GameObject aRight;
+
+        public void Coffee(int player, GameManager gM)
+        {
+            body.GetComponent<Item>().Part = gM.GetPlayerPart(player, (int)PART.BODY);
+            body.GetComponent<SpriteRenderer>().sprite = body.GetComponent<Item>().Part.spriteParts[0];
+
+            head.GetComponent<Item>().Part = gM.GetPlayerPart(player, (int)PART.HEAD);
+            head.GetComponent<SpriteRenderer>().sprite = head.GetComponent<Item>().Part.spriteParts[0];
+
+            leftArm.GetComponent<Item>().Part = gM.GetPlayerPart(player, (int)PART.LEFTARM);
+            leftArm.GetComponent<SpriteRenderer>().sprite = leftArm.GetComponent<Item>().Part.spriteParts[0];
+
+            rightArm.GetComponent<Item>().Part = gM.GetPlayerPart(player, (int)PART.RIGHTARM);
+            rightArm.GetComponent<SpriteRenderer>().sprite = rightArm.GetComponent<Item>().Part.spriteParts[0];
+
+            leftLeg.GetComponent<Item>().Part = gM.GetPlayerPart(player, (int)PART.LEFTLEG);
+            leftLeg.GetComponent<SpriteRenderer>().sprite = leftLeg.GetComponent<Item>().Part.spriteParts[0];
+
+            rightLeg.GetComponent<Item>().Part = gM.GetPlayerPart(player, (int)PART.RIGHTLEG);
+            rightLeg.GetComponent<SpriteRenderer>().sprite = rightLeg.GetComponent<Item>().Part.spriteParts[0];
+
+            tLeft.GetComponent<Item>().Part = leftLeg.GetComponent<Item>().Part;
+            tLeft.GetComponent<SpriteRenderer>().sprite = tLeft.GetComponent<Item>().Part.spriteParts[1];
+
+            tRight.GetComponent<Item>().Part = rightLeg.GetComponent<Item>().Part;
+            tRight.GetComponent<SpriteRenderer>().sprite = tRight.GetComponent<Item>().Part.spriteParts[1];
+
+            aLeft.GetComponent<Item>().Part = leftArm.GetComponent<Item>().Part;
+            aLeft.GetComponent<SpriteRenderer>().sprite = aLeft.GetComponent<Item>().Part.spriteParts[1];
+
+            aRight.GetComponent<Item>().Part = rightArm.GetComponent<Item>().Part;
+            aRight.GetComponent<SpriteRenderer>().sprite = aRight.GetComponent<Item>().Part.spriteParts[1];
+        }
+    }
 }
 

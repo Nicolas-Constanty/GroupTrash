@@ -15,7 +15,6 @@ public class HitManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
     }
 
     // Update is called once per frame
@@ -37,10 +36,13 @@ public class HitManager : MonoBehaviour
         if ((coll.gameObject.layer == LayerMask.NameToLayer("Player1") || coll.gameObject.layer == LayerMask.NameToLayer("Player2")) && timer < 0.05 )
         {
             HitManager hitted = coll.gameObject.GetComponentInChildren<HitManager>();
-            float magnitude = coll.transform.parent.GetChild(0).GetComponentInChildren<Rigidbody2D>().velocity.magnitude;
+            float magnitudeEnemy = coll.transform.parent.GetChild(0).GetComponentInChildren<Rigidbody2D>().velocity.magnitude;
+            Vector2 myVelocity = transform.parent.gameObject.GetComponent<Rigidbody2D>().velocity;
 
-            if (transform.parent.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude > magnitude)
-                hitted.life -= magnitude;
+            if (myVelocity.magnitude > magnitudeEnemy) {
+                hitted.life -= myVelocity.magnitude;
+                hitted.GetComponentInParent<Rigidbody2D>().AddForce(myVelocity, ForceMode2D.Impulse);
+            }
 
             if (hitted.life < 0f)
             {
@@ -51,7 +53,8 @@ public class HitManager : MonoBehaviour
                     {
                         GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SetWin(player.gameObject);
                     }
-
+                    if (joint.GetComponent<CandiesEmitter>() != null)
+                        joint.GetComponent<CandiesEmitter>().EmitCandies();
                     Destroy(joint);
                 }
                 foreach (FixedJoint2D joint in parent.GetComponentsInChildren<FixedJoint2D>())
@@ -60,6 +63,8 @@ public class HitManager : MonoBehaviour
                     {
                         GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SetWin(player.gameObject);
                     }
+                    if (joint.GetComponent<CandiesEmitter>() != null)
+                        joint.GetComponent<CandiesEmitter>().EmitCandies();
                     Destroy(joint);
                 }
             }
