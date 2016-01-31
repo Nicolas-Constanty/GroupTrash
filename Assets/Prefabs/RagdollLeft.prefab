@@ -219,7 +219,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 484056}
   - 50: {fileID: 5026506}
-  - 114: {fileID: 11431038}
   - 114: {fileID: 11425580}
   m_Layer: 8
   m_Name: RagdollLeft
@@ -946,31 +945,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11431038
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 179658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f5119eb654247f48a7cc734fb399751, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 300
-  gogopowerjump: 20
-  player: 1
-  abody:
-    head: {fileID: 0}
-    body: {fileID: 0}
-    leftArm: {fileID: 0}
-    rightArm: {fileID: 0}
-    leftLeg: {fileID: 0}
-    rightLeg: {fileID: 0}
-    tLeft: {fileID: 0}
-    tRight: {fileID: 0}
-    aLeft: {fileID: 0}
-    aRight: {fileID: 0}
 --- !u!114 &11434424
 MonoBehaviour:
   m_ObjectHideFlags: 1

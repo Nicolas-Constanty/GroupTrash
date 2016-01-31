@@ -235,7 +235,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 470872}
   - 50: {fileID: 5050804}
-  - 114: {fileID: 11439964}
+  - 114: {fileID: 11408624}
   m_Layer: 8
   m_Name: RagdollRight
   m_TagString: Untagged
@@ -804,6 +804,31 @@ BoxCollider2D:
   m_Offset: {x: -0.14226115, y: -0.16004944}
   serializedVersion: 2
   m_Size: {x: 1.7426908, y: 4.133072}
+--- !u!114 &11408624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c298a0e0a8534314ab65d1deb7b78f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: 2
+  abody:
+    head: {fileID: 159122}
+    body: {fileID: 173840}
+    leftArm: {fileID: 166768}
+    rightArm: {fileID: 196462}
+    leftLeg: {fileID: 128188}
+    rightLeg: {fileID: 181574}
+    tLeft: {fileID: 160972}
+    tRight: {fileID: 146880}
+    aLeft: {fileID: 149092}
+    aRight: {fileID: 196234}
+  speed: 200
+  gogopowerjump: 300
 --- !u!114 &11410934
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -863,31 +888,6 @@ MonoBehaviour:
   strenght: 30
   target: {fileID: 0}
   mat: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &11439964
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 191152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f5119eb654247f48a7cc734fb399751, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 200
-  gogopowerjump: 300
-  player: 1
-  abody:
-    head: {fileID: 159122}
-    body: {fileID: 173840}
-    leftArm: {fileID: 166768}
-    rightArm: {fileID: 196462}
-    leftLeg: {fileID: 128188}
-    rightLeg: {fileID: 181574}
-    tLeft: {fileID: 160972}
-    tRight: {fileID: 146880}
-    aLeft: {fileID: 149092}
-    aRight: {fileID: 196234}
 --- !u!114 &11452038
 MonoBehaviour:
   m_ObjectHideFlags: 1
