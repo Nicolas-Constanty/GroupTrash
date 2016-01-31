@@ -160,7 +160,7 @@ public class GameManager : MonoBehaviour {
 		// relance la partie après un win
 		if (state == GameState.WIN)
 		{
-			if (Input.GetKeyDown ("joystick button 0") || Input.GetKeyDown(KeyCode.Return) && canSelect)
+			if ((Input.GetKeyDown ("joystick button 0") || Input.GetKeyDown(KeyCode.Return)) && canSelect)
 			{
 				SetSelection ();
 			}
@@ -263,7 +263,7 @@ public class GameManager : MonoBehaviour {
 		player1.playerObj.GetComponent<Player>().enabled = false;
 		player2.playerObj.GetComponent<Player>().enabled = false;
 
-		Invoke ("AllowSelection", 1);
+		Invoke ("AllowSelection", 2);
 	}
 
 	public void SetSelection()
