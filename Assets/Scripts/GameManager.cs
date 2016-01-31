@@ -97,8 +97,6 @@ public class GameManager : MonoBehaviour {
 		player1.playerObj = GameObject.FindGameObjectWithTag ("Player1");
 		player2.playerObj = GameObject.FindGameObjectWithTag ("Player2");
 
-		spectators.SetActive (false);
-
 		SetSelection ();
     }
 
