@@ -204,8 +204,6 @@ public class GameManager : MonoBehaviour {
 		canvasHUD.SetActive (false);
 		canvasWin.SetActive (true);
 
-		Debug.Log ("GAME OBJECT RECEIVED IS = " + player.name);
-
 		if (player == null)
 		{
 			player1.nbCandies += 50;
