@@ -302,8 +302,7 @@ public class GameManager : MonoBehaviour {
 		}
 		return 0;
 	}
-
-	public void SetPlayerPart(int playerID, int partType, Part part)
+    public void SetPlayerPart(int playerID, int partType, Part part)
 	{
 		switch (partType)
 		{

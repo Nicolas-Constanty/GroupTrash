@@ -887,7 +887,7 @@ MonoBehaviour:
     aLeft: {fileID: 157822}
     aRight: {fileID: 180808}
   speed: 200
-  gogopowerjump: 300
+  gogopowerjump: 80
 --- !u!114 &11428054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1563,7 +1563,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: gogopowerjump
+      value: 80
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 179658}
