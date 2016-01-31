@@ -179,7 +179,7 @@ public class BottomPanel : MonoBehaviour {
             if (_allitems.Count > 0)
             {
                 int dice = Random.Range(0, _allitems.Count);
-                _items[i].Add(_allitems[dice]);
+				_items[i].Add(_allitems[dice]);
                 _allitems.Remove(_allitems[dice]);
             }
         }

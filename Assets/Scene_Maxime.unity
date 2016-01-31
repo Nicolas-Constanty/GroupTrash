@@ -127,11 +127,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
---- !u!50 &349603963 stripped
-Rigidbody2D:
-  m_PrefabParentObject: {fileID: 5091594, guid: bfe2916aa9ad7a046a01cd11652b3d64,
-    type: 2}
-  m_PrefabInternal: {fileID: 1306237533}
+--- !u!1 &445848937 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 159300, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
+  m_PrefabInternal: {fileID: 1458405281}
+--- !u!255 &445848941
+FixedJoint2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 445848937}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 1085376808}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0.2800002, y: -14.625}
+  m_DampingRatio: 0
+  m_Frequency: 0
 --- !u!1 &999875675
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,6 +206,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!50 &1085376808 stripped
+Rigidbody2D:
+  m_PrefabParentObject: {fileID: 5060276, guid: 6f8e2ffca684db54ead75bf6d8dac442,
+    type: 2}
+  m_PrefabInternal: {fileID: 1458405281}
 --- !u!1 &1092532074
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,19 +336,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 25531042, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 349603963}
-    - target: {fileID: 25531042, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
-      propertyPath: m_ConnectedAnchor.x
-      value: 0.40931505
-      objectReference: {fileID: 0}
-    - target: {fileID: 25531042, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.7451934
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11415606, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
+    - {fileID: 11471924, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
+    - {fileID: 11467214, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
+    - {fileID: 11482962, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
+    - {fileID: 11447618, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
+    - {fileID: 11401244, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
+    - {fileID: 11481010, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
+    - {fileID: 11424728, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
+    - {fileID: 11474280, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1396196542
@@ -427,32 +445,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5057876, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 25584090, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
+    - {fileID: 11432052, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
+    - {fileID: 11408608, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
+    - {fileID: 11430852, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
+    - {fileID: 11495086, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
+    - {fileID: 11430640, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
+    - {fileID: 11411906, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
+    - {fileID: 11421398, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
+    - {fileID: 11497410, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
+    - {fileID: 11400132, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
+    - {fileID: 11464860, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
   m_IsPrefabParent: 0
---- !u!50 &1515305117 stripped
-Rigidbody2D:
-  m_PrefabParentObject: {fileID: 5080956, guid: bfe2916aa9ad7a046a01cd11652b3d64,
-    type: 2}
-  m_PrefabInternal: {fileID: 1306237533}
---- !u!1 &2088298568 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 163784, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
-  m_PrefabInternal: {fileID: 1306237533}
---- !u!255 &2088298572
-FixedJoint2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2088298568}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 1515305117}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.2800002, y: -14.625}
-  m_DampingRatio: 0
-  m_Frequency: 0
