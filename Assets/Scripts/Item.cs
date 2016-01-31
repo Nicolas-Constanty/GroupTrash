@@ -5,7 +5,6 @@ public class Item : MonoBehaviour {
 
     private float timer = 0f;
     private Part _part = new Part();
-    public GameObject player;
     public Part Part
     {
         get { return _part; }
@@ -39,7 +38,7 @@ public class Item : MonoBehaviour {
                 {
                     if (joint.gameObject.name.Equals("neck") || joint.gameObject.name.Equals("hip"))
                     {
-                        GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SetWin(player.gameObject);
+                        GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SetWin(transform.parent.gameObject);
                     }
 
                     Destroy(joint);
@@ -48,7 +47,7 @@ public class Item : MonoBehaviour {
                 {
                     if (joint.gameObject.name.Equals("neck") || joint.gameObject.name.Equals("hip"))
                     {
-                        GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SetWin(player.gameObject);
+                        GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SetWin(transform.parent.gameObject);
                     }
                     Destroy(joint);
                 }
