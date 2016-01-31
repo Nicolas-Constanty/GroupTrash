@@ -14,6 +14,6 @@ public class TutoManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (hitPart1.enoughtHitted () && hitPart2.enoughtHitted ())
-			SceneManager.LoadScene ("Scene_Nico");
+			SceneManager.LoadScene ("Scene_Fernand");
 	}
 }
