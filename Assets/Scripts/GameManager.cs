@@ -56,6 +56,13 @@ public class GameManager : MonoBehaviour {
 	private Text P2CandiesText;
 
 	[SerializeField]
+<<<<<<< HEAD
+	public GameObject spectators;
+
+	public AudioClip[] audioClips;
+
+    public GameObject confetis;
+=======
 	private GameObject spectators;
 	[SerializeField]
 	private GameObject confettis;
@@ -63,6 +70,7 @@ public class GameManager : MonoBehaviour {
 	public AudioClip[] audioClips;
 
 	private bool canSelect = true;
+>>>>>>> c64b027eba46f73ffbe591e2dc65c3780fe63dd2
 
 	// Enum for current game state
 	public enum GameState
@@ -88,6 +96,9 @@ public class GameManager : MonoBehaviour {
         player2.items.Add((int)PART.RIGHTARM, new List<Part>());
         player2.items.Add((int)PART.LEFTLEG, new List<Part>());
         player2.items.Add((int)PART.RIGHTLEG, new List<Part>());
+
+        confetis = GameObject.Find("ConfetisEmitter");
+        confetis.SetActive(false);
     }
 
 	void Start ()
@@ -224,8 +235,13 @@ public class GameManager : MonoBehaviour {
 		state = GameState.WIN;
 		canvasHUD.SetActive (false);
 		canvasWin.SetActive (true);
+<<<<<<< HEAD
+        //spectators.SetActive (true);
+        spectators.GetComponent<Animator>().SetBool("HouraBool", true);
+=======
 		spectators.SetActive (true);
 		confettis.SetActive (true);
+>>>>>>> c64b027eba46f73ffbe591e2dc65c3780fe63dd2
 
 		if (player == null)
 		{
@@ -275,8 +291,12 @@ public class GameManager : MonoBehaviour {
 		canvasPause.SetActive (false);
 		canvasWin.SetActive (false);
 		background.SetActive (false);
+<<<<<<< HEAD
+		//spectators.SetActive (false);
+=======
 		spectators.SetActive (false);
 		confettis.SetActive (false);
+>>>>>>> c64b027eba46f73ffbe591e2dc65c3780fe63dd2
 		canvasSelection.SetActive (true);
 		Camera.main.GetComponent<AudioSource> ().clip = audioClips[0];
 		Camera.main.GetComponent<AudioSource> ().Play ();

@@ -18,6 +18,8 @@ public class Item : MonoBehaviour {
 
     private float timer = 0f;
     private Part _part = new Part();
+    
+
     public Part Part
     {
         get { return _part; }
@@ -73,7 +75,7 @@ public class Item : MonoBehaviour {
         if (_part.hp < 0)
             return;
 
-        if ((coll.gameObject.layer == LayerMask.NameToLayer("Player1") || coll.gameObject.layer == LayerMask.NameToLayer("Player2")) && timer < 0.05)
+        if ((coll.gameObject.layer == LayerMask.NameToLayer("Player1") || coll.gameObject.layer == LayerMask.NameToLayer("Player2")) && timer > 0.05)
         {
             Item hitted = coll.gameObject.GetComponentInChildren<Item>();
             float magnitude = GetComponent<Rigidbody2D>().velocity.magnitude;
@@ -81,22 +83,30 @@ public class Item : MonoBehaviour {
 
 			StartCoroutine (ControllerVibration ());
 
+<<<<<<< HEAD
+            //Debug.Log(magnitude);
+            //Debug.Log(magnitudeEnn);
+            //Debug.Log(hitted.Part.hp);
+            if (magnitudeEnn > magnitude)
+=======
             Debug.Log("mag " + magnitude);
             Debug.Log("mag ennemie " + magnitudeEnn);
             Debug.Log(hitted.Part.hp);
             if (magnitudeEnn < magnitude)
+>>>>>>> c64b027eba46f73ffbe591e2dc65c3780fe63dd2
                 hitted.Part.hp -= Part.damage;
-            Debug.Log(hitted.Part.hp);
+            //Debug.Log(hitted.Part.hp);
 			if (hitted.Part.hp <= 0)
             {
-                Transform parent = hitted.transform.parent;
-                foreach (HingeJoint2D joint in parent.GetComponentsInChildren<HingeJoint2D>())
+                Debug.Log("Kill part " + hitted.gameObject.name, hitted.gameObject);
+                
+                if(hitted.GetComponent<HingeJoint2D>())
                 {
-                    LooseJoint(joint);
+                    LooseJoint(hitted.GetComponent<HingeJoint2D>());
                 }
-                foreach (FixedJoint2D joint in parent.GetComponentsInChildren<FixedJoint2D>())
+                if(hitted.GetComponent<FixedJoint2D>())
                 {
-                    LooseJoint(joint);
+                    LooseJoint(hitted.GetComponent<FixedJoint2D>());
                 }
             }
 
@@ -113,13 +123,13 @@ public class Item : MonoBehaviour {
         if (joint.gameObject.name.Equals("Head") || joint.gameObject.name.Equals("Body"))
         {
             gm.SetWin(transform.parent.gameObject);
-            //gm.confetis.SetActive(true);
+            gm.confetis.SetActive(true);
         }
 
         if (joint.GetComponent<CandiesEmitter>() != null)
             joint.GetComponent<CandiesEmitter>().EmitCandies();
 
-        //GameObject.Find("Supporters").GetComponent<Animator>().SetTrigger("Houra");
+        gm.spectators.GetComponent<Animator>().SetTrigger("Houra");
 
         Destroy(joint);
 

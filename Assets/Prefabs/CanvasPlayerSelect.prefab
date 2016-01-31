@@ -20858,6 +20858,7 @@ MonoBehaviour:
   audioClips:
   - {fileID: 0}
   - {fileID: 0}
+  confetis: {fileID: 0}
 --- !u!114 &11491424
 MonoBehaviour:
   m_ObjectHideFlags: 1
