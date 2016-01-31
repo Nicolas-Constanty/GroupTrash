@@ -60,10 +60,9 @@ public class Player : MonoBehaviour {
             enemyPos = GameObject.Find("RagdollP1").transform.GetChild(0).transform.position;
         }
 
-        gM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        SetMember();
-
-        Debug.Log("found hip at : ", gameObject.transform.Find("kneeL").gameObject);
+        //gM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        //SetMember();
+        
     }
 
     private void SetMember()
