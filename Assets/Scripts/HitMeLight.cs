@@ -4,7 +4,10 @@ using System.Collections;
 public class HitMeLight : MonoBehaviour {
 
     public int maxHit = 5;
+    public GameObject flame;
+    public Vector2 flamePos;
     private int hit = 0;
+    private bool activated = false;
 
 	// Use this for initialization
 	void Start () {
@@ -22,8 +25,11 @@ public class HitMeLight : MonoBehaviour {
             return;
         if (hit < maxHit)
             ++hit;
-        else
-            gameObject.GetComponent<SpriteRenderer>().color = Color.cyan;
+        else if (!activated)
+        {
+            Instantiate(flame, flamePos, Quaternion.identity);
+            activated = true;
+        }
     }
 
     public bool enoughtHitted()

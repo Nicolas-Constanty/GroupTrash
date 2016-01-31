@@ -36,23 +36,11 @@ public class Item : MonoBehaviour {
                 Transform parent = hitted.transform.parent;
                 foreach (HingeJoint2D joint in parent.GetComponentsInChildren<HingeJoint2D>())
                 {
-                    if (joint.gameObject.name.Equals("neck") || joint.gameObject.name.Equals("hip"))
-                    {
-                        GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SetWin(transform.parent.gameObject);
-                    }
-                    if (joint.GetComponent<CandiesEmitter>() != null)
-                        joint.GetComponent<CandiesEmitter>().EmitCandies();
-                    Destroy(joint);
+                    LooseJoint(joint);
                 }
                 foreach (FixedJoint2D joint in parent.GetComponentsInChildren<FixedJoint2D>())
                 {
-                    if (joint.gameObject.name.Equals("neck") || joint.gameObject.name.Equals("hip"))
-                    {
-                        GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SetWin(transform.parent.gameObject);
-                    }
-                    if (joint.GetComponent<CandiesEmitter>() != null)
-                        joint.GetComponent<CandiesEmitter>().EmitCandies();
-                    Destroy(joint);
+                    LooseJoint(joint);
                 }
             }
 
@@ -60,5 +48,22 @@ public class Item : MonoBehaviour {
         }
 
         timer += Time.deltaTime;
+    }
+
+    private void LooseJoint(Joint2D joint)
+    {
+        if (joint.gameObject.name.Equals("neck") || joint.gameObject.name.Equals("hip"))
+        {
+            GameManager gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+            gm.SetWin(transform.parent.gameObject);
+            //gm.confetis.SetActive(true);
+        }
+
+        if (joint.GetComponent<CandiesEmitter>() != null)
+            joint.GetComponent<CandiesEmitter>().EmitCandies();
+
+        GameObject.Find("Supporters").GetComponent<Animator>().SetTrigger("Houra");
+
+        Destroy(joint);
     }
 }
