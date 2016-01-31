@@ -1,0 +1,328 @@
+fileFormatVersion: 2
+guid: 679de9db9445c2b47a08b25a5050c439
+timeCreated: 1454223425
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: skullgirl_gold_0
+    21300002: skullgirl_gold_1
+    21300004: skullgirl_gold_2
+    21300006: skullgirl_gold_3
+    21300008: skullgirl_gold_4
+    21300010: skullgirl_gold_5
+    21300012: skullgirl_gold_6
+    21300014: skullgirl_gold_7
+    21300016: skullgirl_gold_8
+    21300018: skullgirl_gold_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: skullgirl_gold_0
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 2125.5
+        width: 707.75
+        height: 708.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.583984, y: 77}
+        - {x: -65.583984, y: 55}
+        - {x: -86.583984, y: 27}
+        - {x: -86.583984, y: -50}
+        - {x: -81.583984, y: -55}
+        - {x: -49.583984, y: -110}
+        - {x: -19.583984, y: -117}
+        - {x: 50.416016, y: -124}
+        - {x: 75.416016, y: -124}
+        - {x: 106.416016, y: -86}
+        - {x: 106.416016, y: 77}
+    - name: skullgirl_gold_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1417.5
+        width: 707.75
+        height: 708.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46, y: 99.86133}
+        - {x: -56, y: 47.86133}
+        - {x: -56, y: -111.13867}
+        - {x: -5, y: -111.13867}
+        - {x: 15, y: -105.13867}
+        - {x: 64, y: 51.86133}
+        - {x: 64, y: 83.86133}
+        - {x: 11, y: 99.86133}
+    - name: skullgirl_gold_2
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1417.5
+        width: 707.75
+        height: 708.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 113.416016, y: -73.13867}
+        - {x: 96.416016, y: 21.861328}
+        - {x: 112.416016, y: 47.86133}
+        - {x: 114.416016, y: 57.86133}
+        - {x: 114.416016, y: 83.86133}
+        - {x: 77.416016, y: 171.86133}
+        - {x: 31.416016, y: 202.86133}
+        - {x: 21.416016, y: 232.86133}
+        - {x: 9.416016, y: 240.86133}
+        - {x: -16.583984, y: 240.86133}
+        - {x: -27.583984, y: 238.86133}
+        - {x: -33.583984, y: 215.86133}
+        - {x: -108.583984, y: 162.86133}
+        - {x: -110.583984, y: 147.86133}
+        - {x: -110.583984, y: 118.86133}
+        - {x: -105.583984, y: 107.86133}
+        - {x: -70.583984, y: 63.86133}
+        - {x: -64.583984, y: -3.1386719}
+        - {x: -77.583984, y: -59.13867}
+        - {x: -76.583984, y: -66.13867}
+        - {x: -88.583984, y: -132.13867}
+        - {x: -85.583984, y: -161.13867}
+        - {x: -6.5839844, y: -171.13867}
+        - {x: 20.416016, y: -212.13867}
+        - {x: 26.416016, y: -219.13867}
+        - {x: 41.416016, y: -219.13867}
+        - {x: 61.416016, y: -213.13867}
+        - {x: 90.416016, y: -178.13867}
+        - {x: 114.416016, y: -133.13867}
+        - {x: 114.416016, y: -98.13867}
+      - - {x: -81.583984, y: 180.86133}
+        - {x: -79.583984, y: 177.86133}
+        - {x: -75.583984, y: 177.86133}
+        - {x: -72.583984, y: 178.86133}
+        - {x: -72.583984, y: 182.86133}
+        - {x: -73.583984, y: 184.86133}
+        - {x: -77.583984, y: 184.86133}
+        - {x: -81.583984, y: 182.86133}
+    - name: skullgirl_gold_3
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 1417.5
+        width: 707.75
+        height: 708.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.751953, y: 6.861328}
+        - {x: -17.751953, y: -12.138672}
+        - {x: -7.751953, y: -23.138672}
+        - {x: 7.248047, y: -59.13867}
+        - {x: 25.248047, y: -95.13867}
+        - {x: 29.248047, y: -94.13867}
+        - {x: 31.248047, y: -92.13867}
+        - {x: 31.248047, y: -89.13867}
+        - {x: 31.248047, y: -96.13867}
+        - {x: 50.248047, y: -96.13867}
+        - {x: 73.24805, y: -86.13867}
+        - {x: 73.24805, y: 35.86133}
+        - {x: 71.24805, y: 76.86133}
+        - {x: -7.751953, y: 76.86133}
+        - {x: -25.751953, y: 49.86133}
+    - name: skullgirl_gold_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 709.5
+        width: 707.75
+        height: 708.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: -81.77734}
+        - {x: -6, y: -115.77734}
+        - {x: 16, y: -153.77734}
+        - {x: 27, y: -116.77734}
+        - {x: 27, y: 129.22266}
+        - {x: 21, y: 137.22266}
+        - {x: -63, y: 137.22266}
+        - {x: -80, y: 92.22266}
+        - {x: -80, y: -148.77734}
+        - {x: -37, y: -169.77734}
+        - {x: -8, y: -169.77734}
+        - {x: -2, y: -168.77734}
+        - {x: -4, y: -125.77734}
+        - {x: -7, y: -113.77734}
+        - {x: -6, y: -103.77734}
+    - name: skullgirl_gold_5
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 709.5
+        width: 707.75
+        height: 708.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33.416016, y: 112.22266}
+        - {x: 0.41601562, y: 122.22266}
+        - {x: -32.583984, y: 122.22266}
+        - {x: -47.583984, y: 112.22266}
+        - {x: -93.583984, y: 4.2226562}
+        - {x: -93.583984, y: -53.777344}
+        - {x: -75.583984, y: -98.77734}
+        - {x: -63.583984, y: -90.77734}
+        - {x: -67.583984, y: -132.77734}
+        - {x: -37.583984, y: -171.77734}
+        - {x: 9.416016, y: -171.77734}
+        - {x: 29.416016, y: -155.77734}
+        - {x: 73.416016, y: -80.77734}
+        - {x: 73.416016, y: 65.22266}
+    - name: skullgirl_gold_6
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 709.5
+        width: 707.75
+        height: 708.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 93.33203, y: -24.777344}
+        - {x: 37.33203, y: 133.22266}
+        - {x: 31.332031, y: 137.22266}
+        - {x: 27.332031, y: 137.22266}
+        - {x: -46.66797, y: 67.22266}
+        - {x: -46.66797, y: -67.77734}
+        - {x: -44.66797, y: -75.77734}
+        - {x: -23.667969, y: -153.77734}
+        - {x: 9.332031, y: -167.77734}
+        - {x: 62.33203, y: -167.77734}
+        - {x: 82.33203, y: -130.77734}
+        - {x: 97.33203, y: -68.77734}
+        - {x: 97.33203, y: -40.777344}
+    - name: skullgirl_gold_7
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 709.5
+        width: 707.75
+        height: 708.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.751953, y: 149.22266}
+        - {x: -33.751953, y: 138.22266}
+        - {x: -33.751953, y: 41.222656}
+        - {x: -2.7519531, y: -115.77734}
+        - {x: 115.24805, y: -115.77734}
+        - {x: 131.24805, y: -110.77734}
+        - {x: 131.24805, y: -7.7773438}
+        - {x: 35.248047, y: 149.22266}
+    - name: skullgirl_gold_8
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1.5
+        width: 707.75
+        height: 708.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 76.416016, y: 171.58398}
+        - {x: 76.416016, y: 203.58398}
+        - {x: 52.416016, y: 218.58398}
+        - {x: -6.5839844, y: 218.58398}
+        - {x: -18.583984, y: 211.58398}
+        - {x: -33.583984, y: 163.58398}
+        - {x: -82.583984, y: -133.41602}
+        - {x: -82.583984, y: -187.41602}
+        - {x: -58.583984, y: -219.41602}
+        - {x: -20.583984, y: -219.41602}
+        - {x: -2.5839844, y: -211.41602}
+        - {x: 15.416016, y: -152.41602}
+        - {x: 6.4160156, y: -75.416016}
+        - {x: 26.416016, y: 14.583984}
+      - - {x: -25.583984, y: 202.58398}
+        - {x: -22.583984, y: 203.58398}
+        - {x: -22.583984, y: 206.58398}
+        - {x: -25.583984, y: 207.58398}
+        - {x: -27.583984, y: 205.58398}
+    - name: skullgirl_gold_9
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 1.5
+        width: 707.75
+        height: 708.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7.6679688, y: 200.58398}
+        - {x: -16.667969, y: 186.58398}
+        - {x: -13.667969, y: -1.4160156}
+        - {x: -27.667969, y: -33.416016}
+        - {x: -27.667969, y: -103.416016}
+        - {x: -14.667969, y: -173.41602}
+        - {x: 13.332031, y: -202.41602}
+        - {x: 45.33203, y: -202.41602}
+        - {x: 78.33203, y: -91.416016}
+        - {x: 78.33203, y: 200.58398}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
