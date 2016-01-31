@@ -245,19 +245,31 @@ public class BottomPanel : MonoBehaviour {
             _current = 0;
             ActiveItem(Shop.transform.GetChild(0));
         }
+        UpdateCharacter();
         Move();
         Select();
         _lastType = _type;
+
+        //
+
     }
 
     private void Select()
     {
         if (Input.GetAxis(_axis["Submit"]) != 0 && !_click && _itemActive.GetComponent<Item>().Part.hp != 0)
         {
-            Debug.Log ("Submit");
+            Debug.Log ("Submit", gameObject);
             StartCoroutine(waitClick());
-
-            _GM.SetPlayerPart(manette, _type, _itemActive.GetComponent<Item>().Part);
+            Part pi = new Part();
+            Part tmp = _itemActive.GetComponent<Item>().Part;
+            pi.damage = tmp.damage;
+            pi.hp = tmp.hp;
+            pi.candies = tmp.candies;
+            pi.special = tmp.special;
+            pi.speed = tmp.speed;
+            pi.sprite = tmp.sprite;
+            pi.spriteParts = tmp.spriteParts;
+            _GM.SetPlayerPart(manette, _type, pi);
             CaracTotal.setObject(mixParts(), "Total");
 			UpdateCharacter ();
 

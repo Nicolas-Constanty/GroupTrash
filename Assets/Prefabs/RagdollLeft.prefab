@@ -173,7 +173,7 @@ GameObject:
   - 114: {fileID: 11415352}
   m_Layer: 8
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -887,7 +887,7 @@ MonoBehaviour:
     aLeft: {fileID: 157822}
     aRight: {fileID: 180808}
   speed: 200
-  gogopowerjump: 300
+  gogopowerjump: 80
 --- !u!114 &11428054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1565,8 +1565,8 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
-      propertyPath: m_TagString
-      value: Untagged
+      propertyPath: gogopowerjump
+      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
