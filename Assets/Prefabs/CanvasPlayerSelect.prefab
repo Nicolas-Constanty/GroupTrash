@@ -13846,14 +13846,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.797}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.897}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 6f59c76a5a75aed45a1c62b3099c872c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1d4a1e35eab757447bfcdd727ef39d0e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20848,18 +20848,18 @@ MonoBehaviour:
   canvasWinText: {fileID: 123746}
   background: {fileID: 0}
   timer: {fileID: 11497340}
-  waitTime: 30
+  waitTime: 20
   roundTimer: {fileID: 11414952}
   roundTime: 90
-  player1Prefab: {fileID: 167962, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
-  player2Prefab: {fileID: 163788, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
+  player1Prefab: {fileID: 179658, guid: c8b26d93095364b4f9f75f600a8a8b97, type: 2}
+  player2Prefab: {fileID: 191152, guid: 0a8f54ca39a5b01469c28497f9d7b0bd, type: 2}
   state: 0
   P1VictoryText: {fileID: 11499748}
   P2VictoryText: {fileID: 11419178}
   P12Stalemate: {fileID: 11488832}
   P1CandiesText: {fileID: 11430254}
   P2CandiesText: {fileID: 11464928}
-  spectators: {fileID: 0}
+  supporterPrefab: {fileID: 0}
 --- !u!114 &11491046
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -102,7 +102,7 @@ public class GameManager : MonoBehaviour {
 	{
         for (int i = 0; i < 20; i++)
         {
-            if (Input.GetKeyDown("joystick 1 button " + i))
+            if (Input.GetKeyDown("joystick button " + i))
             {
                 Debug.Log("Button " + i + " pressed !");
             }
@@ -145,14 +145,14 @@ public class GameManager : MonoBehaviour {
 		// relance la partie après un win
 		if (state == GameState.WIN)
 		{
-			if (Input.GetKeyDown ("joystick 1 button 0") || Input.GetKeyDown(KeyCode.Return))
+			if (Input.GetKeyDown ("joystick button 0") || Input.GetKeyDown(KeyCode.Return))
 			{
 				SetSelection ();
 			}
 		}
 
 		// Sets pause with start
-		if (Input.GetKeyDown ("joystick 1 button 7"))
+		if (Input.GetKeyDown ("joystick button 7"))
 		{
 			SetPause ();
 		}
