@@ -57,6 +57,8 @@ public class GameManager : MonoBehaviour {
 
 	[SerializeField]
 	private GameObject spectators;
+	[SerializeField]
+	private GameObject confettis;
 
 	public AudioClip[] audioClips;
 
@@ -219,6 +221,7 @@ public class GameManager : MonoBehaviour {
 		canvasHUD.SetActive (false);
 		canvasWin.SetActive (true);
 		spectators.SetActive (true);
+		confettis.SetActive (true);
 
 		if (player == null)
 		{
@@ -269,6 +272,7 @@ public class GameManager : MonoBehaviour {
 		canvasWin.SetActive (false);
 		background.SetActive (false);
 		spectators.SetActive (false);
+		confettis.SetActive (false);
 		canvasSelection.SetActive (true);
 		Camera.main.GetComponent<AudioSource> ().clip = audioClips[0];
 		Camera.main.GetComponent<AudioSource> ().Play ();
