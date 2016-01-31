@@ -54,7 +54,8 @@ public class HitManager : MonoBehaviour
                     {
                         GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SetWin(player.gameObject);
                     }
-
+                    if (joint.GetComponent<CandiesEmitter>() != null)
+                        joint.GetComponent<CandiesEmitter>().EmitCandies();
                     Destroy(joint);
                 }
                 foreach (FixedJoint2D joint in parent.GetComponentsInChildren<FixedJoint2D>())
@@ -63,6 +64,8 @@ public class HitManager : MonoBehaviour
                     {
                         GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().SetWin(player.gameObject);
                     }
+                    if (joint.GetComponent<CandiesEmitter>() != null)
+                        joint.GetComponent<CandiesEmitter>().EmitCandies();
                     Destroy(joint);
                 }
             }
