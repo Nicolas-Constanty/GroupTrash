@@ -13,6 +13,7 @@ GameObject:
   - 50: {fileID: 5015320}
   - 233: {fileID: 23356556}
   - 114: {fileID: 11466312}
+  - 114: {fileID: 11450140}
   m_Layer: 9
   m_Name: LeftLeg
   m_TagString: Untagged
@@ -49,6 +50,7 @@ GameObject:
   - 50: {fileID: 5086882}
   - 233: {fileID: 23398534}
   - 114: {fileID: 11428730}
+  - 114: {fileID: 11496154}
   m_Layer: 9
   m_Name: TRight
   m_TagString: Untagged
@@ -69,6 +71,7 @@ GameObject:
   - 50: {fileID: 5073792}
   - 233: {fileID: 23305286}
   - 114: {fileID: 11452038}
+  - 114: {fileID: 11475720}
   m_Layer: 9
   m_Name: ALeft
   m_TagString: Untagged
@@ -89,6 +92,7 @@ GameObject:
   - 50: {fileID: 5047788}
   - 255: {fileID: 25503986}
   - 114: {fileID: 11476922}
+  - 114: {fileID: 11461658}
   m_Layer: 9
   m_Name: Head
   m_TagString: Untagged
@@ -109,6 +113,7 @@ GameObject:
   - 50: {fileID: 5082362}
   - 233: {fileID: 23397252}
   - 114: {fileID: 11472816}
+  - 114: {fileID: 11461812}
   m_Layer: 9
   m_Name: TLeft
   m_TagString: Untagged
@@ -145,6 +150,7 @@ GameObject:
   - 50: {fileID: 5064142}
   - 233: {fileID: 23342396}
   - 114: {fileID: 11493516}
+  - 114: {fileID: 11468324}
   m_Layer: 9
   m_Name: LeftArm
   m_TagString: Untagged
@@ -167,6 +173,7 @@ GameObject:
   - 231: {fileID: 23109148}
   - 231: {fileID: 23158628}
   - 114: {fileID: 11413498}
+  - 114: {fileID: 11461766}
   m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
@@ -203,6 +210,7 @@ GameObject:
   - 50: {fileID: 5073162}
   - 233: {fileID: 23309768}
   - 114: {fileID: 11410934}
+  - 114: {fileID: 11427836}
   m_Layer: 9
   m_Name: RightLeg
   m_TagString: Untagged
@@ -256,6 +264,7 @@ GameObject:
   - 50: {fileID: 5066166}
   - 233: {fileID: 23341692}
   - 114: {fileID: 11478926}
+  - 114: {fileID: 11410434}
   m_Layer: 9
   m_Name: ARight
   m_TagString: Untagged
@@ -276,6 +285,7 @@ GameObject:
   - 50: {fileID: 5001784}
   - 233: {fileID: 23332824}
   - 114: {fileID: 11416494}
+  - 114: {fileID: 11422690}
   m_Layer: 9
   m_Name: RightArm
   m_TagString: Untagged
@@ -827,8 +837,38 @@ MonoBehaviour:
     tRight: {fileID: 146880}
     aLeft: {fileID: 149092}
     aRight: {fileID: 196234}
-  speed: 200
-  gogopowerjump: 300
+  speed: 300
+  gogopowerjump: 80
+--- !u!114 &11410434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debbbc8be6ee3b7468c82a3ec0e8abc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nbCandies: 20
+  sprites:
+  - {fileID: 21300000, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300002, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300004, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300006, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300008, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300010, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300012, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300014, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300016, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300018, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300020, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300022, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300024, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300026, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300028, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300030, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  CandyPrefab: {fileID: 101696, guid: 689947b3a7a88e5418f23099286d5928, type: 2}
 --- !u!114 &11410934
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -862,6 +902,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11422690
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debbbc8be6ee3b7468c82a3ec0e8abc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nbCandies: 20
+  sprites:
+  - {fileID: 21300000, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300002, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300004, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300006, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300008, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300010, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300012, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300014, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300016, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300018, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300020, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300022, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300024, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300026, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300028, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300030, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  CandyPrefab: {fileID: 101696, guid: 689947b3a7a88e5418f23099286d5928, type: 2}
+--- !u!114 &11427836
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debbbc8be6ee3b7468c82a3ec0e8abc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nbCandies: 20
+  sprites:
+  - {fileID: 21300000, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300002, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300004, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300006, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300008, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300010, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300012, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300014, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300016, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300018, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300020, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300022, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300024, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300026, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300028, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300030, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  CandyPrefab: {fileID: 101696, guid: 689947b3a7a88e5418f23099286d5928, type: 2}
 --- !u!114 &11428730
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -888,6 +988,36 @@ MonoBehaviour:
   control: RightKick1
   strenght: 30
   mat: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &11450140
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debbbc8be6ee3b7468c82a3ec0e8abc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nbCandies: 20
+  sprites:
+  - {fileID: 21300000, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300002, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300004, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300006, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300008, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300010, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300012, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300014, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300016, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300018, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300020, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300022, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300024, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300026, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300028, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300030, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  CandyPrefab: {fileID: 101696, guid: 689947b3a7a88e5418f23099286d5928, type: 2}
 --- !u!114 &11452038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -899,6 +1029,96 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11461658
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debbbc8be6ee3b7468c82a3ec0e8abc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nbCandies: 20
+  sprites:
+  - {fileID: 21300000, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300002, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300004, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300006, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300008, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300010, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300012, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300014, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300016, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300018, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300020, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300022, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300024, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300026, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300028, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300030, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  CandyPrefab: {fileID: 101696, guid: 689947b3a7a88e5418f23099286d5928, type: 2}
+--- !u!114 &11461766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 173840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debbbc8be6ee3b7468c82a3ec0e8abc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nbCandies: 20
+  sprites:
+  - {fileID: 21300000, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300002, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300004, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300006, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300008, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300010, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300012, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300014, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300016, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300018, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300020, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300022, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300024, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300026, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300028, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300030, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  CandyPrefab: {fileID: 101696, guid: 689947b3a7a88e5418f23099286d5928, type: 2}
+--- !u!114 &11461812
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debbbc8be6ee3b7468c82a3ec0e8abc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nbCandies: 20
+  sprites:
+  - {fileID: 21300000, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300002, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300004, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300006, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300008, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300010, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300012, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300014, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300016, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300018, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300020, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300022, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300024, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300026, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300028, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300030, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  CandyPrefab: {fileID: 101696, guid: 689947b3a7a88e5418f23099286d5928, type: 2}
 --- !u!114 &11462038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -925,6 +1145,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11468324
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debbbc8be6ee3b7468c82a3ec0e8abc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nbCandies: 20
+  sprites:
+  - {fileID: 21300000, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300002, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300004, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300006, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300008, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300010, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300012, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300014, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300016, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300018, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300020, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300022, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300024, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300026, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300028, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300030, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  CandyPrefab: {fileID: 101696, guid: 689947b3a7a88e5418f23099286d5928, type: 2}
 --- !u!114 &11472816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -936,6 +1186,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f571e61f47adb4e8183046d59983dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11475720
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debbbc8be6ee3b7468c82a3ec0e8abc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nbCandies: 20
+  sprites:
+  - {fileID: 21300000, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300002, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300004, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300006, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300008, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300010, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300012, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300014, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300016, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300018, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300020, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300022, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300024, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300026, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300028, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300030, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  CandyPrefab: {fileID: 101696, guid: 689947b3a7a88e5418f23099286d5928, type: 2}
 --- !u!114 &11476922
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -999,6 +1279,36 @@ MonoBehaviour:
   control: LeftPunch2
   strenght: 30
   mat: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &11496154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debbbc8be6ee3b7468c82a3ec0e8abc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nbCandies: 20
+  sprites:
+  - {fileID: 21300000, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300002, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300004, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300006, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300008, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300010, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300012, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300014, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300016, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300018, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300020, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300022, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300024, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300026, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300028, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  - {fileID: 21300030, guid: 5ff530cee694cba4c8b2d4c7d54c9cfd, type: 3}
+  CandyPrefab: {fileID: 101696, guid: 689947b3a7a88e5418f23099286d5928, type: 2}
 --- !u!212 &21200266
 SpriteRenderer:
   m_ObjectHideFlags: 1
