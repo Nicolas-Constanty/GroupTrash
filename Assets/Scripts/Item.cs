@@ -31,6 +31,43 @@ public class Item : MonoBehaviour {
         }
     }
 
+    public void Start()
+    {
+        switch (gameObject.name)
+        {
+            case "Head":
+                Part.hp = 24;
+                break;
+            case "Body":
+                Part.hp = 44;
+                break;
+            case "LeftArm":
+                Part.hp = 4;
+                break;
+            case "RightArm":
+                Part.hp = 4;
+                break;
+            case "ARight":
+                Part.hp = 4;
+                break;
+            case "ALeft":
+                Part.hp = 4;
+                break;
+            case "LeftLeg":
+                Part.hp = 3;
+                break;
+            case "RightLeg":
+                Part.hp = 3;
+                break;
+            case "TRight":
+                Part.hp = 3;
+                break;
+            case "TLeft":
+                Part.hp = 3;
+                break;
+        }
+    }
+
     void OnCollisionEnter2D(Collision2D coll)
     {
         if (_part.hp < 0)
@@ -39,14 +76,18 @@ public class Item : MonoBehaviour {
         if ((coll.gameObject.layer == LayerMask.NameToLayer("Player1") || coll.gameObject.layer == LayerMask.NameToLayer("Player2")) && timer < 0.05)
         {
             Item hitted = coll.gameObject.GetComponentInChildren<Item>();
-            float magnitude = transform.parent.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude;
+            float magnitude = transform.parent.GetComponent<Rigidbody2D>().velocity.magnitude;
+            float magnitudeEnn = coll.transform.parent.GetChild(0).GetComponentInChildren<Rigidbody2D>().velocity.magnitude;
 
 			StartCoroutine (ControllerVibration ());
 
-            if (coll.transform.parent.GetChild(0).GetComponentInChildren<Rigidbody2D>().velocity.magnitude > magnitude)
-                hitted.Part.hp -= (int)magnitude + Part.damage;
-
-			if (hitted.Part.hp < 0)
+            Debug.Log(magnitude);
+            Debug.Log(magnitudeEnn);
+            Debug.Log(hitted.Part.hp);
+            if (magnitudeEnn > magnitude)
+                hitted.Part.hp -= Part.damage;
+            Debug.Log(hitted.Part.hp);
+			if (hitted.Part.hp <= 0)
             {
                 Transform parent = hitted.transform.parent;
                 foreach (HingeJoint2D joint in parent.GetComponentsInChildren<HingeJoint2D>())

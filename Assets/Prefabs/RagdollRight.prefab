@@ -236,7 +236,7 @@ GameObject:
   - 4: {fileID: 470872}
   - 50: {fileID: 5050804}
   - 114: {fileID: 11408624}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: RagdollRight
   m_TagString: Player2
   m_Icon: {fileID: 0}
@@ -828,7 +828,7 @@ MonoBehaviour:
     aLeft: {fileID: 149092}
     aRight: {fileID: 196234}
   speed: 200
-  gogopowerjump: 80
+  gogopowerjump: 300
 --- !u!114 &11410934
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1565,16 +1565,12 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_Layer
       value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_TagString
-      value: Player2
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: gogopowerjump
-      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
