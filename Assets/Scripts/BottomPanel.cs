@@ -154,6 +154,7 @@ public class BottomPanel : MonoBehaviour {
     }
 
 	// Update visual
+	// The selection panel MUST BE ACTIVATED before these actions are done
 	private void UpdateCharacter()
 	{
 		//visual.buttons [_type].GetComponent<Image> ().sprite = _items[_type][_current].sprite;

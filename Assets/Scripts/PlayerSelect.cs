@@ -36,14 +36,19 @@ public class PlayerSelect : MonoBehaviour {
 
 	void MoveCursor()
 	{
-		float verticalP1 = Input.GetAxisRaw ("Vertical" + control.ToString());
+		float verticalP1 = Input.GetAxis ("Vertical" + control.ToString());
 		//float horizontalP1 = Input.GetAxisRaw ("Horizontal" + control.ToString());
+		//Debug.Log("Vertical = " + verticalP1);
 
 		if (verticalP1 != 0 && !isMoving)
 		{
+			Debug.Log ("Switching");
             StartCoroutine(waitV());
 			buttons[buttonIdx].GetComponent<Image>().color = Color.white;
-			buttonIdx -= (int)verticalP1;
+			if (verticalP1 < 0)
+				++buttonIdx;
+			else
+				--buttonIdx;
 			buttonIdx = (buttonIdx < 0) ? buttons.Length - 1 : (buttonIdx > buttons.Length - 1) ? 0 : buttonIdx;
 			buttons[buttonIdx].GetComponent<Image>().color = Color.red;
             CaracsPerso.setObject(GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().GetPlayerPart(control, buttonIdx), NAME[buttonIdx]);
