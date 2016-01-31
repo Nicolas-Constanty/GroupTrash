@@ -21,10 +21,4 @@ public class MeteorFire : MonoBehaviour {
             collision.gameObject.GetComponent<Item>().Part.hp -= 1;
         Destroy(gameObject);
     }
-
-    IEnumerator DestroyAfter(int timeout, GameObject toDestroy)
-    {
-        yield return new WaitForSeconds(timeout);
-        Destroy(toDestroy);
-    }
 }

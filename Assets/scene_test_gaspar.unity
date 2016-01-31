@@ -161,7 +161,7 @@ Transform:
   m_LocalScale: {x: 0.018387062, y: 0.018387076, z: 0.018387076}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!60 &69024958
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -610,24 +610,12 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 2, y: 1}
---- !u!1 &925247696 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 163268, guid: f44e87d25bcb2ec418828277e90004d0, type: 2}
-  m_PrefabInternal: {fileID: 1573514001}
---- !u!114 &925247697
+--- !u!114 &925247697 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 925247696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_PrefabParentObject: {fileID: 11496884, guid: f44e87d25bcb2ec418828277e90004d0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1573514001}
   m_Script: {fileID: 11500000, guid: 177f6248899307e428b4e03b3912db1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  baseObject: {fileID: 183740, guid: 255f5369c4597ea4988db38fde64fcc9, type: 2}
-  intensity: 28
-  frequency: 10
 --- !u!1001 &951630852
 Prefab:
   m_ObjectHideFlags: 0
@@ -1167,10 +1155,7 @@ Prefab:
       propertyPath: m_Name
       value: MeteorFire
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 11458672, guid: f44e87d25bcb2ec418828277e90004d0, type: 2}
-    - {fileID: 5855144, guid: f44e87d25bcb2ec418828277e90004d0, type: 2}
-    - {fileID: 5048456, guid: f44e87d25bcb2ec418828277e90004d0, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f44e87d25bcb2ec418828277e90004d0, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1612140075

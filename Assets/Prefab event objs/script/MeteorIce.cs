@@ -15,16 +15,11 @@ public class MeteorIce : MonoBehaviour {
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log(collision);
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player1") ||
             collision.gameObject.layer == LayerMask.NameToLayer("Player2") ||
             collision.gameObject.layer == LayerMask.NameToLayer("doll"))
             StartCoroutine(freezePlayer(collision.gameObject.GetComponent<Item>()));
-        Destroy(gameObject);
-    }
-
-    IEnumerator DestroyAfter(int timeout)
-    {
-        yield return new WaitForSeconds(timeout);
         Destroy(gameObject);
     }
 
