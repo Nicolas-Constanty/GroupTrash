@@ -163,11 +163,6 @@ public class GameManager : MonoBehaviour {
 		{
 			player2.playerObj = GameObject.FindGameObjectWithTag ("Player2");
 		}
-
-		if (Input.GetKeyDown (KeyCode.A))
-		{
-			SetWin (player1.playerObj);
-		}
 	}
 
 	public void StartGame()
@@ -209,6 +204,8 @@ public class GameManager : MonoBehaviour {
 		canvasHUD.SetActive (false);
 		canvasWin.SetActive (true);
 
+		Debug.Log ("GAME OBJECT RECEIVED IS = " + player.name);
+
 		if (player == null)
 		{
 			player1.nbCandies += 50;
@@ -219,7 +216,7 @@ public class GameManager : MonoBehaviour {
 			P1CandiesText.text = "50";
 			P2CandiesText.text = "50";
 		}
-		else if (player == player1.playerObj)
+		else if (player == player2.playerObj)
 		{
 			player2.nbVictories++;
 			player2.nbCandies += 75;
