@@ -43,10 +43,10 @@ public class Item : MonoBehaviour {
 
 			StartCoroutine (ControllerVibration ());
 
-            if (coll.transform.parent.GetChild(0).GetComponentInChildren<Rigidbody2D>().velocity.magnitude < magnitude)
+            if (coll.transform.parent.GetChild(0).GetComponentInChildren<Rigidbody2D>().velocity.magnitude > magnitude)
                 hitted.Part.hp -= (int)magnitude + Part.damage;
 
-            if (hitted.Part.hp < 0)
+			if (hitted.Part.hp < 0)
             {
                 Transform parent = hitted.transform.parent;
                 foreach (HingeJoint2D joint in parent.GetComponentsInChildren<HingeJoint2D>())
@@ -69,7 +69,7 @@ public class Item : MonoBehaviour {
     {
         GameManager gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
-        if (joint.gameObject.name.Equals("neck") || joint.gameObject.name.Equals("hip"))
+        if (joint.gameObject.name.Equals("Head") || joint.gameObject.name.Equals("Body"))
         {
             gm.SetWin(transform.parent.gameObject);
             //gm.confetis.SetActive(true);
@@ -78,7 +78,7 @@ public class Item : MonoBehaviour {
         if (joint.GetComponent<CandiesEmitter>() != null)
             joint.GetComponent<CandiesEmitter>().EmitCandies();
 
-        GameObject.Find("Supporters").GetComponent<Animator>().SetTrigger("Houra");
+        //GameObject.Find("Supporters").GetComponent<Animator>().SetTrigger("Houra");
 
         Destroy(joint);
 
