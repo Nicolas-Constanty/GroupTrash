@@ -78,6 +78,11 @@ public class Player : MonoBehaviour {
             cooldownRF = Mathf.Max(1, cooldownRF - Time.deltaTime * (force / 2));
 
 
+        foreach (LineRenderer line in gameObject.GetComponentsInChildren<LineRenderer>())
+        {
+            line.SetPosition(0, line.gameObject.transform.position);
+            line.SetPosition(1, new Vector3(line.gameObject.transform.position.x, 25, 0));
+        }
 
         if ((Input.GetButtonDown("LeftPunch1") && player == 1) ||
             (Input.GetButtonDown("LeftPunch2") && player == 2) ||
