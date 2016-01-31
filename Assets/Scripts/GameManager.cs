@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour {
 	private Text P2CandiesText;
 
 	[SerializeField]
-	private GameObject spectators;
+	private GameObject supporterPrefab;
 
 	// Enum for current game state
 	public enum GameState
@@ -206,7 +206,8 @@ public class GameManager : MonoBehaviour {
 		state = GameState.WIN;
 		canvasHUD.SetActive (false);
 		canvasWin.SetActive (true);
-		spectators.SetActive (true);
+        //spectators.SetActive (true);
+        supporterPrefab.transform.position = Vector3.zero;
 
 		if (player == null)
 		{
@@ -254,7 +255,7 @@ public class GameManager : MonoBehaviour {
 		canvasPause.SetActive (false);
 		canvasWin.SetActive (false);
 		background.SetActive (false);
-		spectators.SetActive (false);
+		//spectators.SetActive (false);
 		canvasSelection.SetActive (true);
 	}
 
