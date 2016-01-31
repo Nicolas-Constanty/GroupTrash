@@ -58,6 +58,8 @@ public class GameManager : MonoBehaviour {
 	[SerializeField]
 	private GameObject supporterPrefab;
 
+    public GameObject confetis;
+
 	// Enum for current game state
 	public enum GameState
 	{
@@ -82,6 +84,9 @@ public class GameManager : MonoBehaviour {
         player2.items.Add((int)PART.RIGHTARM, new List<Part>());
         player2.items.Add((int)PART.LEFTLEG, new List<Part>());
         player2.items.Add((int)PART.RIGHTLEG, new List<Part>());
+
+        confetis = GameObject.Find("ConfetisEmitter");
+        confetis.SetActive(false);
     }
 
 	void Start ()
@@ -207,7 +212,8 @@ public class GameManager : MonoBehaviour {
 		canvasHUD.SetActive (false);
 		canvasWin.SetActive (true);
         //spectators.SetActive (true);
-        supporterPrefab.transform.position = Vector3.zero;
+        supporterPrefab.GetComponent<Animator>().SetBool("HouraBool", true);
+        confetis.SetActive(true);
 
 		if (player == null)
 		{
@@ -488,4 +494,9 @@ public class GameManager : MonoBehaviour {
 			set { _items = value; }
 		}
 	}
+
+    public GameObject GetSupporters()
+    {
+        return supporterPrefab;
+    }
 }

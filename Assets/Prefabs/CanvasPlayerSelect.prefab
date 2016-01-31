@@ -20859,7 +20859,7 @@ MonoBehaviour:
   P12Stalemate: {fileID: 11488832}
   P1CandiesText: {fileID: 11430254}
   P2CandiesText: {fileID: 11464928}
-  spectators: {fileID: 0}
+  supporterPrefab: {fileID: 0}
 --- !u!114 &11491046
 MonoBehaviour:
   m_ObjectHideFlags: 1

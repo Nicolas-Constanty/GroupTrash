@@ -63,7 +63,7 @@ public class Item : MonoBehaviour {
         if (joint.GetComponent<CandiesEmitter>() != null)
             joint.GetComponent<CandiesEmitter>().EmitCandies();
 
-        GameObject.Find("Supporters").GetComponent<Animator>().SetTrigger("Houra");
+        gm.GetSupporters().GetComponent<Animator>().SetTrigger("Houra");
 
         Destroy(joint);
     }
