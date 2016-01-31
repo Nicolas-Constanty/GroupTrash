@@ -8305,7 +8305,7 @@ MonoBehaviour:
   - head:
       sprite: {fileID: 21300002, guid: c182fd87f89ce884481aee11b610b74a, type: 3}
       spriteParts:
-      - {fileID: 0}
+      - {fileID: 21300000, guid: e80a092d0aaaa2641a744be6d5d2253e, type: 3}
       - {fileID: 0}
       damage: 2
       hp: 1
@@ -8315,7 +8315,7 @@ MonoBehaviour:
     body:
       sprite: {fileID: 21300004, guid: c182fd87f89ce884481aee11b610b74a, type: 3}
       spriteParts:
-      - {fileID: 0}
+      - {fileID: 21300004, guid: e80a092d0aaaa2641a744be6d5d2253e, type: 3}
       - {fileID: 0}
       damage: 4
       hp: 1
@@ -8325,8 +8325,8 @@ MonoBehaviour:
     leftArm:
       sprite: {fileID: 21300000, guid: c182fd87f89ce884481aee11b610b74a, type: 3}
       spriteParts:
-      - {fileID: 0}
-      - {fileID: 0}
+      - {fileID: 21300002, guid: e80a092d0aaaa2641a744be6d5d2253e, type: 3}
+      - {fileID: 21300008, guid: e80a092d0aaaa2641a744be6d5d2253e, type: 3}
       damage: 2
       hp: 1
       speed: 1
@@ -8335,8 +8335,8 @@ MonoBehaviour:
     rightArm:
       sprite: {fileID: 21300006, guid: c182fd87f89ce884481aee11b610b74a, type: 3}
       spriteParts:
-      - {fileID: 0}
-      - {fileID: 0}
+      - {fileID: 21300006, guid: e80a092d0aaaa2641a744be6d5d2253e, type: 3}
+      - {fileID: 21300014, guid: e80a092d0aaaa2641a744be6d5d2253e, type: 3}
       damage: 3
       hp: 1
       speed: 1
@@ -8345,8 +8345,8 @@ MonoBehaviour:
     leftLeg:
       sprite: {fileID: 21300008, guid: c182fd87f89ce884481aee11b610b74a, type: 3}
       spriteParts:
-      - {fileID: 0}
-      - {fileID: 0}
+      - {fileID: 21300010, guid: e80a092d0aaaa2641a744be6d5d2253e, type: 3}
+      - {fileID: 21300016, guid: e80a092d0aaaa2641a744be6d5d2253e, type: 3}
       damage: 2
       hp: 1
       speed: 1
@@ -8355,8 +8355,8 @@ MonoBehaviour:
     rightLeg:
       sprite: {fileID: 21300010, guid: c182fd87f89ce884481aee11b610b74a, type: 3}
       spriteParts:
-      - {fileID: 0}
-      - {fileID: 0}
+      - {fileID: 21300012, guid: e80a092d0aaaa2641a744be6d5d2253e, type: 3}
+      - {fileID: 21300018, guid: e80a092d0aaaa2641a744be6d5d2253e, type: 3}
       damage: 4
       hp: 1
       speed: 1
@@ -8425,7 +8425,7 @@ MonoBehaviour:
   - head:
       sprite: {fileID: 21300002, guid: d9da38c4020afc642af6650df9ece620, type: 3}
       spriteParts:
-      - {fileID: 0}
+      - {fileID: 21300000, guid: 92d478afce4caf144a191fa5e95e2d81, type: 3}
       - {fileID: 0}
       damage: 1
       hp: 2
@@ -8435,7 +8435,7 @@ MonoBehaviour:
     body:
       sprite: {fileID: 21300004, guid: d9da38c4020afc642af6650df9ece620, type: 3}
       spriteParts:
-      - {fileID: 0}
+      - {fileID: 21300004, guid: 92d478afce4caf144a191fa5e95e2d81, type: 3}
       - {fileID: 0}
       damage: 1
       hp: 2
@@ -8445,8 +8445,8 @@ MonoBehaviour:
     leftArm:
       sprite: {fileID: 21300000, guid: d9da38c4020afc642af6650df9ece620, type: 3}
       spriteParts:
-      - {fileID: 0}
-      - {fileID: 0}
+      - {fileID: 21300002, guid: 92d478afce4caf144a191fa5e95e2d81, type: 3}
+      - {fileID: 21300008, guid: 92d478afce4caf144a191fa5e95e2d81, type: 3}
       damage: 2
       hp: 1
       speed: 5
@@ -8455,8 +8455,8 @@ MonoBehaviour:
     rightArm:
       sprite: {fileID: 21300006, guid: d9da38c4020afc642af6650df9ece620, type: 3}
       spriteParts:
-      - {fileID: 0}
-      - {fileID: 0}
+      - {fileID: 21300006, guid: 92d478afce4caf144a191fa5e95e2d81, type: 3}
+      - {fileID: 21300014, guid: 92d478afce4caf144a191fa5e95e2d81, type: 3}
       damage: 1
       hp: 2
       speed: 5
@@ -8465,8 +8465,8 @@ MonoBehaviour:
     leftLeg:
       sprite: {fileID: 21300008, guid: d9da38c4020afc642af6650df9ece620, type: 3}
       spriteParts:
-      - {fileID: 0}
-      - {fileID: 0}
+      - {fileID: 21300010, guid: 92d478afce4caf144a191fa5e95e2d81, type: 3}
+      - {fileID: 21300016, guid: 92d478afce4caf144a191fa5e95e2d81, type: 3}
       damage: 1
       hp: 2
       speed: 5
@@ -8475,8 +8475,8 @@ MonoBehaviour:
     rightLeg:
       sprite: {fileID: 21300010, guid: d9da38c4020afc642af6650df9ece620, type: 3}
       spriteParts:
-      - {fileID: 0}
-      - {fileID: 0}
+      - {fileID: 21300012, guid: 92d478afce4caf144a191fa5e95e2d81, type: 3}
+      - {fileID: 21300018, guid: 92d478afce4caf144a191fa5e95e2d81, type: 3}
       damage: 1
       hp: 2
       speed: 5
