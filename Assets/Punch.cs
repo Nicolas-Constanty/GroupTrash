@@ -3,16 +3,18 @@ using System.Collections;
 
 public class Punch : MonoBehaviour {
 
+    [Range(1, 2)]
+    public int player = 1;
     public string control;
     public float strenght = 10;
-    public Transform target;
+    private Transform target;
     public Material mat;
 	// Use this for initialization
     private float   _cooldown;
     private bool    _canAttack = true;
 
     LineRenderer line;
-	void Awake () {
+	void Start () {
         _cooldown = 1 - (0.2f * transform.parent.GetComponent<Item>().Part.speed);
         gameObject.AddComponent<Rigidbody2D>();
         line = gameObject.AddComponent<LineRenderer>();
@@ -22,6 +24,7 @@ public class Punch : MonoBehaviour {
         line.SetPosition(1, new Vector2(0, 25));
         FixedJoint2D join = gameObject.AddComponent<FixedJoint2D>();
         join.connectedBody = transform.parent.GetComponent<Rigidbody2D>();
+        target = GameObject.FindGameObjectWithTag("Player" + player).transform.FindChild("Head");
     }
 	
 	// Update is called once per frame

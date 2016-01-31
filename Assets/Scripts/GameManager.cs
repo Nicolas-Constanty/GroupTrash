@@ -56,7 +56,9 @@ public class GameManager : MonoBehaviour {
 	private Text P2CandiesText;
 
 	[SerializeField]
-	private GameObject spectators;
+	private GameObject supporterPrefab;
+
+    public GameObject confetis;
 
 	// Enum for current game state
 	public enum GameState
@@ -82,6 +84,9 @@ public class GameManager : MonoBehaviour {
         player2.items.Add((int)PART.RIGHTARM, new List<Part>());
         player2.items.Add((int)PART.LEFTLEG, new List<Part>());
         player2.items.Add((int)PART.RIGHTLEG, new List<Part>());
+
+        confetis = GameObject.Find("ConfetisEmitter");
+        confetis.SetActive(false);
     }
 
 	void Start ()
@@ -102,7 +107,7 @@ public class GameManager : MonoBehaviour {
 	{
         for (int i = 0; i < 20; i++)
         {
-            if (Input.GetKeyDown("joystick 1 button " + i))
+            if (Input.GetKeyDown("joystick button " + i))
             {
                 Debug.Log("Button " + i + " pressed !");
             }
@@ -145,14 +150,14 @@ public class GameManager : MonoBehaviour {
 		// relance la partie après un win
 		if (state == GameState.WIN)
 		{
-			if (Input.GetKeyDown ("joystick 1 button 0") || Input.GetKeyDown(KeyCode.Return))
+			if (Input.GetKeyDown ("joystick button 0") || Input.GetKeyDown(KeyCode.Return))
 			{
 				SetSelection ();
 			}
 		}
 
 		// Sets pause with start
-		if (Input.GetKeyDown ("joystick 1 button 7"))
+		if (Input.GetKeyDown ("joystick button 7"))
 		{
 			SetPause ();
 		}
@@ -206,7 +211,9 @@ public class GameManager : MonoBehaviour {
 		state = GameState.WIN;
 		canvasHUD.SetActive (false);
 		canvasWin.SetActive (true);
-		spectators.SetActive (true);
+        //spectators.SetActive (true);
+        supporterPrefab.GetComponent<Animator>().SetBool("HouraBool", true);
+        confetis.SetActive(true);
 
 		if (player == null)
 		{
@@ -254,7 +261,7 @@ public class GameManager : MonoBehaviour {
 		canvasPause.SetActive (false);
 		canvasWin.SetActive (false);
 		background.SetActive (false);
-		spectators.SetActive (false);
+		//spectators.SetActive (false);
 		canvasSelection.SetActive (true);
 	}
 
@@ -487,4 +494,9 @@ public class GameManager : MonoBehaviour {
 			set { _items = value; }
 		}
 	}
+
+    public GameObject GetSupporters()
+    {
+        return supporterPrefab;
+    }
 }
