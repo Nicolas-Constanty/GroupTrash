@@ -4,6 +4,7 @@ using System.Collections;
 public class HitMeLight : MonoBehaviour {
 
     public int maxHit = 5;
+    public Sprite lightSprite;
     private int hit = 0;
 
 	// Use this for initialization
@@ -23,7 +24,7 @@ public class HitMeLight : MonoBehaviour {
         if (hit < maxHit)
             ++hit;
         else
-            gameObject.GetComponent<SpriteRenderer>().color = Color.cyan;
+            gameObject.GetComponent<SpriteRenderer>().sprite = lightSprite;
     }
 
     public bool enoughtHitted()

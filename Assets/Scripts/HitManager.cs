@@ -74,5 +74,4 @@ public class HitManager : MonoBehaviour
 
         timer += Time.deltaTime;
     }
-
 }
