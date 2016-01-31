@@ -38,7 +38,7 @@ public class BottomPanel : MonoBehaviour {
     public Body[] bodies;
     public Part[] shopContent;
 
-    private const int MAX_RANDOM = 12;
+    private const int MAX_RANDOM = 20;
 
     //private List<Part> _items = new List<Part>();
     private Dictionary<int, List<Part>> _allitems = new Dictionary<int, List<Part>>();

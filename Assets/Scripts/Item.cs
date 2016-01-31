@@ -83,17 +83,10 @@ public class Item : MonoBehaviour {
 
 			StartCoroutine (ControllerVibration ());
 
-<<<<<<< HEAD
-            //Debug.Log(magnitude);
-            //Debug.Log(magnitudeEnn);
-            //Debug.Log(hitted.Part.hp);
-            if (magnitudeEnn > magnitude)
-=======
             Debug.Log("mag " + magnitude);
             Debug.Log("mag ennemie " + magnitudeEnn);
             Debug.Log(hitted.Part.hp);
             if (magnitudeEnn < magnitude)
->>>>>>> c64b027eba46f73ffbe591e2dc65c3780fe63dd2
                 hitted.Part.hp -= Part.damage;
             //Debug.Log(hitted.Part.hp);
 			if (hitted.Part.hp <= 0)
@@ -123,13 +116,11 @@ public class Item : MonoBehaviour {
         if (joint.gameObject.name.Equals("Head") || joint.gameObject.name.Equals("Body"))
         {
             gm.SetWin(transform.parent.gameObject);
-            gm.confetis.SetActive(true);
+            gm.confettis.SetActive(true);
         }
 
         if (joint.GetComponent<CandiesEmitter>() != null)
             joint.GetComponent<CandiesEmitter>().EmitCandies();
-
-        gm.spectators.GetComponent<Animator>().SetTrigger("Houra");
 
         Destroy(joint);
 
