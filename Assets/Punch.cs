@@ -11,10 +11,11 @@ public class Punch : MonoBehaviour {
     public Material mat;
 	// Use this for initialization
     private float   _cooldown;
-    private bool    _canAttack = true;
+    private bool    _canAttack;
 
     LineRenderer line;
 	void Start () {
+        _canAttack = true;
         _cooldown = 1 - (0.2f * transform.parent.GetComponent<Item>().Part.speed);
         gameObject.AddComponent<Rigidbody2D>();
         line = gameObject.AddComponent<LineRenderer>();
@@ -24,15 +25,20 @@ public class Punch : MonoBehaviour {
         line.SetPosition(1, new Vector2(0, 25));
         FixedJoint2D join = gameObject.AddComponent<FixedJoint2D>();
         join.connectedBody = transform.parent.GetComponent<Rigidbody2D>();
-        target = GameObject.FindGameObjectWithTag("Player" + player).transform.FindChild("Head");
+        target = GameObject.FindGameObjectWithTag("Player" + player).transform;
     }
 	
 	// Update is called once per frame
 	void Update () {
         line.SetPosition(0, transform.position);
         line.SetPosition(1, transform.position + new Vector3(0, 25, 0));
+        //print(control);
+        //print(_canAttack);
+        if (target == null)
+            target = GameObject.FindGameObjectWithTag("Player" + player).transform;
         if (Input.GetAxis(control) != 0 && _canAttack)
         {
+            Debug.Log("Target = " + target);
             if (target != null)
                 GetComponent<Rigidbody2D>().AddForce((target.transform.position - transform.position).normalized * strenght * 5, ForceMode2D.Impulse);
             StartCoroutine(waitCD());
