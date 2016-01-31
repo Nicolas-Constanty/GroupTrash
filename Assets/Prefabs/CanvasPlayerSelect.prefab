@@ -15321,7 +15321,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 73dd5143e16aaa946ac3752377cd09c8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1d4a1e35eab757447bfcdd727ef39d0e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20848,7 +20848,7 @@ MonoBehaviour:
   canvasWinText: {fileID: 123746}
   background: {fileID: 0}
   timer: {fileID: 11497340}
-  waitTime: 20
+  waitTime: 60
   roundTimer: {fileID: 11414952}
   roundTime: 90
   player1Prefab: {fileID: 179658, guid: c8b26d93095364b4f9f75f600a8a8b97, type: 2}
@@ -20859,8 +20859,10 @@ MonoBehaviour:
   P12Stalemate: {fileID: 11488832}
   P1CandiesText: {fileID: 11430254}
   P2CandiesText: {fileID: 11464928}
-  supporterPrefab: {fileID: 0}
-  confetis: {fileID: 0}
+  spectators: {fileID: 0}
+  audioClips:
+  - {fileID: 8300000, guid: bbe9e30a36ba1c9449abfa80607ed108, type: 3}
+  - {fileID: 8300000, guid: 6bbed9d8d6e8f104f8be307466709907, type: 3}
 --- !u!114 &11491046
 MonoBehaviour:
   m_ObjectHideFlags: 1

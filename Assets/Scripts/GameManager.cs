@@ -56,9 +56,9 @@ public class GameManager : MonoBehaviour {
 	private Text P2CandiesText;
 
 	[SerializeField]
-	private GameObject supporterPrefab;
+	private GameObject spectators;
 
-    public GameObject confetis;
+	public AudioClip[] audioClips;
 
 	// Enum for current game state
 	public enum GameState
@@ -84,9 +84,6 @@ public class GameManager : MonoBehaviour {
         player2.items.Add((int)PART.RIGHTARM, new List<Part>());
         player2.items.Add((int)PART.LEFTLEG, new List<Part>());
         player2.items.Add((int)PART.RIGHTLEG, new List<Part>());
-
-        confetis = GameObject.Find("ConfetisEmitter");
-        confetis.SetActive(false);
     }
 
 	void Start ()
@@ -99,6 +96,8 @@ public class GameManager : MonoBehaviour {
 
 		player1.playerObj = GameObject.FindGameObjectWithTag ("Player1");
 		player2.playerObj = GameObject.FindGameObjectWithTag ("Player2");
+
+		spectators.SetActive (false);
 
 		SetSelection ();
     }
@@ -185,6 +184,8 @@ public class GameManager : MonoBehaviour {
 		player1.playerObj = (GameObject)Instantiate (player1Prefab);
 		player2.playerObj = (GameObject)Instantiate (player2Prefab);
 		roundRemainingTime = roundTime;
+		Camera.main.GetComponent<AudioSource> ().clip = audioClips[1];
+		Camera.main.GetComponent<AudioSource> ().Play ();
 		state = GameState.PLAYING;
 	}
 
@@ -211,9 +212,7 @@ public class GameManager : MonoBehaviour {
 		state = GameState.WIN;
 		canvasHUD.SetActive (false);
 		canvasWin.SetActive (true);
-        //spectators.SetActive (true);
-        supporterPrefab.GetComponent<Animator>().SetBool("HouraBool", true);
-        confetis.SetActive(true);
+		spectators.SetActive (true);
 
 		if (player == null)
 		{
@@ -261,8 +260,10 @@ public class GameManager : MonoBehaviour {
 		canvasPause.SetActive (false);
 		canvasWin.SetActive (false);
 		background.SetActive (false);
-		//spectators.SetActive (false);
+		spectators.SetActive (false);
 		canvasSelection.SetActive (true);
+		Camera.main.GetComponent<AudioSource> ().clip = audioClips[0];
+		Camera.main.GetComponent<AudioSource> ().Play ();
 	}
 
 	public void SetPlayerParts(int playerID, Dictionary<int, List<Part>> _items)
@@ -494,9 +495,4 @@ public class GameManager : MonoBehaviour {
 			set { _items = value; }
 		}
 	}
-
-    public GameObject GetSupporters()
-    {
-        return supporterPrefab;
-    }
 }
