@@ -141,6 +141,19 @@ public class BottomPanel : MonoBehaviour {
                 Inventory.transform.GetChild(i).GetComponent<Item>().Part = _items[_type][i];
                 Inventory.transform.GetChild(i).transform.GetChild(0).GetComponent<Image>().sprite = _items[_type][i].sprite;
             }
+            else
+            {
+                Part tmp = Inventory.transform.GetChild(i).GetComponent<Item>().Part;
+                tmp.hp = 0;
+                tmp.special = 0;
+                tmp.speed = 0;
+                tmp.sprite = null;
+                tmp.damage = 0;
+                tmp.spriteParts = null;
+                tmp.candies = 0;
+                Inventory.transform.GetChild(i).GetComponent<Item>().Part = tmp;
+                Inventory.transform.GetChild(i).transform.GetChild(0).GetComponent<Image>().sprite = null;
+            }
         }
         for (int i = 0; i < shopContent.Length; i++)
         {
@@ -149,6 +162,12 @@ public class BottomPanel : MonoBehaviour {
                 Shop.transform.GetChild(i).GetComponent<Item>().Part = shopContent[i];
                 Shop.transform.GetChild(i).transform.GetChild(0).GetComponent<Image>().sprite = shopContent[i].sprite;
             }
+            else
+            {
+                Shop.transform.GetChild(i).GetComponent<Item>().Part = null;
+                Shop.transform.GetChild(i).transform.GetChild(0).GetComponent<Image>().sprite = null;
+            }
+               
         }
         ActiveItem(Inventory.transform.GetChild(0));
     }
@@ -170,12 +189,12 @@ public class BottomPanel : MonoBehaviour {
     {
         foreach (Body body in bodies)
         {
-            _allitems[(int)PART.HEAD].Add(body.getPart(0));
-            _allitems[(int)PART.BODY].Add(body.getPart(1));
-            _allitems[(int)PART.LEFTARM].Add(body.getPart(2));
-            _allitems[(int)PART.RIGHTARM].Add(body.getPart(3));
-            _allitems[(int)PART.LEFTLEG].Add(body.getPart(4));
-            _allitems[(int)PART.RIGHTLEG].Add(body.getPart(5));
+            _allitems[(int)PART.HEAD].Add(body.getPart((int)PART.HEAD));
+            _allitems[(int)PART.BODY].Add(body.getPart((int)PART.BODY));
+            _allitems[(int)PART.LEFTARM].Add(body.getPart((int)PART.LEFTARM));
+            _allitems[(int)PART.RIGHTARM].Add(body.getPart((int)PART.RIGHTARM));
+            _allitems[(int)PART.LEFTLEG].Add(body.getPart((int)PART.LEFTLEG));
+            _allitems[(int)PART.RIGHTLEG].Add(body.getPart((int)PART.RIGHTLEG));
         }
         for (int i = 0; i < 6; i++)
         {
@@ -233,13 +252,15 @@ public class BottomPanel : MonoBehaviour {
 
     private void Select()
     {
-        if (Input.GetAxis(_axis["Submit"]) != 0 && !_click)
+        if (Input.GetAxis(_axis["Submit"]) != 0 && !_click && _itemActive.GetComponent<Item>().Part.hp != 0)
         {
-			Debug.Log ("Submit");
+            Debug.Log ("Submit");
             StartCoroutine(waitClick());
+
             _GM.SetPlayerPart(manette, _type, _itemActive.GetComponent<Item>().Part);
             CaracTotal.setObject(mixParts(), "Total");
 			UpdateCharacter ();
+
         }
     }
 
