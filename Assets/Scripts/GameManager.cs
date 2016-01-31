@@ -104,9 +104,13 @@ public class GameManager : MonoBehaviour {
 	{
         for (int i = 0; i < 20; i++)
         {
-            if (Input.GetKeyDown("joystick button " + i))
+            if (Input.GetKeyDown("joystick 1 button " + i))
             {
-                Debug.Log("Button " + i + " pressed !");
+                Debug.Log("1 Button " + i + " pressed !");
+            }
+            if(Input.GetKeyDown("joystick 2 button " + i))
+            {
+                Debug.Log("2 Button " + i + " pressed !");
             }
         }
 

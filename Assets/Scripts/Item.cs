@@ -76,15 +76,15 @@ public class Item : MonoBehaviour {
         if ((coll.gameObject.layer == LayerMask.NameToLayer("Player1") || coll.gameObject.layer == LayerMask.NameToLayer("Player2")) && timer < 0.05)
         {
             Item hitted = coll.gameObject.GetComponentInChildren<Item>();
-            float magnitude = transform.parent.GetComponent<Rigidbody2D>().velocity.magnitude;
+            float magnitude = GetComponent<Rigidbody2D>().velocity.magnitude;
             float magnitudeEnn = coll.transform.parent.GetChild(0).GetComponentInChildren<Rigidbody2D>().velocity.magnitude;
 
 			StartCoroutine (ControllerVibration ());
 
-            Debug.Log(magnitude);
-            Debug.Log(magnitudeEnn);
+            Debug.Log("mag " + magnitude);
+            Debug.Log("mag ennemie " + magnitudeEnn);
             Debug.Log(hitted.Part.hp);
-            if (magnitudeEnn > magnitude)
+            if (magnitudeEnn < magnitude)
                 hitted.Part.hp -= Part.damage;
             Debug.Log(hitted.Part.hp);
 			if (hitted.Part.hp <= 0)
