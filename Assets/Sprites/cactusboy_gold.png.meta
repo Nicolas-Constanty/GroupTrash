@@ -1,0 +1,284 @@
+fileFormatVersion: 2
+guid: a7bf360f01445e349824b0d11483192a
+timeCreated: 1454219799
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cactusboy_gold_0
+    21300002: cactusboy_gold_1
+    21300004: cactusboy_gold_2
+    21300006: cactusboy_gold_3
+    21300008: cactusboy_gold_4
+    21300010: cactusboy_gold_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: cactusboy_gold_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1417
+        width: 707.75
+        height: 1417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 188}
+        - {x: -10, y: 180}
+        - {x: -19, y: 167}
+        - {x: -26, y: 150}
+        - {x: -44, y: 129}
+        - {x: -71, y: -54}
+        - {x: -71, y: -248}
+        - {x: -61, y: -265}
+        - {x: 12, y: -265}
+        - {x: 51, y: -96}
+        - {x: 51, y: 188}
+      - - {x: 45, y: 83}
+        - {x: 41, y: 79}
+        - {x: 41, y: 75}
+        - {x: 43, y: 73}
+        - {x: 46, y: 74}
+        - {x: 48, y: 78}
+        - {x: 48, y: 81}
+        - {x: 47, y: 83}
+    - name: cactusboy_gold_1
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1417
+        width: 707.75
+        height: 1417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 125.416016, y: 81}
+        - {x: 108.416016, y: 134}
+        - {x: 86.416016, y: 163}
+        - {x: 39.416016, y: 204}
+        - {x: 3.4160156, y: 204}
+        - {x: -9.583984, y: 187}
+        - {x: -25.583984, y: 204}
+        - {x: -26.583984, y: 204}
+        - {x: -41.583984, y: 195}
+        - {x: -72.583984, y: 111}
+        - {x: -72.583984, y: -36}
+        - {x: -70.583984, y: -43}
+        - {x: -19.583984, y: -63}
+        - {x: -2.5839844, y: -64}
+        - {x: 75.416016, y: -64}
+        - {x: 88.416016, y: -57}
+        - {x: 111.416016, y: -26}
+        - {x: 125.416016, y: 30}
+    - name: cactusboy_gold_2
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 1417
+        width: 707.75
+        height: 1417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60.33203, y: -505}
+        - {x: 56.33203, y: -505}
+        - {x: 54.33203, y: -509}
+        - {x: 54.33203, y: -512}
+        - {x: 60.33203, y: -512}
+        - {x: 62.33203, y: -509}
+        - {x: 62.33203, y: -506}
+      - - {x: 103.33203, y: -89}
+        - {x: 90.33203, y: -60}
+        - {x: 105.33203, y: 4}
+        - {x: 113.33203, y: 24}
+        - {x: 113.33203, y: 44}
+        - {x: 88.33203, y: 121}
+        - {x: 73.33203, y: 156}
+        - {x: 19.332031, y: 157}
+        - {x: -47.66797, y: 158}
+        - {x: -89.66797, y: 166}
+        - {x: -106.66797, y: 166}
+        - {x: -135.66797, y: 130}
+        - {x: -135.66797, y: 90}
+        - {x: -130.66797, y: 70}
+        - {x: -79.66797, y: 0}
+        - {x: -46.66797, y: -37}
+        - {x: -57.66797, y: -96}
+        - {x: -78.66797, y: -112}
+        - {x: -95.66797, y: -151}
+        - {x: -93.66797, y: -173}
+        - {x: -92.66797, y: -205}
+        - {x: -63.66797, y: -180}
+        - {x: -12.667969, y: -183}
+        - {x: 20.332031, y: -265}
+        - {x: 56.33203, y: -265}
+        - {x: 72.33203, y: -226}
+        - {x: 96.33203, y: -169}
+        - {x: 105.33203, y: -140}
+    - name: cactusboy_gold_3
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 1417
+        width: 707.75
+        height: 1417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.751953, y: 162}
+        - {x: -34.751953, y: 162}
+        - {x: -44.751953, y: 152}
+        - {x: -44.751953, y: -44}
+        - {x: 2.2480469, y: -206}
+        - {x: 74.24805, y: -206}
+        - {x: 104.24805, y: -169}
+        - {x: 104.24805, y: -116}
+        - {x: 69.24805, y: -15}
+    - name: cactusboy_gold_4
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 0
+        width: 707.75
+        height: 1417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.416016, y: -41}
+        - {x: 39.416016, y: 66}
+        - {x: 60.416016, y: 78}
+        - {x: 68.416016, y: 113}
+        - {x: 78.416016, y: 250}
+        - {x: 94.416016, y: 258}
+        - {x: 94.416016, y: 321}
+        - {x: 87.416016, y: 336}
+        - {x: 36.416016, y: 377}
+        - {x: -17.583984, y: 377}
+        - {x: -31.583984, y: 375}
+        - {x: -43.583984, y: 360}
+        - {x: -43.583984, y: 257}
+        - {x: -46.583984, y: 100}
+        - {x: -63.583984, y: 82}
+        - {x: -76.583984, y: 62}
+        - {x: -83.583984, y: 22}
+        - {x: -75.583984, y: -95}
+        - {x: -110.583984, y: -208}
+        - {x: -118.583984, y: -251}
+        - {x: -118.583984, y: -273}
+        - {x: -115.583984, y: -295}
+        - {x: -79.583984, y: -333}
+        - {x: -59.583984, y: -333}
+        - {x: -46.583984, y: -324}
+        - {x: -35.583984, y: -297}
+        - {x: -28.583984, y: -275}
+        - {x: -15.583984, y: -153}
+    - name: cactusboy_gold_5
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 0
+        width: 707.75
+        height: 1417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33.33203, y: 381}
+        - {x: 25.332031, y: 381}
+        - {x: 23.332031, y: 380}
+        - {x: 22.332031, y: 377}
+        - {x: 22.332031, y: 374}
+        - {x: 20.332031, y: 381}
+        - {x: -19.667969, y: 381}
+        - {x: -47.66797, y: 371}
+        - {x: -53.66797, y: 328}
+        - {x: -53.66797, y: 222}
+        - {x: -28.667969, y: 107}
+        - {x: -26.667969, y: 14}
+        - {x: -34.66797, y: -132}
+        - {x: -50.66797, y: -203}
+        - {x: -49.66797, y: -230}
+        - {x: -31.667969, y: -267}
+        - {x: 13.332031, y: -293}
+        - {x: 43.33203, y: -293}
+        - {x: 54.33203, y: -245}
+        - {x: 75.33203, y: 41}
+        - {x: 75.33203, y: 126}
+      - - {x: -155.66797, y: 345}
+        - {x: -158.66797, y: 344}
+        - {x: -158.66797, y: 338}
+        - {x: -151.66797, y: 338}
+        - {x: -150.66797, y: 340}
+        - {x: -150.66797, y: 344}
+        - {x: -151.66797, y: 345}
+      - - {x: 16.332031, y: 483}
+        - {x: 19.332031, y: 484}
+        - {x: 19.332031, y: 487}
+        - {x: 16.332031, y: 488}
+        - {x: 14.332031, y: 486}
+      - - {x: 14.332031, y: 496}
+        - {x: 14.332031, y: 491}
+        - {x: 16.332031, y: 489}
+        - {x: 19.332031, y: 490}
+        - {x: 21.332031, y: 496}
+        - {x: 21.332031, y: 499}
+        - {x: 18.332031, y: 500}
+      - - {x: -238.66797, y: 510}
+        - {x: -237.66797, y: 507}
+        - {x: -231.66797, y: 507}
+        - {x: -229.66797, y: 509}
+        - {x: -230.66797, y: 512}
+        - {x: -236.66797, y: 512}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
