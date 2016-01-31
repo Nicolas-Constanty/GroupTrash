@@ -227,22 +227,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &179858
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 478708}
-  - 50: {fileID: 5074794}
-  m_Layer: 8
-  m_Name: control1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &180808
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,7 +295,7 @@ Transform:
   m_Children:
   - {fileID: 475392}
   m_Father: {fileID: 484056}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!4 &411344
 Transform:
   m_ObjectHideFlags: 1
@@ -323,7 +307,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 484056}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!4 &433928
 Transform:
   m_ObjectHideFlags: 1
@@ -347,7 +331,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 484056}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!4 &442878
 Transform:
   m_ObjectHideFlags: 1
@@ -372,7 +356,7 @@ Transform:
   m_Children:
   - {fileID: 478190}
   m_Father: {fileID: 484056}
-  m_RootOrder: 10
+  m_RootOrder: 9
 --- !u!4 &450546
 Transform:
   m_ObjectHideFlags: 1
@@ -385,7 +369,7 @@ Transform:
   m_Children:
   - {fileID: 442878}
   m_Father: {fileID: 484056}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!4 &455136
 Transform:
   m_ObjectHideFlags: 1
@@ -397,7 +381,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 484056}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!4 &468250
 Transform:
   m_ObjectHideFlags: 1
@@ -409,7 +393,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 484056}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!4 &475392
 Transform:
   m_ObjectHideFlags: 1
@@ -434,18 +418,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 444682}
   m_RootOrder: 0
---- !u!4 &478708
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 179858}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4, y: -6.52, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 484056}
-  m_RootOrder: 0
 --- !u!4 &479190
 Transform:
   m_ObjectHideFlags: 1
@@ -457,7 +429,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 484056}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!4 &479512
 Transform:
   m_ObjectHideFlags: 1
@@ -470,7 +442,7 @@ Transform:
   m_Children:
   - {fileID: 433928}
   m_Father: {fileID: 484056}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!4 &483234
 Transform:
   m_ObjectHideFlags: 1
@@ -482,7 +454,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 484056}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!4 &484056
 Transform:
   m_ObjectHideFlags: 1
@@ -493,7 +465,6 @@ Transform:
   m_LocalPosition: {x: -5, y: 6, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children:
-  - {fileID: 478708}
   - {fileID: 483234}
   - {fileID: 438202}
   - {fileID: 455136}
@@ -638,23 +609,6 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!50 &5074794
-Rigidbody2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 179858}
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_IsKinematic: 1
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -905,9 +859,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee630ef18a5cf614fad8aae34666f781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: 1
   control: LeftPunch1
   strenght: 30
-  target: {fileID: 0}
   mat: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &11425580
 MonoBehaviour:
@@ -956,9 +910,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee630ef18a5cf614fad8aae34666f781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: 1
   control: LeftKick1
   strenght: 50
-  target: {fileID: 0}
   mat: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &11435300
 MonoBehaviour:
@@ -982,9 +936,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee630ef18a5cf614fad8aae34666f781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: 1
   control: RightKick1
   strenght: 50
-  target: {fileID: 0}
   mat: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &11452328
 MonoBehaviour:
@@ -1041,9 +995,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee630ef18a5cf614fad8aae34666f781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: 1
   control: RightPunch1
   strenght: 30
-  target: {fileID: 0}
   mat: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!212 &21211874
 SpriteRenderer:

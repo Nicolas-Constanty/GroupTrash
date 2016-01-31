@@ -884,9 +884,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee630ef18a5cf614fad8aae34666f781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  control: RightPunch1
+  player: 2
+  control: RightKick1
   strenght: 30
-  target: {fileID: 0}
   mat: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &11452038
 MonoBehaviour:
@@ -910,9 +910,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee630ef18a5cf614fad8aae34666f781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  control: RightPunch1
+  player: 2
+  control: RightPunch2
   strenght: 30
-  target: {fileID: 0}
   mat: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &11466312
 MonoBehaviour:
@@ -969,9 +969,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee630ef18a5cf614fad8aae34666f781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  control: RightPunch1
+  player: 2
+  control: LeftKick1
   strenght: 30
-  target: {fileID: 0}
   mat: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &11493516
 MonoBehaviour:
@@ -995,9 +995,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee630ef18a5cf614fad8aae34666f781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  control: RightPunch1
+  player: 2
+  control: LeftPunch2
   strenght: 30
-  target: {fileID: 0}
   mat: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!212 &21200266
 SpriteRenderer:
