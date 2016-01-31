@@ -52,9 +52,10 @@ public class Item : MonoBehaviour {
 
     private void LooseJoint(Joint2D joint)
     {
+        GameManager gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
         if (joint.gameObject.name.Equals("neck") || joint.gameObject.name.Equals("hip"))
         {
-            GameManager gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
             gm.SetWin(transform.parent.gameObject);
             //gm.confetis.SetActive(true);
         }
