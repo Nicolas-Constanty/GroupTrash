@@ -77,7 +77,6 @@ GameObject:
   - 212: {fileID: 21231040}
   - 50: {fileID: 5009934}
   - 233: {fileID: 23316212}
-  - 114: {fileID: 11432052}
   m_Layer: 8
   m_Name: armL
   m_TagString: Untagged
@@ -395,7 +394,6 @@ GameObject:
   - 212: {fileID: 21206004}
   - 50: {fileID: 5035576}
   - 233: {fileID: 23381700}
-  - 114: {fileID: 11411906}
   m_Layer: 8
   m_Name: kneeL
   m_TagString: Untagged
@@ -415,7 +413,6 @@ GameObject:
   - 50: {fileID: 5015512}
   - 233: {fileID: 23348448}
   - 255: {fileID: 25552048}
-  - 114: {fileID: 11497410}
   - 120: {fileID: 12030614}
   m_Layer: 8
   m_Name: spine
@@ -452,7 +449,6 @@ GameObject:
   - 212: {fileID: 21283776}
   - 50: {fileID: 5010878}
   - 233: {fileID: 23399794}
-  - 114: {fileID: 11408608}
   m_Layer: 8
   m_Name: armR
   m_TagString: Untagged
@@ -677,7 +673,6 @@ GameObject:
   - 212: {fileID: 21222412}
   - 50: {fileID: 5087860}
   - 233: {fileID: 23376176}
-  - 114: {fileID: 11495086}
   m_Layer: 8
   m_Name: legR
   m_TagString: Untagged
@@ -713,6 +708,7 @@ GameObject:
   - 212: {fileID: 21268544}
   - 50: {fileID: 5057876}
   - 255: {fileID: 25569046}
+  - 255: {fileID: 25584214}
   m_Layer: 8
   m_Name: hip
   m_TagString: Untagged
@@ -765,7 +761,6 @@ GameObject:
   - 212: {fileID: 21296316}
   - 50: {fileID: 5016448}
   - 233: {fileID: 23374250}
-  - 114: {fileID: 11430640}
   m_Layer: 8
   m_Name: elbowR
   m_TagString: Untagged
@@ -784,7 +779,6 @@ GameObject:
   - 212: {fileID: 21224852}
   - 50: {fileID: 5068330}
   - 255: {fileID: 25510220}
-  - 114: {fileID: 11464860}
   m_Layer: 8
   m_Name: neck
   m_TagString: Untagged
@@ -803,7 +797,6 @@ GameObject:
   - 212: {fileID: 21274674}
   - 50: {fileID: 5046984}
   - 233: {fileID: 23383048}
-  - 114: {fileID: 11430852}
   m_Layer: 8
   m_Name: legL
   m_TagString: Untagged
@@ -1079,7 +1072,6 @@ GameObject:
   - 212: {fileID: 21250060}
   - 50: {fileID: 5031760}
   - 233: {fileID: 23343670}
-  - 114: {fileID: 11400132}
   m_Layer: 8
   m_Name: elbowL
   m_TagString: Untagged
@@ -1190,7 +1182,6 @@ GameObject:
   - 212: {fileID: 21293326}
   - 50: {fileID: 5003940}
   - 233: {fileID: 23367674}
-  - 114: {fileID: 11421398}
   m_Layer: 8
   m_Name: kneeR
   m_TagString: Untagged
@@ -3104,19 +3095,6 @@ BoxCollider2D:
   m_Offset: {x: -0.11502341, y: -0.2766724}
   serializedVersion: 2
   m_Size: {x: 0.8099409, y: 3.8029542}
---- !u!114 &11400132
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 186142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51abe65331cb4d549b1177436b4163dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 11423308}
-  life: 100
 --- !u!114 &11407300
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3129,38 +3107,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 104430}
---- !u!114 &11408608
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 136036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51abe65331cb4d549b1177436b4163dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 11423308}
-  life: 100
 --- !u!114 &11409260
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51abe65331cb4d549b1177436b4163dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 11423308}
-  life: 100
---- !u!114 &11411906
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 131964}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51abe65331cb4d549b1177436b4163dc, type: 3}
@@ -3180,19 +3132,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 164430}
---- !u!114 &11421398
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 198796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51abe65331cb4d549b1177436b4163dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 11423308}
-  life: 100
 --- !u!114 &11423308
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3285,45 +3224,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 124506}
---- !u!114 &11430640
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 162416}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51abe65331cb4d549b1177436b4163dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 11423308}
-  life: 100
---- !u!114 &11430852
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 164764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51abe65331cb4d549b1177436b4163dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 11423308}
-  life: 100
---- !u!114 &11432052
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 103380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51abe65331cb4d549b1177436b4163dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 11423308}
-  life: 100
 --- !u!114 &11437764
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3368,19 +3268,6 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 154856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51abe65331cb4d549b1177436b4163dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 11423308}
-  life: 100
---- !u!114 &11464860
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 164430}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51abe65331cb4d549b1177436b4163dc, type: 3}
@@ -3458,32 +3345,6 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51abe65331cb4d549b1177436b4163dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 11423308}
-  life: 100
---- !u!114 &11495086
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51abe65331cb4d549b1177436b4163dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 11423308}
-  life: 100
---- !u!114 &11497410
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133190}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51abe65331cb4d549b1177436b4163dc, type: 3}
@@ -5911,6 +5772,23 @@ FixedJoint2D:
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!255 &25569046
+FixedJoint2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159300}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 5060276}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0.2800002, y: -14.625}
+  m_DampingRatio: 0
+  m_Frequency: 0
+--- !u!255 &25584214
 FixedJoint2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

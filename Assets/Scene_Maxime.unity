@@ -127,27 +127,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
---- !u!1 &445848937 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 159300, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
-  m_PrefabInternal: {fileID: 1458405281}
---- !u!255 &445848941
-FixedJoint2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 445848937}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 1085376808}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.2800002, y: -14.625}
-  m_DampingRatio: 0
-  m_Frequency: 0
 --- !u!1 &999875675
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,11 +185,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
---- !u!50 &1085376808 stripped
-Rigidbody2D:
-  m_PrefabParentObject: {fileID: 5060276, guid: 6f8e2ffca684db54ead75bf6d8dac442,
-    type: 2}
-  m_PrefabInternal: {fileID: 1458405281}
 --- !u!1 &1092532074
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,6 +310,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11491412, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
+      propertyPath: life
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11415606, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
     - {fileID: 11471924, guid: bfe2916aa9ad7a046a01cd11652b3d64, type: 2}
@@ -445,21 +423,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5057876, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 25584090, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
-    - {fileID: 11432052, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
-    - {fileID: 11408608, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
-    - {fileID: 11430852, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
-    - {fileID: 11495086, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
-    - {fileID: 11430640, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
-    - {fileID: 11411906, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
-    - {fileID: 11421398, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
-    - {fileID: 11497410, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
-    - {fileID: 11400132, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
-    - {fileID: 11464860, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6f8e2ffca684db54ead75bf6d8dac442, type: 2}
   m_IsPrefabParent: 0
