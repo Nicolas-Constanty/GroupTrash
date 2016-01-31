@@ -41,7 +41,7 @@ public class BottomPanel : MonoBehaviour {
     private const int MAX_RANDOM = 12;
 
     //private List<Part> _items = new List<Part>();
-    private List<Part> _allitems = new List<Part>();
+    private Dictionary<int, List<Part>> _allitems = new Dictionary<int, List<Part>>();
     private Dictionary<int, List<Part>> _items;
     private GameManager _GM;
 
@@ -61,6 +61,13 @@ public class BottomPanel : MonoBehaviour {
         _items = _GM.GetPlayerParts(manette);
 
         // INIT MENU
+        _allitems.Add((int)PART.HEAD, new List<Part>());
+        _allitems.Add((int)PART.BODY, new List<Part>());
+        _allitems.Add((int)PART.LEFTARM, new List<Part>());
+        _allitems.Add((int)PART.RIGHTARM, new List<Part>());
+        _allitems.Add((int)PART.LEFTLEG, new List<Part>());
+        _allitems.Add((int)PART.RIGHTLEG, new List<Part>());
+
         _itemActive = Inventory.transform.GetChild(0);
         _itemActive.GetComponent<Image>().sprite = actifSlot;
         Shop.SetActive(false);
@@ -150,39 +157,44 @@ public class BottomPanel : MonoBehaviour {
 	private void UpdateCharacter()
 	{
 		//visual.buttons [_type].GetComponent<Image> ().sprite = _items[_type][_current].sprite;
-		visual.buttons [0].GetComponent<Image> ().sprite = _GM.GetPlayerPart(manette, (int)Character.PART.HEAD).sprite;
-		visual.buttons [1].GetComponent<Image> ().sprite = _GM.GetPlayerPart(manette, (int)Character.PART.LEFTARM).sprite;
-		visual.buttons [2].GetComponent<Image> ().sprite = _GM.GetPlayerPart(manette, (int)Character.PART.BODY).sprite;
-		visual.buttons [3].GetComponent<Image> ().sprite = _GM.GetPlayerPart(manette, (int)Character.PART.RIGHTARM).sprite;
-		visual.buttons [4].GetComponent<Image> ().sprite = _GM.GetPlayerPart(manette, (int)Character.PART.LEFTLEG).sprite;
-		visual.buttons [5].GetComponent<Image> ().sprite = _GM.GetPlayerPart(manette, (int)Character.PART.RIGHTLEG).sprite;
+		visual.buttons [0].GetComponent<Image> ().sprite = _GM.GetPlayerPart(manette, (int)PART.HEAD).sprite;
+		visual.buttons [1].GetComponent<Image> ().sprite = _GM.GetPlayerPart(manette, (int)PART.LEFTARM).sprite;
+		visual.buttons [2].GetComponent<Image> ().sprite = _GM.GetPlayerPart(manette, (int)PART.BODY).sprite;
+		visual.buttons [3].GetComponent<Image> ().sprite = _GM.GetPlayerPart(manette, (int)PART.RIGHTARM).sprite;
+		visual.buttons [4].GetComponent<Image> ().sprite = _GM.GetPlayerPart(manette, (int)PART.LEFTLEG).sprite;
+		visual.buttons [5].GetComponent<Image> ().sprite = _GM.GetPlayerPart(manette, (int)PART.RIGHTLEG).sprite;
 	}
 
     public void Generate()
     {
         foreach (Body body in bodies)
         {
-            _allitems.Add(body.getPart(0));
-            _allitems.Add(body.getPart(1));
-            _allitems.Add(body.getPart(2));
-            _allitems.Add(body.getPart(3));
-            _allitems.Add(body.getPart(4));
-            _allitems.Add(body.getPart(5));
+            _allitems[(int)PART.HEAD].Add(body.getPart(0));
+            _allitems[(int)PART.BODY].Add(body.getPart(1));
+            _allitems[(int)PART.LEFTARM].Add(body.getPart(2));
+            _allitems[(int)PART.RIGHTARM].Add(body.getPart(3));
+            _allitems[(int)PART.LEFTLEG].Add(body.getPart(4));
+            _allitems[(int)PART.RIGHTLEG].Add(body.getPart(5));
         }
         for (int i = 0; i < 6; i++)
         {
             int dice = Random.Range(0, bodies.Length);
             _items[i].Add(bodies[dice].getPart(i));
-            _allitems.Remove(bodies[dice].getPart(i));
+            _allitems[i].Remove(bodies[dice].getPart(i));
             _GM.SetPlayerPart(manette, i, bodies[dice].getPart(i));
         }
         for (int i = 0; i < MAX_RANDOM; i++)
         {
             if (_allitems.Count > 0)
             {
-                int dice = Random.Range(0, _allitems.Count);
-				_items[i].Add(_allitems[dice]);
-                _allitems.Remove(_allitems[dice]);
+                int type = Random.Range(0, 6);
+                int dice = Random.Range(0, _allitems[type].Count);
+                if (_allitems[type][dice] != null)
+                {
+                    _items[type].Add(_allitems[type][dice]);
+                    _allitems[type][dice] = null;
+                }
+				
             }
         }
 		UpdateCharacter ();

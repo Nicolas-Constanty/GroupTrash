@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 8691fa3713293b442b037a88a8ac6b11
-timeCreated: 1454199451
+guid: fb0d3832940461e4ca32c3e4ba3fa625
+timeCreated: 1454202441
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: skullgirl_puissance_0
-    21300002: skullgirl_puissance_1
-    21300004: skullgirl_puissance_2
-    21300006: skullgirl_puissance_3
-    21300008: skullgirl_puissance_4
-    21300010: skullgirl_puissance_5
-    21300012: skullgirl_puissance_6
-    21300014: skullgirl_puissance_7
-    21300016: skullgirl_puissance_8
-    21300018: skullgirl_puissance_9
+    21300000: skullgirl_puissance (1)_0
+    21300002: skullgirl_puissance (1)_1
+    21300004: skullgirl_puissance (1)_2
+    21300006: skullgirl_puissance (1)_3
+    21300008: skullgirl_puissance (1)_4
+    21300010: skullgirl_puissance (1)_5
+    21300012: skullgirl_puissance (1)_6
+    21300014: skullgirl_puissance (1)_7
+    21300016: skullgirl_puissance (1)_8
+    21300018: skullgirl_puissance (1)_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -60,7 +60,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: skullgirl_puissance_0
+    - name: skullgirl_puissance (1)_0
       rect:
         serializedVersion: 2
         x: 707
@@ -99,7 +99,7 @@ TextureImporter:
         - {x: 119.416016, y: -42}
         - {x: 134.41602, y: 8}
         - {x: 160.41602, y: 30}
-    - name: skullgirl_puissance_1
+    - name: skullgirl_puissance (1)_1
       rect:
         serializedVersion: 2
         x: 0
@@ -119,7 +119,7 @@ TextureImporter:
         - {x: 30, y: -64.13867}
         - {x: 30, y: 63.86133}
         - {x: 25, y: 65.86133}
-    - name: skullgirl_puissance_2
+    - name: skullgirl_puissance (1)_2
       rect:
         serializedVersion: 2
         x: 707
@@ -159,7 +159,7 @@ TextureImporter:
         - {x: 114.416016, y: -167.13867}
         - {x: 123.416016, y: -144.13867}
         - {x: 123.416016, y: -95.13867}
-    - name: skullgirl_puissance_3
+    - name: skullgirl_puissance (1)_3
       rect:
         serializedVersion: 2
         x: 2121
@@ -170,15 +170,15 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -30.751953, y: -44.13867}
-        - {x: 38.248047, y: -120.13867}
-        - {x: 55.248047, y: -120.13867}
-        - {x: 84.24805, y: -101.13867}
-        - {x: 84.24805, y: -22.138672}
-        - {x: 76.24805, y: 71.86133}
-        - {x: -28.751953, y: 71.86133}
-        - {x: -30.751953, y: 67.86133}
-    - name: skullgirl_puissance_4
+      - - {x: 50.248047, y: 71.86133}
+        - {x: -30.751953, y: 71.86133}
+        - {x: -30.751953, y: -20.138672}
+        - {x: 13.248047, y: -115.13867}
+        - {x: 84.24805, y: -115.13867}
+        - {x: 95.24805, y: -109.13867}
+        - {x: 95.24805, y: -43.13867}
+        - {x: 70.24805, y: 66.86133}
+    - name: skullgirl_puissance (1)_4
       rect:
         serializedVersion: 2
         x: 0
@@ -207,7 +207,7 @@ TextureImporter:
         - {x: -1, y: -166.77734}
         - {x: -1, y: -152.77734}
         - {x: -6, y: -127.77734}
-    - name: skullgirl_puissance_5
+    - name: skullgirl_puissance (1)_5
       rect:
         serializedVersion: 2
         x: 707
@@ -235,7 +235,7 @@ TextureImporter:
         - {x: 38.416016, y: -175.77734}
         - {x: 60.416016, y: -92.77734}
         - {x: 69.416016, y: -26.777344}
-    - name: skullgirl_puissance_6
+    - name: skullgirl_puissance (1)_6
       rect:
         serializedVersion: 2
         x: 1414
@@ -246,21 +246,19 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 49.33203, y: 115.22266}
+      - - {x: 54.33203, y: 117.22266}
         - {x: 35.33203, y: 133.22266}
         - {x: 22.332031, y: 138.22266}
         - {x: -18.667969, y: 138.22266}
         - {x: -52.66797, y: 120.22266}
         - {x: -63.66797, y: 103.22266}
-        - {x: -63.66797, y: 58.222656}
-        - {x: -24.667969, y: -76.77734}
-        - {x: -13.667969, y: -154.77734}
-        - {x: 8.332031, y: -191.77734}
-        - {x: 63.33203, y: -191.77734}
-        - {x: 78.33203, y: -188.77734}
-        - {x: 80.33203, y: -178.77734}
-        - {x: 80.33203, y: -37.777344}
-        - {x: 72.33203, y: 15.222656}
+        - {x: -63.66797, y: 54.222656}
+        - {x: -9.667969, y: -163.77734}
+        - {x: -1.6679688, y: -170.77734}
+        - {x: 15.332031, y: -170.77734}
+        - {x: 75.33203, y: -162.77734}
+        - {x: 80.33203, y: -156.77734}
+        - {x: 80.33203, y: -30.777344}
       - - {x: -37.66797, y: -37.777344}
         - {x: -38.66797, y: -45.777344}
         - {x: -36.66797, y: -47.777344}
@@ -268,7 +266,7 @@ TextureImporter:
         - {x: -32.66797, y: -40.777344}
         - {x: -32.66797, y: -38.777344}
         - {x: -34.66797, y: -36.777344}
-    - name: skullgirl_puissance_7
+    - name: skullgirl_puissance (1)_7
       rect:
         serializedVersion: 2
         x: 2121
@@ -288,7 +286,7 @@ TextureImporter:
         - {x: 115.24805, y: -85.77734}
         - {x: 115.24805, y: 131.22266}
         - {x: 85.24805, y: 137.22266}
-    - name: skullgirl_puissance_8
+    - name: skullgirl_puissance (1)_8
       rect:
         serializedVersion: 2
         x: 707
@@ -319,7 +317,7 @@ TextureImporter:
         - {x: 32.416016, y: -142.41602}
         - {x: 11.416016, y: -69.416016}
         - {x: 54.416016, y: -75.416016}
-    - name: skullgirl_puissance_9
+    - name: skullgirl_puissance (1)_9
       rect:
         serializedVersion: 2
         x: 1414
@@ -330,26 +328,26 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 119.33203, y: 12.583984}
-        - {x: 133.33203, y: 32.583984}
-        - {x: 125.33203, y: 69.583984}
-        - {x: 139.33203, y: 131.58398}
-        - {x: 139.33203, y: 176.58398}
-        - {x: 56.33203, y: 225.58398}
-        - {x: 40.33203, y: 230.58398}
-        - {x: -14.667969, y: 230.58398}
-        - {x: -36.66797, y: 221.58398}
-        - {x: -88.66797, y: 104.583984}
-        - {x: -88.66797, y: 93.583984}
-        - {x: -87.66797, y: 87.583984}
-        - {x: -65.66797, y: 80.583984}
-        - {x: -71.66797, y: 39.583984}
-        - {x: -19.667969, y: -172.41602}
-        - {x: 5.3320312, y: -183.41602}
-        - {x: 43.33203, y: -183.41602}
-        - {x: 52.33203, y: -79.416016}
-        - {x: 69.33203, y: -67.416016}
-        - {x: 84.33203, y: 3.5839844}
+      - - {x: 129.33203, y: 45.583984}
+        - {x: 87.33203, y: 60.583984}
+        - {x: 84.33203, y: 54.583984}
+        - {x: 128.33203, y: 85.583984}
+        - {x: 147.33203, y: 115.583984}
+        - {x: 148.33203, y: 118.583984}
+        - {x: 148.33203, y: 151.58398}
+        - {x: 64.33203, y: 209.58398}
+        - {x: 54.33203, y: 235.58398}
+        - {x: 52.33203, y: 236.58398}
+        - {x: -16.667969, y: 236.58398}
+        - {x: -79.66797, y: 116.583984}
+        - {x: -79.66797, y: 75.583984}
+        - {x: -75.66797, y: 71.583984}
+        - {x: -18.667969, y: -181.41602}
+        - {x: 13.332031, y: -199.41602}
+        - {x: 41.33203, y: -199.41602}
+        - {x: 48.33203, y: -187.41602}
+        - {x: 80.33203, y: -90.416016}
+        - {x: 144.33203, y: 8.583984}
     outline: []
   spritePackingTag: 
   userData: 
