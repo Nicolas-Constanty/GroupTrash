@@ -33,8 +33,8 @@ public class Punch : MonoBehaviour {
         line.SetPosition(1, transform.position + new Vector3(0, 25, 0));
         if (Input.GetAxis(control) != 0 && _canAttack)
         {
+            GetComponent<Rigidbody2D>().AddForce((target.transform.position - transform.position).normalized * strenght * 5, ForceMode2D.Impulse);
             StartCoroutine(waitCD());
-            GetComponent<Rigidbody2D>().AddForce((target.transform.position - transform.position).normalized * strenght, ForceMode2D.Impulse);
         }
 	}
 

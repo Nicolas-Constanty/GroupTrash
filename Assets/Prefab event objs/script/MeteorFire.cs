@@ -13,9 +13,12 @@ public class MeteorFire : MonoBehaviour {
 	
 	}
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer != LayerMask.NameToLayer("projectile"))
-            Destroy(gameObject);
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Player1") ||
+            collision.gameObject.layer == LayerMask.NameToLayer("Player2") ||
+            collision.gameObject.layer == LayerMask.NameToLayer("doll"))
+            collision.gameObject.GetComponent<Item>().Part.hp -= 1;
+        Destroy(gameObject);
     }
 }

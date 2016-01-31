@@ -13,10 +13,20 @@ public class MeteorIce : MonoBehaviour {
 	
 	}
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        //Geler la poupée correspondante
-        if (collision.gameObject.layer != LayerMask.NameToLayer("projectile"))
-            Destroy(gameObject);
+        Debug.Log(collision);
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Player1") ||
+            collision.gameObject.layer == LayerMask.NameToLayer("Player2") ||
+            collision.gameObject.layer == LayerMask.NameToLayer("doll"))
+            StartCoroutine(freezePlayer(collision.gameObject.GetComponent<Item>()));
+        Destroy(gameObject);
+    }
+
+    IEnumerator freezePlayer(Item partItem)
+    {
+        partItem.Part.speed -= 1;
+        yield return new WaitForSeconds(2);
+        partItem.Part.speed = 1;
     }
 }
